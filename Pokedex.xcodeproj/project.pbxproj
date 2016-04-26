@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F377F2B1CCF03F400EEEEAD /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F377F2A1CCF03F400EEEEAD /* bg.jpg */; };
 		7FADE3EC1CCED44300B71E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FADE3EB1CCED44300B71E46 /* AppDelegate.swift */; };
 		7FADE3EE1CCED44300B71E46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FADE3ED1CCED44300B71E46 /* ViewController.swift */; };
 		7FADE3F11CCED44300B71E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FADE3EF1CCED44300B71E46 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F377F2A1CCF03F400EEEEAD /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		7FADE3E81CCED44300B71E46 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FADE3EB1CCED44300B71E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FADE3ED1CCED44300B71E46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,8 +108,17 @@
 		7FADE4011CCEDB5400B71E46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7F377F2A1CCF03F400EEEEAD /* bg.jpg */,
+				7FADE4061CCEFA3100B71E46 /* Pokemon Sprites */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		7FADE4061CCEFA3100B71E46 /* Pokemon Sprites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Pokemon Sprites";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F377F2B1CCF03F400EEEEAD /* bg.jpg in Resources */,
 				7FADE3F61CCED44300B71E46 /* LaunchScreen.storyboard in Resources */,
 				7FADE3F31CCED44300B71E46 /* Assets.xcassets in Resources */,
 				7FADE4051CCEDE5F00B71E46 /* pokemon.csv in Resources */,
@@ -336,6 +348,7 @@
 				7FADE3FC1CCED44300B71E46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

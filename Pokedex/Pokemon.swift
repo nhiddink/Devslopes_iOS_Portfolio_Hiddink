@@ -10,14 +10,21 @@ import Foundation
 
 class Pokemon {
     
-    var name:String!
-    var dexNumber: Int!
+    private var _name: String!
+    private var _pokedexId: Int!
     
+    var name: String {
+        return _name
+    }
     
-    init(name: String, dexNumber: Int){
+    var pokedexId: Int {
+            return _pokedexId
+    }
     
-        self.name = name
-        self.dexNumber = dexNumber
+    init(_: String, pokedexId: Int){
+    
+        self._name = name
+        self._pokedexId = pokedexId
     
     
     }
