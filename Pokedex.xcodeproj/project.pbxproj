@@ -17,6 +17,7 @@
 		7FADE3F61CCED44300B71E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FADE3F41CCED44300B71E46 /* LaunchScreen.storyboard */; };
 		7FADE4031CCEDB8200B71E46 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FADE4021CCEDB8200B71E46 /* Pokemon.swift */; };
 		7FADE4051CCEDE5F00B71E46 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FADE4041CCEDE5F00B71E46 /* pokemon.csv */; };
+		7FEF189B1CD036D200553419 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF189A1CD036D200553419 /* csv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7FADE3F71CCED44300B71E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FADE4021CCEDB8200B71E46 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		7FADE4041CCEDE5F00B71E46 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		7FEF189A1CD036D200553419 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,6 @@
 				7FADE3FE1CCEDB2E00B71E46 /* View */,
 				7FADE3FF1CCEDB3800B71E46 /* Controller */,
 				7FADE4001CCEDB4E00B71E46 /* Utils */,
-				7FADE4041CCEDE5F00B71E46 /* pokemon.csv */,
 				7FADE4011CCEDB5400B71E46 /* Resources */,
 				7FADE3F21CCED44300B71E46 /* Assets.xcassets */,
 				7FADE3F71CCED44300B71E46 /* Info.plist */,
@@ -106,6 +107,7 @@
 		7FADE4001CCEDB4E00B71E46 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7FEF189A1CD036D200553419 /* csv.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -113,6 +115,7 @@
 		7FADE4011CCEDB5400B71E46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7FADE4041CCEDE5F00B71E46 /* pokemon.csv */,
 				7F377F2C1CCF168B00EEEEAD /* Pokemon GB.ttf */,
 				7F377F2A1CCF03F400EEEEAD /* bg.jpg */,
 				7FADE4061CCEFA3100B71E46 /* Pokemon Sprites */,
@@ -159,6 +162,7 @@
 				TargetAttributes = {
 					7FADE3E71CCED44300B71E46 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7G4UHWJ29G;
 					};
 				};
 			};
@@ -205,6 +209,7 @@
 				7FADE3EE1CCED44300B71E46 /* ViewController.swift in Sources */,
 				7FADE3EC1CCED44300B71E46 /* AppDelegate.swift in Sources */,
 				7FADE4031CCEDB8200B71E46 /* Pokemon.swift in Sources */,
+				7FEF189B1CD036D200553419 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,10 +324,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Neil-Hiddink.Pokedex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -330,10 +338,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Neil-Hiddink.Pokedex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
