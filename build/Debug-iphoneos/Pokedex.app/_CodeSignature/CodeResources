@@ -58,7 +58,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Y+a8kwmMNpj/6b6K2o2NfaxpMns=
+		9Png1//KaGywItnCSxJaVtvwjIc=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JNY3TBjck9vXoh4vLs4+0kA2ouo=
+			ABWhsDszTi3/XfHQi01cRjdXyjg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -109,11 +109,15 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/yVrhfUkwgMOc990L8VlHiqNPXo=
+			+/RYFe/uAUm1x7VpwtGKZf7B0rg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<data>
+		nhms5IZlkD+4J6ri9Ok3DnKzqvk=
+		</data>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
 		pY2L2ZS+mP5BdQ63ss6VGuGrMhc=
@@ -122,6 +126,10 @@
 		<data>
 		QM7yjLSq7gMS183PoTfNKkIGr6k=
 		</data>
+		<key>Frameworks/libswiftCoreAudio.dylib</key>
+		<data>
+		klp2en5AvypsfUiP8HC+stXF8KU=
+		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
 		vPbmIuqJpBqvugH4364MtKPmHCU=
@@ -129,6 +137,10 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		iaHIE/kiI7ndQj7+atbLa6L7+3U=
+		</data>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<data>
+		CUIRLfQ2ZxKlFlsbDW1wQSDAprQ=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
@@ -152,7 +164,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		X4uNUCwgawxUJ93F80IZjWTWZqo=
+		ByGZzFMgWeCW+qqxpw3552/nukE=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -162,6 +174,10 @@
 		<data>
 		PUuTeWrPSTTxvc8IQU0NkjjEuuY=
 		</data>
+		<key>Pokemon Solid.ttf</key>
+		<data>
+		YEt4Z14kRIfw79gGYqxbiZNTuA4=
+		</data>
 		<key>bg.jpg</key>
 		<data>
 		RQWJayZC9H/6dA3fJzizL7DQqf0=
@@ -170,9 +186,21 @@
 		<data>
 		aRbM0S7ZU9N+0EHenNS/Ofk8p1c=
 		</data>
+		<key>music.mp3</key>
+		<data>
+		5AvzEY4fgxRxoVF/63aUKRdK1HY=
+		</data>
+		<key>mute.png</key>
+		<data>
+		nZACfjv21H3dWRTh1g1KoLloojE=
+		</data>
 		<key>pokemon.csv</key>
 		<data>
 		m2EvjPFvQUpP7ERgbhMHwd9sQM8=
+		</data>
+		<key>sound.png</key>
+		<data>
+		Ly8IgLSlpaAJh1TjYCR/8JE3F5s=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -324,11 +352,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y+a8kwmMNpj/6b6K2o2NfaxpMns=
+			9Png1//KaGywItnCSxJaVtvwjIc=
 			</data>
 			<key>hash2</key>
 			<data>
-			jGwyyOSWgA9dYc7eF1YSgAkMcUtBLt+8AjdsGl1Xbqs=
+			XaZLrgq7YLtFNmYSj9+T3WxAxOtX1Jxopuh4NCknO94=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -374,11 +402,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JNY3TBjck9vXoh4vLs4+0kA2ouo=
+			ABWhsDszTi3/XfHQi01cRjdXyjg=
 			</data>
 			<key>hash2</key>
 			<data>
-			h/DYGOF11ltfhCJ7cL7lm4yZ+eldt8YlKqXHhLMKx8M=
+			YGcxZOSrRAkCV4seeiPs2INFBchCFPj4cwTM2VAtrDE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -400,14 +428,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/yVrhfUkwgMOc990L8VlHiqNPXo=
+			+/RYFe/uAUm1x7VpwtGKZf7B0rg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ApZWrAbEEyCf4AGc2ukvpM5+51OUTO+Thi1PasX4x1w=
+			8i1hkYx78L1/QoCi4liUq3/0uhwLu/+4hPQ1yd97ouo=
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nhms5IZlkD+4J6ri9Ok3DnKzqvk=
+			</data>
+			<key>hash2</key>
+			<data>
+			a2SVbbTyAg99gNzcyFCs5iQjYRa1F5QKlpMZYP0zXRM=
+			</data>
 		</dict>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<dict>
@@ -431,6 +470,17 @@
 			ebm3CZ6qttv8bMOmwkfeZ79UhrcnY8QzGRqG+NbPsL0=
 			</data>
 		</dict>
+		<key>Frameworks/libswiftCoreAudio.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			klp2en5AvypsfUiP8HC+stXF8KU=
+			</data>
+			<key>hash2</key>
+			<data>
+			EaEfbby1MYFAHlWhKI42JXv47FcXcoLcfKTFiFlOtx8=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<dict>
 			<key>hash</key>
@@ -451,6 +501,17 @@
 			<key>hash2</key>
 			<data>
 			HehFo1ZzdnSldWUTXdKQfeJ+b+3wfq1kBS3EfYJEDnk=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CUIRLfQ2ZxKlFlsbDW1wQSDAprQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			/1BjFsGTWeTIf4L8CA7Af1WUN6JRLnQQeltn9Bn8FYA=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
@@ -519,6 +580,17 @@
 			9I6nc/wLc50/WwPZWP/uP9fgLES9xWfkqIZSGFLjDTg=
 			</data>
 		</dict>
+		<key>Pokemon Solid.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YEt4Z14kRIfw79gGYqxbiZNTuA4=
+			</data>
+			<key>hash2</key>
+			<data>
+			qOI97V8ZQuc1xgQMdblqbPkMj83aaxuh+HAG2ZkgP2s=
+			</data>
+		</dict>
 		<key>bg.jpg</key>
 		<dict>
 			<key>hash</key>
@@ -541,6 +613,28 @@
 			ECZtU+9C8+YO3EcEBadFDDykZdC93tOVWeKl11HcJSU=
 			</data>
 		</dict>
+		<key>music.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5AvzEY4fgxRxoVF/63aUKRdK1HY=
+			</data>
+			<key>hash2</key>
+			<data>
+			7lCZOjaLv3s2TdJvoUC3QhxARZrms+MXXVeCKHBdkVY=
+			</data>
+		</dict>
+		<key>mute.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nZACfjv21H3dWRTh1g1KoLloojE=
+			</data>
+			<key>hash2</key>
+			<data>
+			oRpx6cbp1+qKEeqhOD4+lmAa8O8JcqfWm1QCwgxhar4=
+			</data>
+		</dict>
 		<key>pokemon.csv</key>
 		<dict>
 			<key>hash</key>
@@ -550,6 +644,17 @@
 			<key>hash2</key>
 			<data>
 			/zboRaAKiPzncl8HF1vOafMSuyasU9mLlplK+n7ffkM=
+			</data>
+		</dict>
+		<key>sound.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ly8IgLSlpaAJh1TjYCR/8JE3F5s=
+			</data>
+			<key>hash2</key>
+			<data>
+			E2XC/8rkJ45qAHz4XVE6kEVK3h9IOzmhD+hb/UB7G40=
 			</data>
 		</dict>
 	</dict>
