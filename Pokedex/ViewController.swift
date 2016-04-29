@@ -31,10 +31,31 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collection.dataSource = self
         
         initAudio()
+        parsePokemonCSV()
         
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.Done
         
+    }
+    
+    func parsePokemonCSV() {
+    
+        let path = NSBundle.mainBundle().pathForResource("pokemon", ofType: "csv")
+        do {
+            let csv = try CSV(contentsOfURL: path!)
+            let rows = csv.rows
+            
+            for row in rows {
+            
+                let pokeId = Int(row["id"]!)!
+                let name = row["identifier"]!
+                let poke = Pokemon(name: name, pokedexId: pokeId)
+                pokemon.append(poke)
+            }
+            
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
     
     //MARK: Audio

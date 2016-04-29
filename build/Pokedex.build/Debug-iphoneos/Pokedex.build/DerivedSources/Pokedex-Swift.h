@@ -141,6 +141,7 @@ SWIFT_CLASS("_TtC7Pokedex14ViewController")
 @property (nonatomic, strong) UIImage * _Nullable muteImg;
 @property (nonatomic, strong) UIImage * _Nullable soundImg;
 - (void)viewDidLoad;
+- (void)parsePokemonCSV;
 - (void)initAudio;
 - (IBAction)musicButtonPressed:(UIButton * _Null_unspecified)sender;
 - (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;

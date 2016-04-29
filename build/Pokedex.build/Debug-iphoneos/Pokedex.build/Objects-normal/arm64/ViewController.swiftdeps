@@ -6,49 +6,51 @@ provides-nominal:
 provides-member:
 - ["C7Pokedex14ViewController", ""]
 provides-dynamic-lookup:
-- "collection"
-- "inSearchMode"
-- "searchBarSearchButtonClicked"
-- "musicPlayer"
-- "muteImg"
-- "viewDidLoad"
-- "musicButtonPressed"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "searchBar"
 - "searchBar"
-- "numberOfSectionsInCollectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
 - "initAudio"
+- "numberOfSectionsInCollectionView"
+- "parsePokemonCSV"
+- "musicButtonPressed"
 - "soundImg"
+- "collection"
+- "searchBarSearchButtonClicked"
+- "viewDidLoad"
+- "inSearchMode"
+- "muteImg"
+- "musicPlayer"
 depends-top-level:
-- "UIImage"
-- !private "NSURL"
-- "BooleanLiteralType"
-- "UICollectionViewCell"
-- "UISearchBar"
-- "UICollectionView"
-- !private "print"
-- "AVAudioPlayer"
 - !private "NSError"
-- "ViewController"
-- !private "UIReturnKeyType"
-- "UIButton"
-- !private "!="
-- !private "PokeCell"
-- "UIViewController"
-- "StringLiteralType"
-- "String"
-- "UICollectionViewDataSource"
-- "NSIndexPath"
 - "UICollectionViewDelegate"
-- "UISearchBarDelegate"
-- !private "||"
 - "Int"
-- "UICollectionViewDelegateFlowLayout"
-- !private "NSBundle"
-- "Pokemon"
+- !private "!="
+- "UICollectionViewDataSource"
+- "StringLiteralType"
+- !private "PokeCell"
+- "UIButton"
+- "UISearchBar"
+- !private "CSV"
 - !private "=="
+- "UICollectionViewCell"
+- "UICollectionView"
+- !private "NSBundle"
+- "UIViewController"
+- "UICollectionViewDelegateFlowLayout"
+- "Pokemon"
+- "UISearchBarDelegate"
+- "BooleanLiteralType"
+- !private "UIReturnKeyType"
+- "UIImage"
+- !private "print"
+- "String"
+- !private "NSURL"
+- "AVAudioPlayer"
+- "NSIndexPath"
+- !private "||"
+- "ViewController"
 depends-member:
 - !private ["CSo13AVAudioPlayer", "init"]
 - !private ["CSo13AVAudioPlayer", "numberOfLoops"]
@@ -57,6 +59,8 @@ depends-member:
 - !private ["CSo13AVAudioPlayer", "prepareToPlay"]
 - !private ["CSo13AVAudioPlayer", "stop"]
 - !private ["Ps9AnyObject", "AVAudioPlayer"]
+- !private ["Ps9AnyObject", "CSV"]
+- !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "NSURL"]
 - ["Ps9AnyObject", "Pokemon"]
@@ -84,6 +88,7 @@ depends-member:
 - !private ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "numberOfLoops"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
+- ["Ps9AnyObject", "parsePokemonCSV"]
 - !private ["Ps9AnyObject", "pathForResource"]
 - !private ["Ps9AnyObject", "play"]
 - !private ["Ps9AnyObject", "playing"]
@@ -95,6 +100,7 @@ depends-member:
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "returnKeyType"]
 - !private ["Ps9AnyObject", "row"]
+- !private ["Ps9AnyObject", "rows"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
 - ["Ps9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -128,6 +134,7 @@ depends-member:
 - ["Sa", "Index"]
 - ["Sa", "SubSequence"]
 - ["Sa", "_Element"]
+- !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "filter"]
@@ -138,6 +145,7 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Normal"]
 - ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "append"]
 - !private ["Ps23ArrayLiteralConvertible", "count"]
 - !private ["Ps23ArrayLiteralConvertible", "filter"]
 - ["Ps23ArrayLiteralConvertible", "init"]
@@ -146,13 +154,19 @@ depends-member:
 - ["Vs10ArraySlice", "Index"]
 - ["Ps22BidirectionalIndexType", "Distance"]
 - ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "init"]
 - ["Ps21BitwiseOperationsType", "Distance"]
 - ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["C7Pokedex3CSV", "init"]
+- !private ["C7Pokedex3CSV", "rows"]
 - !private ["Ps11CVarArgType", "AVAudioPlayer"]
+- !private ["Ps11CVarArgType", "CSV"]
 - ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "Int"]
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSBundle"]
 - !private ["Ps11CVarArgType", "NSURL"]
@@ -180,6 +194,7 @@ depends-member:
 - ["Ps11CVarArgType", "muteImg"]
 - !private ["Ps11CVarArgType", "numberOfLoops"]
 - ["Ps11CVarArgType", "numberOfSectionsInCollectionView"]
+- ["Ps11CVarArgType", "parsePokemonCSV"]
 - !private ["Ps11CVarArgType", "pathForResource"]
 - !private ["Ps11CVarArgType", "play"]
 - !private ["Ps11CVarArgType", "playing"]
@@ -224,17 +239,21 @@ depends-member:
 - ["Ps14CollectionType", "Index"]
 - ["Ps14CollectionType", "SubSequence"]
 - ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "append"]
 - !private ["Ps14CollectionType", "count"]
 - !private ["Ps14CollectionType", "filter"]
 - ["Ps14CollectionType", "init"]
 - !private ["Ps14CollectionType", "subscript"]
 - ["Ps10Comparable", "Distance"]
 - ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "lowercaseString"]
 - !private ["Ps10Comparable", "rangeOfString"]
 - !private ["Ps28CustomDebugStringConvertible", "AVAudioPlayer"]
+- !private ["Ps28CustomDebugStringConvertible", "CSV"]
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
 - !private ["Ps28CustomDebugStringConvertible", "NSBundle"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - ["Ps28CustomDebugStringConvertible", "Pokemon"]
@@ -244,6 +263,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIReturnKeyType"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
 - ["Ps28CustomDebugStringConvertible", "collection"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "configurePokemonCell"]
@@ -266,6 +286,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "muteImg"]
 - !private ["Ps28CustomDebugStringConvertible", "numberOfLoops"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
+- ["Ps28CustomDebugStringConvertible", "parsePokemonCSV"]
 - !private ["Ps28CustomDebugStringConvertible", "pathForResource"]
 - !private ["Ps28CustomDebugStringConvertible", "play"]
 - !private ["Ps28CustomDebugStringConvertible", "playing"]
@@ -308,9 +329,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "AVAudioPlayer"]
+- !private ["Ps23CustomStringConvertible", "CSV"]
 - ["Ps23CustomStringConvertible", "Distance"]
 - ["Ps23CustomStringConvertible", "Generator"]
 - ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "Int"]
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "NSBundle"]
 - !private ["Ps23CustomStringConvertible", "NSURL"]
@@ -321,6 +344,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIReturnKeyType"]
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
 - ["Ps23CustomStringConvertible", "collection"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "configurePokemonCell"]
@@ -343,6 +367,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "muteImg"]
 - !private ["Ps23CustomStringConvertible", "numberOfLoops"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
+- ["Ps23CustomStringConvertible", "parsePokemonCSV"]
 - !private ["Ps23CustomStringConvertible", "pathForResource"]
 - !private ["Ps23CustomStringConvertible", "play"]
 - !private ["Ps23CustomStringConvertible", "playing"]
@@ -384,9 +409,16 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
 - !private ["Ps9Equatable", "AVAudioPlayer"]
+- !private ["Ps9Equatable", "CSV"]
 - ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Done"]
+- !private ["Ps9Equatable", "Int"]
 - ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSBundle"]
 - !private ["Ps9Equatable", "NSURL"]
@@ -416,6 +448,7 @@ depends-member:
 - ["Ps9Equatable", "muteImg"]
 - !private ["Ps9Equatable", "numberOfLoops"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
+- ["Ps9Equatable", "parsePokemonCSV"]
 - !private ["Ps9Equatable", "pathForResource"]
 - !private ["Ps9Equatable", "play"]
 - !private ["Ps9Equatable", "playing"]
@@ -461,10 +494,13 @@ depends-member:
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "rangeOfString"]
 - ["Ps16ForwardIndexType", "Distance"]
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "init"]
 - ["Ps13GeneratorType", "Element"]
 - !private ["Ps8Hashable", "AVAudioPlayer"]
+- !private ["Ps8Hashable", "CSV"]
 - ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "Done"]
+- !private ["Ps8Hashable", "Int"]
 - ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSBundle"]
 - !private ["Ps8Hashable", "NSURL"]
@@ -493,6 +529,7 @@ depends-member:
 - ["Ps8Hashable", "muteImg"]
 - !private ["Ps8Hashable", "numberOfLoops"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
+- ["Ps8Hashable", "parsePokemonCSV"]
 - !private ["Ps8Hashable", "pathForResource"]
 - !private ["Ps8Hashable", "play"]
 - !private ["Ps8Hashable", "playing"]
@@ -537,6 +574,7 @@ depends-member:
 - ["Ps9Indexable", "Index"]
 - ["Ps9Indexable", "SubSequence"]
 - ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
 - !private ["Ps9Indexable", "filter"]
 - ["Ps9Indexable", "init"]
@@ -544,20 +582,26 @@ depends-member:
 - ["Vs17IndexingGenerator", "Element"]
 - ["Si", "Distance"]
 - ["Si", "IntegerLiteralType"]
+- !private ["Si", "init"]
 - ["Ps21IntegerArithmeticType", "Distance"]
 - ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "init"]
 - ["Ps25IntegerLiteralConvertible", "Distance"]
 - ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
 - ["Ps11IntegerType", "Distance"]
 - ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "init"]
 - ["Ps14MirrorPathType", "Distance"]
 - ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps14MirrorPathType", "lowercaseString"]
 - !private ["Ps14MirrorPathType", "rangeOfString"]
 - ["Ps21MutableCollectionType", "Generator"]
 - ["Ps21MutableCollectionType", "Index"]
 - ["Ps21MutableCollectionType", "SubSequence"]
 - ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "append"]
 - !private ["Ps21MutableCollectionType", "count"]
 - !private ["Ps21MutableCollectionType", "filter"]
 - ["Ps21MutableCollectionType", "init"]
@@ -566,6 +610,7 @@ depends-member:
 - ["Ps16MutableIndexable", "Index"]
 - ["Ps16MutableIndexable", "SubSequence"]
 - ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
 - !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "filter"]
 - ["Ps16MutableIndexable", "init"]
@@ -574,6 +619,7 @@ depends-member:
 - ["Ps16MutableSliceable", "Index"]
 - ["Ps16MutableSliceable", "SubSequence"]
 - ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "append"]
 - !private ["Ps16MutableSliceable", "count"]
 - !private ["Ps16MutableSliceable", "filter"]
 - ["Ps16MutableSliceable", "init"]
@@ -581,6 +627,8 @@ depends-member:
 - !private ["CSo8NSBundle", "mainBundle"]
 - !private ["CSo8NSBundle", "pathForResource"]
 - !private ["PSo8NSCoding", "AVAudioPlayer"]
+- !private ["PSo8NSCoding", "CSV"]
+- !private ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "NSBundle"]
 - !private ["PSo8NSCoding", "NSURL"]
 - ["PSo8NSCoding", "Pokemon"]
@@ -605,6 +653,7 @@ depends-member:
 - ["PSo8NSCoding", "musicPlayer"]
 - ["PSo8NSCoding", "muteImg"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
+- ["PSo8NSCoding", "parsePokemonCSV"]
 - ["PSo8NSCoding", "pokemon"]
 - ["PSo8NSCoding", "positionForBar"]
 - !private ["PSo8NSCoding", "print"]
@@ -647,6 +696,8 @@ depends-member:
 - !private ["PSo9NSCopying", "row"]
 - !private ["CSo7NSError", "debugDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "AVAudioPlayer"]
+- !private ["PSo26NSExtensionRequestHandling", "CSV"]
+- !private ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "NSBundle"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - ["PSo26NSExtensionRequestHandling", "Pokemon"]
@@ -664,6 +715,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "musicPlayer"]
 - ["PSo26NSExtensionRequestHandling", "muteImg"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
+- ["PSo26NSExtensionRequestHandling", "parsePokemonCSV"]
 - ["PSo26NSExtensionRequestHandling", "pokemon"]
 - ["PSo26NSExtensionRequestHandling", "positionForBar"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
@@ -697,6 +749,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "lowercaseString"]
 - !private ["PSo16NSMutableCopying", "rangeOfString"]
 - ["CSo8NSObject", "AVAudioPlayer"]
+- !private ["CSo8NSObject", "CSV"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSBundle"]
 - !private ["CSo8NSObject", "NSError"]
@@ -731,6 +784,7 @@ depends-member:
 - ["CSo8NSObject", "muteImg"]
 - !private ["CSo8NSObject", "numberOfLoops"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
+- ["CSo8NSObject", "parsePokemonCSV"]
 - !private ["CSo8NSObject", "pathForResource"]
 - !private ["CSo8NSObject", "play"]
 - !private ["CSo8NSObject", "playing"]
@@ -771,6 +825,8 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "AVAudioPlayer"]
+- !private ["PSo16NSObjectProtocol", "CSV"]
+- !private ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - ["PSo16NSObjectProtocol", "Pokemon"]
@@ -797,6 +853,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "muteImg"]
 - !private ["PSo16NSObjectProtocol", "numberOfLoops"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
+- ["PSo16NSObjectProtocol", "parsePokemonCSV"]
 - !private ["PSo16NSObjectProtocol", "pathForResource"]
 - !private ["PSo16NSObjectProtocol", "play"]
 - !private ["PSo16NSObjectProtocol", "playing"]
@@ -853,13 +910,16 @@ depends-member:
 - !private ["Ps16OutputStreamType", "rangeOfString"]
 - !private ["C7Pokedex8PokeCell", "configurePokemonCell"]
 - ["C7Pokedex7Pokemon", "deinit"]
+- !private ["C7Pokedex7Pokemon", "init"]
 - !private ["C7Pokedex7Pokemon", "name"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "init"]
 - ["Ps30RangeReplaceableCollectionType", "Generator"]
 - ["Ps30RangeReplaceableCollectionType", "Index"]
 - ["Ps30RangeReplaceableCollectionType", "SubSequence"]
 - ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "append"]
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
 - !private ["Ps30RangeReplaceableCollectionType", "filter"]
 - ["Ps30RangeReplaceableCollectionType", "init"]
@@ -871,6 +931,7 @@ depends-member:
 - ["Ps12SequenceType", "Index"]
 - ["Ps12SequenceType", "SubSequence"]
 - ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "append"]
 - !private ["Ps12SequenceType", "count"]
 - !private ["Ps12SequenceType", "filter"]
 - ["Ps12SequenceType", "init"]
@@ -878,8 +939,10 @@ depends-member:
 - !private ["Ps14SetAlgebraType", "Normal"]
 - ["Ps17SignedIntegerType", "Distance"]
 - ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "init"]
 - ["Ps16SignedNumberType", "Distance"]
 - ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "init"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
@@ -888,6 +951,7 @@ depends-member:
 - !private ["Ps10Streamable", "rangeOfString"]
 - ["Ps10Strideable", "Distance"]
 - ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "init"]
 - !private ["SS", "lowercaseString"]
 - !private ["SS", "rangeOfString"]
 - !private ["Ps30StringInterpolationConvertible", "lowercaseString"]
@@ -915,6 +979,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "AVAudioPlayer"]
+- !private ["PSo21UIAppearanceContainer", "CSV"]
+- !private ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "NSBundle"]
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - ["PSo21UIAppearanceContainer", "Pokemon"]
@@ -937,6 +1003,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "musicPlayer"]
 - ["PSo21UIAppearanceContainer", "muteImg"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
+- ["PSo21UIAppearanceContainer", "parsePokemonCSV"]
 - ["PSo21UIAppearanceContainer", "pokemon"]
 - ["PSo21UIAppearanceContainer", "positionForBar"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -974,6 +1041,8 @@ depends-member:
 - !private ["PSo16UIBarPositioning", "returnKeyType"]
 - !private ["PSo16UIBarPositioning", "text"]
 - !private ["PSo24UIBarPositioningDelegate", "AVAudioPlayer"]
+- !private ["PSo24UIBarPositioningDelegate", "CSV"]
+- !private ["PSo24UIBarPositioningDelegate", "Int"]
 - !private ["PSo24UIBarPositioningDelegate", "NSBundle"]
 - !private ["PSo24UIBarPositioningDelegate", "NSURL"]
 - ["PSo24UIBarPositioningDelegate", "Pokemon"]
@@ -989,6 +1058,7 @@ depends-member:
 - !private ["PSo24UIBarPositioningDelegate", "musicPlayer"]
 - !private ["PSo24UIBarPositioningDelegate", "muteImg"]
 - ["PSo24UIBarPositioningDelegate", "numberOfSectionsInCollectionView"]
+- !private ["PSo24UIBarPositioningDelegate", "parsePokemonCSV"]
 - !private ["PSo24UIBarPositioningDelegate", "pokemon"]
 - ["PSo24UIBarPositioningDelegate", "positionForBar"]
 - !private ["PSo24UIBarPositioningDelegate", "print"]
@@ -1028,6 +1098,8 @@ depends-member:
 - !private ["CSo20UICollectionViewCell", "deinit"]
 - !private ["CSo20UICollectionViewCell", "init"]
 - !private ["PSo26UICollectionViewDataSource", "AVAudioPlayer"]
+- !private ["PSo26UICollectionViewDataSource", "CSV"]
+- !private ["PSo26UICollectionViewDataSource", "Int"]
 - !private ["PSo26UICollectionViewDataSource", "NSBundle"]
 - !private ["PSo26UICollectionViewDataSource", "NSURL"]
 - ["PSo26UICollectionViewDataSource", "Pokemon"]
@@ -1043,6 +1115,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "musicPlayer"]
 - !private ["PSo26UICollectionViewDataSource", "muteImg"]
 - ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "parsePokemonCSV"]
 - !private ["PSo26UICollectionViewDataSource", "pokemon"]
 - ["PSo26UICollectionViewDataSource", "positionForBar"]
 - !private ["PSo26UICollectionViewDataSource", "print"]
@@ -1072,6 +1145,8 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo26UICollectionViewDataSource", ""]
 - !private ["PSo24UICollectionViewDelegate", "AVAudioPlayer"]
+- !private ["PSo24UICollectionViewDelegate", "CSV"]
+- !private ["PSo24UICollectionViewDelegate", "Int"]
 - !private ["PSo24UICollectionViewDelegate", "NSBundle"]
 - !private ["PSo24UICollectionViewDelegate", "NSURL"]
 - ["PSo24UICollectionViewDelegate", "Pokemon"]
@@ -1087,6 +1162,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "musicPlayer"]
 - !private ["PSo24UICollectionViewDelegate", "muteImg"]
 - ["PSo24UICollectionViewDelegate", "numberOfSectionsInCollectionView"]
+- !private ["PSo24UICollectionViewDelegate", "parsePokemonCSV"]
 - !private ["PSo24UICollectionViewDelegate", "pokemon"]
 - ["PSo24UICollectionViewDelegate", "positionForBar"]
 - !private ["PSo24UICollectionViewDelegate", "print"]
@@ -1116,6 +1192,8 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo24UICollectionViewDelegate", ""]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "AVAudioPlayer"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "CSV"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "Int"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "NSBundle"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "NSURL"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "Pokemon"]
@@ -1131,6 +1209,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "musicPlayer"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "muteImg"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSectionsInCollectionView"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "parsePokemonCSV"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "pokemon"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "positionForBar"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "print"]
@@ -1160,6 +1239,8 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZoomingInScrollView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", ""]
 - !private ["PSo18UIContentContainer", "AVAudioPlayer"]
+- !private ["PSo18UIContentContainer", "CSV"]
+- !private ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "NSBundle"]
 - !private ["PSo18UIContentContainer", "NSURL"]
 - ["PSo18UIContentContainer", "Pokemon"]
@@ -1177,6 +1258,7 @@ depends-member:
 - ["PSo18UIContentContainer", "musicPlayer"]
 - ["PSo18UIContentContainer", "muteImg"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
+- ["PSo18UIContentContainer", "parsePokemonCSV"]
 - ["PSo18UIContentContainer", "pokemon"]
 - ["PSo18UIContentContainer", "positionForBar"]
 - !private ["PSo18UIContentContainer", "print"]
@@ -1229,6 +1311,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "AVAudioPlayer"]
+- !private ["PSo18UIFocusEnvironment", "CSV"]
+- !private ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "NSBundle"]
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - ["PSo18UIFocusEnvironment", "Pokemon"]
@@ -1251,6 +1335,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "musicPlayer"]
 - ["PSo18UIFocusEnvironment", "muteImg"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
+- ["PSo18UIFocusEnvironment", "parsePokemonCSV"]
 - ["PSo18UIFocusEnvironment", "pokemon"]
 - ["PSo18UIFocusEnvironment", "positionForBar"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -1286,6 +1371,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - ["CSo7UIImage", "init"]
 - ["CSo11UIResponder", "AVAudioPlayer"]
+- !private ["CSo11UIResponder", "CSV"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - !private ["CSo11UIResponder", "NSError"]
@@ -1316,6 +1402,7 @@ depends-member:
 - ["CSo11UIResponder", "musicPlayer"]
 - ["CSo11UIResponder", "muteImg"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
+- ["CSo11UIResponder", "parsePokemonCSV"]
 - ["CSo11UIResponder", "pokemon"]
 - ["CSo11UIResponder", "positionForBar"]
 - !private ["CSo11UIResponder", "print"]
@@ -1354,6 +1441,8 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "AVAudioPlayer"]
+- !private ["PSo20UIScrollViewDelegate", "CSV"]
+- !private ["PSo20UIScrollViewDelegate", "Int"]
 - !private ["PSo20UIScrollViewDelegate", "NSBundle"]
 - !private ["PSo20UIScrollViewDelegate", "NSURL"]
 - ["PSo20UIScrollViewDelegate", "Pokemon"]
@@ -1369,6 +1458,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "musicPlayer"]
 - !private ["PSo20UIScrollViewDelegate", "muteImg"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInCollectionView"]
+- !private ["PSo20UIScrollViewDelegate", "parsePokemonCSV"]
 - !private ["PSo20UIScrollViewDelegate", "pokemon"]
 - ["PSo20UIScrollViewDelegate", "positionForBar"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
@@ -1401,6 +1491,8 @@ depends-member:
 - !private ["CSo11UISearchBar", "returnKeyType"]
 - !private ["CSo11UISearchBar", "text"]
 - !private ["PSo19UISearchBarDelegate", "AVAudioPlayer"]
+- !private ["PSo19UISearchBarDelegate", "CSV"]
+- !private ["PSo19UISearchBarDelegate", "Int"]
 - !private ["PSo19UISearchBarDelegate", "NSBundle"]
 - !private ["PSo19UISearchBarDelegate", "NSURL"]
 - ["PSo19UISearchBarDelegate", "Pokemon"]
@@ -1416,6 +1508,7 @@ depends-member:
 - !private ["PSo19UISearchBarDelegate", "musicPlayer"]
 - !private ["PSo19UISearchBarDelegate", "muteImg"]
 - ["PSo19UISearchBarDelegate", "numberOfSectionsInCollectionView"]
+- !private ["PSo19UISearchBarDelegate", "parsePokemonCSV"]
 - !private ["PSo19UISearchBarDelegate", "pokemon"]
 - ["PSo19UISearchBarDelegate", "positionForBar"]
 - !private ["PSo19UISearchBarDelegate", "print"]
@@ -1445,6 +1538,8 @@ depends-member:
 - ["PSo19UISearchBarDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UISearchBarDelegate", ""]
 - !private ["PSo16UIStateRestoring", "AVAudioPlayer"]
+- !private ["PSo16UIStateRestoring", "CSV"]
+- !private ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "NSBundle"]
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - ["PSo16UIStateRestoring", "Pokemon"]
@@ -1462,6 +1557,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "musicPlayer"]
 - ["PSo16UIStateRestoring", "muteImg"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
+- ["PSo16UIStateRestoring", "parsePokemonCSV"]
 - ["PSo16UIStateRestoring", "pokemon"]
 - ["PSo16UIStateRestoring", "positionForBar"]
 - !private ["PSo16UIStateRestoring", "print"]
@@ -1495,6 +1591,8 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "returnKeyType"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "AVAudioPlayer"]
+- !private ["PSo18UITraitEnvironment", "CSV"]
+- !private ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "NSBundle"]
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - ["PSo18UITraitEnvironment", "Pokemon"]
@@ -1517,6 +1615,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "musicPlayer"]
 - ["PSo18UITraitEnvironment", "muteImg"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
+- ["PSo18UITraitEnvironment", "parsePokemonCSV"]
 - ["PSo18UITraitEnvironment", "pokemon"]
 - ["PSo18UITraitEnvironment", "positionForBar"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -1561,6 +1660,7 @@ depends-member:
 - !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AVAudioPlayer"]
+- !private ["CSo16UIViewController", "CSV"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSBundle"]
 - !private ["CSo16UIViewController", "NSError"]
@@ -1586,6 +1686,7 @@ depends-member:
 - ["CSo16UIViewController", "musicPlayer"]
 - ["CSo16UIViewController", "muteImg"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
+- ["CSo16UIViewController", "parsePokemonCSV"]
 - ["CSo16UIViewController", "pokemon"]
 - ["CSo16UIViewController", "positionForBar"]
 - !private ["CSo16UIViewController", "print"]
@@ -1618,6 +1719,7 @@ depends-member:
 - !private ["Ps31UnicodeScalarLiteralConvertible", "lowercaseString"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "rangeOfString"]
 - ["C7Pokedex14ViewController", "AVAudioPlayer"]
+- !private ["C7Pokedex14ViewController", "CSV"]
 - ["C7Pokedex14ViewController", "Int"]
 - !private ["C7Pokedex14ViewController", "NSBundle"]
 - !private ["C7Pokedex14ViewController", "NSError"]
@@ -1644,6 +1746,7 @@ depends-member:
 - ["C7Pokedex14ViewController", "musicPlayer"]
 - ["C7Pokedex14ViewController", "muteImg"]
 - ["C7Pokedex14ViewController", "numberOfSectionsInCollectionView"]
+- ["C7Pokedex14ViewController", "parsePokemonCSV"]
 - ["C7Pokedex14ViewController", "pokemon"]
 - ["C7Pokedex14ViewController", "positionForBar"]
 - !private ["C7Pokedex14ViewController", "print"]
@@ -1676,6 +1779,7 @@ depends-member:
 - ["Ps10_ArrayType", "Index"]
 - ["Ps10_ArrayType", "SubSequence"]
 - ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "append"]
 - !private ["Ps10_ArrayType", "count"]
 - !private ["Ps10_ArrayType", "filter"]
 - ["Ps10_ArrayType", "init"]
@@ -1685,6 +1789,7 @@ depends-member:
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "rangeOfString"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "lowercaseString"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "rangeOfString"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "lowercaseString"]
@@ -1695,6 +1800,7 @@ depends-member:
 - ["Ps24_DestructorSafeContainer", "Index"]
 - ["Ps24_DestructorSafeContainer", "SubSequence"]
 - ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps24_DestructorSafeContainer", "filter"]
 - ["Ps24_DestructorSafeContainer", "init"]
@@ -1703,10 +1809,13 @@ depends-member:
 - ["Ps24_ImageLiteralConvertible", "init"]
 - ["Ps14_Incrementable", "Distance"]
 - ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "init"]
 - ["Ps22_IntegerArithmeticType", "Distance"]
 - ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "init"]
 - ["Ps12_IntegerType", "Distance"]
 - ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "init"]
 - ["Ps21_ObjectiveCBridgeable", "Distance"]
 - ["Ps21_ObjectiveCBridgeable", "Generator"]
 - ["Ps21_ObjectiveCBridgeable", "Index"]
@@ -1714,6 +1823,7 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "filter"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
@@ -1723,6 +1833,7 @@ depends-member:
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - ["Ps22_RandomAccessAmbiguity", "Distance"]
 - ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "init"]
 - ["Ps12_Reflectable", "Distance"]
 - ["Ps12_Reflectable", "Generator"]
 - ["Ps12_Reflectable", "Index"]
@@ -1731,6 +1842,7 @@ depends-member:
 - ["Ps12_Reflectable", "SubSequence"]
 - ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "append"]
 - !private ["Ps12_Reflectable", "configurePokemonCell"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dataSource"]
@@ -1748,6 +1860,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "text"]
 - ["Ps18_SignedIntegerType", "Distance"]
 - ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "init"]
 depends-nominal:
 - !private "CSo13AVAudioPlayer"
 - "Ps9AnyObject"
@@ -1759,11 +1872,14 @@ depends-nominal:
 - !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
+- !private "C7Pokedex3CSV"
 - "Ps11CVarArgType"
 - "Ps14CollectionType"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
 - "Ps9Equatable"
 - !private "Ps9ErrorType"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
@@ -1874,4 +1990,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "ed023cf729954850f942b74d3c54cab5"
+interface-hash: "e28e72feea00fd84d5b581908472a036"
