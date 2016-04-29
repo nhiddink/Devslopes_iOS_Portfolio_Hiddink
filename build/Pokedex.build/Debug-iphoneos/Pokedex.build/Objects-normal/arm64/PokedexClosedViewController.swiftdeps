@@ -1,0 +1,325 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PokedexClosedViewController"
+provides-nominal:
+- "C7Pokedex27PokedexClosedViewController"
+provides-member:
+- ["C7Pokedex27PokedexClosedViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "swipeRight"
+- "bgImgClosed"
+depends-top-level:
+- "UIGestureRecognizerDelegate"
+- "UIImageView"
+- "UIViewController"
+- !private "UISwipeGestureRecognizerDirection"
+- "PokedexClosedViewController"
+- "AnyObject"
+- !private "StringLiteralType"
+- !private "Selector"
+- !private "UISwipeGestureRecognizer"
+depends-member:
+- !private ["Ps9AnyObject", "PokedexClosedViewController"]
+- !private ["Ps9AnyObject", "UISwipeGestureRecognizer"]
+- !private ["Ps9AnyObject", "UISwipeGestureRecognizerDirection"]
+- !private ["Ps9AnyObject", "addGestureRecognizer"]
+- ["Ps9AnyObject", "bgImgClosed"]
+- !private ["Ps9AnyObject", "direction"]
+- ["Ps9AnyObject", "gestureRecognizer"]
+- ["Ps9AnyObject", "gestureRecognizerShouldBegin"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "performSegueWithIdentifier"]
+- ["Ps9AnyObject", "swipeRight"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps23ArrayLiteralConvertible", "Right"]
+- !private ["Ps11CVarArgType", "PokedexClosedViewController"]
+- !private ["Ps11CVarArgType", "UISwipeGestureRecognizer"]
+- !private ["Ps11CVarArgType", "UISwipeGestureRecognizerDirection"]
+- !private ["Ps11CVarArgType", "addGestureRecognizer"]
+- ["Ps11CVarArgType", "bgImgClosed"]
+- !private ["Ps11CVarArgType", "direction"]
+- ["Ps11CVarArgType", "gestureRecognizer"]
+- ["Ps11CVarArgType", "gestureRecognizerShouldBegin"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
+- ["Ps11CVarArgType", "swipeRight"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "PokedexClosedViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "UISwipeGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "UISwipeGestureRecognizerDirection"]
+- !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
+- ["Ps28CustomDebugStringConvertible", "bgImgClosed"]
+- !private ["Ps28CustomDebugStringConvertible", "direction"]
+- ["Ps28CustomDebugStringConvertible", "gestureRecognizer"]
+- ["Ps28CustomDebugStringConvertible", "gestureRecognizerShouldBegin"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "swipeRight"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "PokedexClosedViewController"]
+- !private ["Ps23CustomStringConvertible", "UISwipeGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "UISwipeGestureRecognizerDirection"]
+- !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
+- ["Ps23CustomStringConvertible", "bgImgClosed"]
+- !private ["Ps23CustomStringConvertible", "direction"]
+- ["Ps23CustomStringConvertible", "gestureRecognizer"]
+- ["Ps23CustomStringConvertible", "gestureRecognizerShouldBegin"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
+- ["Ps23CustomStringConvertible", "swipeRight"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "PokedexClosedViewController"]
+- !private ["Ps9Equatable", "Right"]
+- !private ["Ps9Equatable", "UISwipeGestureRecognizer"]
+- !private ["Ps9Equatable", "UISwipeGestureRecognizerDirection"]
+- !private ["Ps9Equatable", "addGestureRecognizer"]
+- ["Ps9Equatable", "bgImgClosed"]
+- !private ["Ps9Equatable", "direction"]
+- ["Ps9Equatable", "gestureRecognizer"]
+- ["Ps9Equatable", "gestureRecognizerShouldBegin"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "performSegueWithIdentifier"]
+- ["Ps9Equatable", "swipeRight"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "PokedexClosedViewController"]
+- !private ["Ps8Hashable", "UISwipeGestureRecognizer"]
+- !private ["Ps8Hashable", "UISwipeGestureRecognizerDirection"]
+- !private ["Ps8Hashable", "addGestureRecognizer"]
+- ["Ps8Hashable", "bgImgClosed"]
+- !private ["Ps8Hashable", "direction"]
+- ["Ps8Hashable", "gestureRecognizer"]
+- ["Ps8Hashable", "gestureRecognizerShouldBegin"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "performSegueWithIdentifier"]
+- ["Ps8Hashable", "swipeRight"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "PokedexClosedViewController"]
+- !private ["PSo8NSCoding", "UISwipeGestureRecognizer"]
+- !private ["PSo8NSCoding", "UISwipeGestureRecognizerDirection"]
+- !private ["PSo8NSCoding", "addGestureRecognizer"]
+- ["PSo8NSCoding", "bgImgClosed"]
+- ["PSo8NSCoding", "gestureRecognizer"]
+- ["PSo8NSCoding", "gestureRecognizerShouldBegin"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
+- ["PSo8NSCoding", "swipeRight"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "PokedexClosedViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "UISwipeGestureRecognizer"]
+- !private ["PSo26NSExtensionRequestHandling", "UISwipeGestureRecognizerDirection"]
+- ["PSo26NSExtensionRequestHandling", "bgImgClosed"]
+- ["PSo26NSExtensionRequestHandling", "gestureRecognizer"]
+- ["PSo26NSExtensionRequestHandling", "gestureRecognizerShouldBegin"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
+- ["PSo26NSExtensionRequestHandling", "swipeRight"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "PokedexClosedViewController"]
+- !private ["CSo8NSObject", "Selector"]
+- ["CSo8NSObject", "UIImageView"]
+- !private ["CSo8NSObject", "UISwipeGestureRecognizer"]
+- !private ["CSo8NSObject", "UISwipeGestureRecognizerDirection"]
+- !private ["CSo8NSObject", "addGestureRecognizer"]
+- ["CSo8NSObject", "bgImgClosed"]
+- !private ["CSo8NSObject", "direction"]
+- ["CSo8NSObject", "gestureRecognizer"]
+- ["CSo8NSObject", "gestureRecognizerShouldBegin"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "performSegueWithIdentifier"]
+- ["CSo8NSObject", "swipeRight"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "PokedexClosedViewController"]
+- !private ["PSo16NSObjectProtocol", "UISwipeGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "UISwipeGestureRecognizerDirection"]
+- !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
+- ["PSo16NSObjectProtocol", "bgImgClosed"]
+- !private ["PSo16NSObjectProtocol", "direction"]
+- ["PSo16NSObjectProtocol", "gestureRecognizer"]
+- ["PSo16NSObjectProtocol", "gestureRecognizerShouldBegin"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
+- ["PSo16NSObjectProtocol", "swipeRight"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Ps13OptionSetType", "Right"]
+- ["C7Pokedex27PokedexClosedViewController", "AnyObject"]
+- !private ["C7Pokedex27PokedexClosedViewController", "PokedexClosedViewController"]
+- !private ["C7Pokedex27PokedexClosedViewController", "Selector"]
+- ["C7Pokedex27PokedexClosedViewController", "UIImageView"]
+- !private ["C7Pokedex27PokedexClosedViewController", "UISwipeGestureRecognizer"]
+- !private ["C7Pokedex27PokedexClosedViewController", "UISwipeGestureRecognizerDirection"]
+- ["C7Pokedex27PokedexClosedViewController", "bgImgClosed"]
+- ["C7Pokedex27PokedexClosedViewController", "deinit"]
+- ["C7Pokedex27PokedexClosedViewController", "gestureRecognizer"]
+- ["C7Pokedex27PokedexClosedViewController", "gestureRecognizerShouldBegin"]
+- ["C7Pokedex27PokedexClosedViewController", "init"]
+- !private ["C7Pokedex27PokedexClosedViewController", "performSegueWithIdentifier"]
+- ["C7Pokedex27PokedexClosedViewController", "swipeRight"]
+- ["C7Pokedex27PokedexClosedViewController", "viewDidLoad"]
+- !private ["Ps16RawRepresentable", "Right"]
+- !private ["Ps14SetAlgebraType", "Right"]
+- !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
+- !private ["PSo12UIAppearance", "addGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "PokedexClosedViewController"]
+- !private ["PSo21UIAppearanceContainer", "UISwipeGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "UISwipeGestureRecognizerDirection"]
+- !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
+- ["PSo21UIAppearanceContainer", "bgImgClosed"]
+- ["PSo21UIAppearanceContainer", "gestureRecognizer"]
+- ["PSo21UIAppearanceContainer", "gestureRecognizerShouldBegin"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
+- ["PSo21UIAppearanceContainer", "swipeRight"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "PokedexClosedViewController"]
+- !private ["PSo18UIContentContainer", "UISwipeGestureRecognizer"]
+- !private ["PSo18UIContentContainer", "UISwipeGestureRecognizerDirection"]
+- ["PSo18UIContentContainer", "bgImgClosed"]
+- ["PSo18UIContentContainer", "gestureRecognizer"]
+- ["PSo18UIContentContainer", "gestureRecognizerShouldBegin"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
+- ["PSo18UIContentContainer", "swipeRight"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "PokedexClosedViewController"]
+- !private ["PSo18UIFocusEnvironment", "UISwipeGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "UISwipeGestureRecognizerDirection"]
+- !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
+- ["PSo18UIFocusEnvironment", "bgImgClosed"]
+- ["PSo18UIFocusEnvironment", "gestureRecognizer"]
+- ["PSo18UIFocusEnvironment", "gestureRecognizerShouldBegin"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
+- ["PSo18UIFocusEnvironment", "swipeRight"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo19UIGestureRecognizer", "direction"]
+- !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "PokedexClosedViewController"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UISwipeGestureRecognizer"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UISwipeGestureRecognizerDirection"]
+- !private ["PSo27UIGestureRecognizerDelegate", "bgImgClosed"]
+- ["PSo27UIGestureRecognizerDelegate", "gestureRecognizer"]
+- ["PSo27UIGestureRecognizerDelegate", "gestureRecognizerShouldBegin"]
+- !private ["PSo27UIGestureRecognizerDelegate", "performSegueWithIdentifier"]
+- !private ["PSo27UIGestureRecognizerDelegate", "swipeRight"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["CSo11UIImageView", "addGestureRecognizer"]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "PokedexClosedViewController"]
+- !private ["CSo11UIResponder", "Selector"]
+- ["CSo11UIResponder", "UIImageView"]
+- !private ["CSo11UIResponder", "UISwipeGestureRecognizer"]
+- !private ["CSo11UIResponder", "UISwipeGestureRecognizerDirection"]
+- !private ["CSo11UIResponder", "addGestureRecognizer"]
+- ["CSo11UIResponder", "bgImgClosed"]
+- ["CSo11UIResponder", "gestureRecognizer"]
+- ["CSo11UIResponder", "gestureRecognizerShouldBegin"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
+- ["CSo11UIResponder", "swipeRight"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "PokedexClosedViewController"]
+- !private ["PSo16UIStateRestoring", "UISwipeGestureRecognizer"]
+- !private ["PSo16UIStateRestoring", "UISwipeGestureRecognizerDirection"]
+- ["PSo16UIStateRestoring", "bgImgClosed"]
+- ["PSo16UIStateRestoring", "gestureRecognizer"]
+- ["PSo16UIStateRestoring", "gestureRecognizerShouldBegin"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
+- ["PSo16UIStateRestoring", "swipeRight"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo24UISwipeGestureRecognizer", "direction"]
+- !private ["CSo24UISwipeGestureRecognizer", "init"]
+- !private ["VSC33UISwipeGestureRecognizerDirection", "Right"]
+- !private ["PSo18UITraitEnvironment", "PokedexClosedViewController"]
+- !private ["PSo18UITraitEnvironment", "UISwipeGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "UISwipeGestureRecognizerDirection"]
+- !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
+- ["PSo18UITraitEnvironment", "bgImgClosed"]
+- ["PSo18UITraitEnvironment", "gestureRecognizer"]
+- ["PSo18UITraitEnvironment", "gestureRecognizerShouldBegin"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
+- ["PSo18UITraitEnvironment", "swipeRight"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addGestureRecognizer"]
+- ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "PokedexClosedViewController"]
+- !private ["CSo16UIViewController", "Selector"]
+- ["CSo16UIViewController", "UIImageView"]
+- !private ["CSo16UIViewController", "UISwipeGestureRecognizer"]
+- !private ["CSo16UIViewController", "UISwipeGestureRecognizerDirection"]
+- ["CSo16UIViewController", "bgImgClosed"]
+- ["CSo16UIViewController", "gestureRecognizer"]
+- ["CSo16UIViewController", "gestureRecognizerShouldBegin"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
+- ["CSo16UIViewController", "swipeRight"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps12_Reflectable", "addGestureRecognizer"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps23ArrayLiteralConvertible"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps13OptionSetType"
+- "C7Pokedex27PokedexClosedViewController"
+- !private "Ps16RawRepresentable"
+- !private "Ps14SetAlgebraType"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo19UIGestureRecognizer"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "CSo11UIImageView"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- !private "CSo24UISwipeGestureRecognizer"
+- !private "VSC33UISwipeGestureRecognizerDirection"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+interface-hash: "3c44c15da0187d5c88db0261a81cc6b6"

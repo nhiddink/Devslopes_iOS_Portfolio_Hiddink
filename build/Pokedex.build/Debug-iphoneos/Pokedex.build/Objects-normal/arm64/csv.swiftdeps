@@ -7,17 +7,17 @@ provides-member:
 - ["C7Pokedex3CSV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
-- "String"
-- !private "NSUTF8StringEncoding"
-- "NSCharacterSet"
-- "UInt"
-- !private "!="
 - "CSV"
-- !private "=="
-- "UnicodeScalarType"
+- "NSCharacterSet"
 - "Dictionary"
 - !private "<"
+- "UInt"
+- !private "NSUTF8StringEncoding"
+- "StringLiteralType"
+- "String"
+- "UnicodeScalarType"
+- !private "!="
+- !private "=="
 depends-member:
 - ["Ps9AnyObject", "Dictionary"]
 - ["Ps9AnyObject", "NSCharacterSet"]

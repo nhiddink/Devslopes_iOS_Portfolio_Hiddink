@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
+class PokedexOpenViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
 
     //MARK: Outlets and Properties
     
@@ -39,20 +39,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func parsePokemonCSV() {
-    
         let path = NSBundle.mainBundle().pathForResource("pokemon", ofType: "csv")
+        
         do {
             let csv = try CSV(contentsOfURL: path!)
             let rows = csv.rows
-            
             for row in rows {
-            
                 let pokeId = Int(row["id"]!)!
                 let name = row["identifier"]!
                 let poke = Pokemon(name: name, pokedexId: pokeId)
                 pokemon.append(poke)
             }
-            
         } catch let err as NSError {
             print(err.debugDescription)
         }
@@ -73,7 +70,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             print(err.debugDescription)
         }
     }
-    
     
     @IBAction func musicButtonPressed(sender: UIButton!) {
         if musicPlayer.playing {

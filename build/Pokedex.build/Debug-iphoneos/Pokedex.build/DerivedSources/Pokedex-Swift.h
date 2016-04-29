@@ -124,16 +124,26 @@ SWIFT_CLASS("_TtC7Pokedex8PokeCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSBundle;
+
+SWIFT_CLASS("_TtC7Pokedex27PokedexClosedViewController")
+@interface PokedexClosedViewController : UIViewController <UIGestureRecognizerDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImgClosed;
+- (void)viewDidLoad;
+- (void)swipeRight:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class AVAudioPlayer;
 @class UIImage;
 @class UIButton;
 @class UISearchBar;
 @class UICollectionView;
 @class NSIndexPath;
-@class NSBundle;
 
-SWIFT_CLASS("_TtC7Pokedex14ViewController")
-@interface ViewController : UIViewController <UIBarPositioningDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UISearchBarDelegate>
+SWIFT_CLASS("_TtC7Pokedex25PokedexOpenViewController")
+@interface PokedexOpenViewController : UIViewController <UIBarPositioningDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UISearchBarDelegate>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collection;
 @property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified searchBar;
 @property (nonatomic, strong) AVAudioPlayer * _Null_unspecified musicPlayer;

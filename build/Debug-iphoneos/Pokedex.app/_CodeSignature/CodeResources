@@ -64,7 +64,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1jE7dbWw6qlBl7wwa+vzR4aCW00=
+			owH+R1ZJYVc46ewrxAPipcMedCg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yd2r8MkaDJCDKtmphHfUOG8XEbw=
+			BsvmRZObof5Y4wMwgWqbd30rXMc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			khyV6ekTPBWMgd6uzFqwPMe3f1M=
+			jItTiltteee3ofXnO3e3OXO4TF0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MDrKFvFWroTb0+KEbQShBcoBvo4=
+			9ytiO1DIe2C6FprNsxFYbbaRfMs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -109,7 +109,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yZhTgFeBD3OP5+KJXtVphia+mOY=
+			Ngd0aL6tsUke9DgHrgg4ssyPcKE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-oB3-JJ-fS1.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DvKu+C167VrCnI0pnRl25D5XI5Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/oB3-JJ-fS1-view-gTL-Iq-XbC.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RkvBsx3BdNdJhA3tv9fxee1MbMo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -180,11 +198,19 @@
 		</data>
 		<key>bgImg.png</key>
 		<data>
-		qticX6znhwEC6W2ZroM9wE77CaM=
+		DY8FCVhYEw6EYTTup7+UAXQirhs=
+		</data>
+		<key>bgImgClosed.png</key>
+		<data>
+		0+Boj/18e5KkG/iPr4O6GWF1ZZY=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		aRbM0S7ZU9N+0EHenNS/Ofk8p1c=
+		</data>
+		<key>lock.png</key>
+		<data>
+		5z7t5Z4KbqEHhOZ6i3Hw5/WFSQU=
 		</data>
 		<key>music.mp3</key>
 		<data>
@@ -194,6 +220,10 @@
 		<data>
 		nZACfjv21H3dWRTh1g1KoLloojE=
 		</data>
+		<key>pokedexLogo.png</key>
+		<data>
+		TY4tkrSnfetDE4fLI7IAkNptDUo=
+		</data>
 		<key>pokemon.csv</key>
 		<data>
 		u4vCJQCJ++HX3LUrxPlxgoiqZ6U=
@@ -201,6 +231,10 @@
 		<key>sound.png</key>
 		<data>
 		Ly8IgLSlpaAJh1TjYCR/8JE3F5s=
+		</data>
+		<key>swipe.png</key>
+		<data>
+		wE1hvuFHkbTjkJ+zOKeK0knVP3I=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -363,11 +397,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1jE7dbWw6qlBl7wwa+vzR4aCW00=
+			owH+R1ZJYVc46ewrxAPipcMedCg=
 			</data>
 			<key>hash2</key>
 			<data>
-			WnbakE7FgRLkhpEZezg4riqMVE8UM0ZPswBb7ATWxk0=
+			Jhp3r0GU0/yWfvgQGbC038xbyffy60NvfmcOnqs2jfw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -389,11 +423,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yd2r8MkaDJCDKtmphHfUOG8XEbw=
+			BsvmRZObof5Y4wMwgWqbd30rXMc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xgo/qrG1/YpWLRP/EB6qXhbqE0VLmBdTtNruHUHkGQM=
+			0dcyBmLfKG8kKkuT6Mk0icIfwVfO5sua7QrO2zM5EQQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -402,11 +436,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			khyV6ekTPBWMgd6uzFqwPMe3f1M=
+			jItTiltteee3ofXnO3e3OXO4TF0=
 			</data>
 			<key>hash2</key>
 			<data>
-			l3sTBiyh6VD1o9mJqoVpvSFK+xbyDkLCDMbI1MVYWZE=
+			UU6L0pI8L0U91gF0PA8caLnKaPEEzlUfwanlu60oOGI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -415,11 +449,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MDrKFvFWroTb0+KEbQShBcoBvo4=
+			9ytiO1DIe2C6FprNsxFYbbaRfMs=
 			</data>
 			<key>hash2</key>
 			<data>
-			PpvapAjR62rl6Ym4E6hkTgpKmBICxTaQXeUqcpHmmqQ=
+			Y/c29npPZnSYFe6xRKUV/dMi4HrC7uXGKdWa5N/og7k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -428,11 +462,37 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yZhTgFeBD3OP5+KJXtVphia+mOY=
+			Ngd0aL6tsUke9DgHrgg4ssyPcKE=
 			</data>
 			<key>hash2</key>
 			<data>
-			0f/RSsXeF3D6Pf56y9p+i4PcA383Ua/X2SrX3QhxKf4=
+			pCFtmwFvmOYtnYbj0tgSc3rwMVN3n7Lw/9K2O7kG6wY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-oB3-JJ-fS1.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DvKu+C167VrCnI0pnRl25D5XI5Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			IB1IOspCu3TAF4jAh+3WYP5o1aHNZpv3b7R6F+MztXE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/oB3-JJ-fS1-view-gTL-Iq-XbC.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RkvBsx3BdNdJhA3tv9fxee1MbMo=
+			</data>
+			<key>hash2</key>
+			<data>
+			7AI/sm/wFdxRLkpt0sJfsVsMGf2hwZkjYHSTStPzH4c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -595,11 +655,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qticX6znhwEC6W2ZroM9wE77CaM=
+			DY8FCVhYEw6EYTTup7+UAXQirhs=
 			</data>
 			<key>hash2</key>
 			<data>
-			I8yyjS4QQ2LJfAkPeMqSh8UpNJboKJTey8p9B+1/6x8=
+			f281dnha7JPpS07sIvHENMmxI3/OHDPeVULVKO7T7p4=
+			</data>
+		</dict>
+		<key>bgImgClosed.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0+Boj/18e5KkG/iPr4O6GWF1ZZY=
+			</data>
+			<key>hash2</key>
+			<data>
+			x3njpvIFM3D6DMlW88GVfTUIsFtLcK7hRmWpWbb2y8E=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -611,6 +682,17 @@
 			<key>hash2</key>
 			<data>
 			ECZtU+9C8+YO3EcEBadFDDykZdC93tOVWeKl11HcJSU=
+			</data>
+		</dict>
+		<key>lock.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5z7t5Z4KbqEHhOZ6i3Hw5/WFSQU=
+			</data>
+			<key>hash2</key>
+			<data>
+			PuYJyCuZWh+JmqXe5fvyUtIN5IA8Y9EQSYbe7ivCpyw=
 			</data>
 		</dict>
 		<key>music.mp3</key>
@@ -635,6 +717,17 @@
 			oRpx6cbp1+qKEeqhOD4+lmAa8O8JcqfWm1QCwgxhar4=
 			</data>
 		</dict>
+		<key>pokedexLogo.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TY4tkrSnfetDE4fLI7IAkNptDUo=
+			</data>
+			<key>hash2</key>
+			<data>
+			65lpkwCVrxnPMnLKWr0OZvPtD9iWwidC+hjFRKr3D+E=
+			</data>
+		</dict>
 		<key>pokemon.csv</key>
 		<dict>
 			<key>hash</key>
@@ -655,6 +748,17 @@
 			<key>hash2</key>
 			<data>
 			E2XC/8rkJ45qAHz4XVE6kEVK3h9IOzmhD+hb/UB7G40=
+			</data>
+		</dict>
+		<key>swipe.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wE1hvuFHkbTjkJ+zOKeK0knVP3I=
+			</data>
+			<key>hash2</key>
+			<data>
+			ohhLRo6JsinPiyR4gjjng3vitzvHJxeUIrrYa+nqSAI=
 			</data>
 		</dict>
 	</dict>
