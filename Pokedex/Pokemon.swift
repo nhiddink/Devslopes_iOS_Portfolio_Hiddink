@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SpriteKit
 
 class Pokemon {
     
@@ -22,11 +23,9 @@ class Pokemon {
     }
     
     init(name: String, pokedexId: Int){
-    
         self._name = name
         self._pokedexId = pokedexId
-    
-    
+        
     }
     
     init(){

@@ -127,10 +127,19 @@ SWIFT_CLASS("_TtC7Pokedex8PokeCell")
 @class NSBundle;
 
 SWIFT_CLASS("_TtC7Pokedex27PokedexClosedViewController")
-@interface PokedexClosedViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface PokedexClosedViewController : UIViewController <UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImgClosed;
 - (void)viewDidLoad;
 - (void)swipeRight:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Pokedex27PokedexDetailViewController")
+@interface PokedexDetailViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -141,6 +150,7 @@ SWIFT_CLASS("_TtC7Pokedex27PokedexClosedViewController")
 @class UISearchBar;
 @class UICollectionView;
 @class NSIndexPath;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Pokedex25PokedexOpenViewController")
 @interface PokedexOpenViewController : UIViewController <UIBarPositioningDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UISearchBarDelegate>
@@ -160,6 +170,7 @@ SWIFT_CLASS("_TtC7Pokedex25PokedexOpenViewController")
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

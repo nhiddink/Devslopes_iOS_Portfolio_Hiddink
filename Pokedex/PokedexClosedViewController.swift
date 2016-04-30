@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PokedexClosedViewController: UIViewController, UIGestureRecognizerDelegate {
+class PokedexClosedViewController: UIViewController, UIGestureRecognizerDelegate, UIPopoverPresentationControllerDelegate {
  
     @IBOutlet weak var bgImgClosed: UIImageView!
     

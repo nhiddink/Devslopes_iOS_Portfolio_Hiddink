@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SpriteKit
 
 class PokedexOpenViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
 
@@ -138,6 +139,27 @@ class PokedexOpenViewController: UIViewController, UICollectionViewDelegate, UIC
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        let poke: Pokemon!
+        
+        if inSearchMode {
+            poke = filteredPokemon[indexPath.row]
+        } else {
+            poke = pokemon[indexPath.row]
+        }
+        
+        performSegueWithIdentifier("detailSegue", sender: poke)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "detailSegue" {
+            if let detailsVC = segue.destinationViewController as? PokedexDetailViewController {
+                if let poke = sender as? Pokemon {
+                    detailsVC.pokemon = poke
+                }
+            }
+        
+        }
     }
     
 }

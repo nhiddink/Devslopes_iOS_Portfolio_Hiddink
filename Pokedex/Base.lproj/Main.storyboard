@@ -8,6 +8,27 @@
     <customFonts key="customFonts">
         <mutableArray key="Pokemon GB.ttf">
             <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
+            <string>PokemonGB</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -117,12 +138,323 @@
                     <connections>
                         <outlet property="collection" destination="Uqu-E4-Ztz" id="W2o-fk-Z9q"/>
                         <outlet property="searchBar" destination="5cM-x2-JLx" id="qS8-mf-nrk"/>
-                        <segue destination="oB3-JJ-fS1" kind="show" identifier="closeSegue" id="wNz-6e-3kP"/>
+                        <segue destination="BhX-ke-LGg" kind="show" identifier="detailSegue" animates="NO" id="6ZT-dv-OQg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="345.5" y="392.5"/>
+        </scene>
+        <!--Pokedex Detail View Controller-->
+        <scene sceneID="Njy-wH-U8B">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96u-Nd-zQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="BhX-ke-LGg" customClass="PokedexDetailViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mTL-Hk-Ne2"/>
+                        <viewControllerLayoutGuide type="bottom" id="R6J-MN-ZfR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Hj-kL-RDf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Yz9-5a-Dz5">
+                                <rect key="frame" x="16" y="268" width="343" height="192"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwF-VY-tVo">
+                                        <rect key="frame" x="0.0" y="0.0" width="93" height="10"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ATTACK:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujT-0g-yND">
+                                                <rect key="frame" x="0.0" y="0.0" width="83" height="10"/>
+                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86u-g1-XOl">
+                                                <rect key="frame" x="83" y="0.0" width="10" height="10"/>
+                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSD-bU-k19">
+                                        <rect key="frame" x="93" y="0.0" width="90" height="10"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DEFENSE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AF6-wB-tNR">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="10"/>
+                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8A-cv-e9g">
+                                                <rect key="frame" x="80" y="0.0" width="10" height="10"/>
+                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="790-8E-xZ5">
+                                        <rect key="frame" x="183" y="0.0" width="90" height="10"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SPECIAL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDP-n3-vp5">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="10"/>
+                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uK7-S1-Zfe">
+                                                <rect key="frame" x="80" y="0.0" width="10" height="10"/>
+                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7O3-72-JAV">
+                                        <rect key="frame" x="273" y="0.0" width="70" height="10"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SPEED:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gns-GW-6CL">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="10"/>
+                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekI-vP-SSD">
+                                                <rect key="frame" x="60" y="0.0" width="10" height="10"/>
+                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="790-8E-xZ5" firstAttribute="leading" secondItem="fSD-bU-k19" secondAttribute="trailing" id="VXm-U4-g5p"/>
+                                    <constraint firstItem="fSD-bU-k19" firstAttribute="leading" secondItem="cwF-VY-tVo" secondAttribute="trailing" id="sGa-Ve-HAy"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="N13-23-zwi">
+                                <rect key="frame" x="16" y="500" width="343" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEXT EVOLUTION:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8r-BG-3hr">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="20"/>
+                                        <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kdU-Y2-27z">
+                                        <rect key="frame" x="114" y="0.0" width="109" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="LVL. 16" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4j-bp-uhu">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="8"/>
+                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="8"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Hb6-rG-IBX">
+                                                <rect key="frame" x="0.0" y="8" width="109" height="120"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cBR-cz-0g0">
+                                        <rect key="frame" x="223" y="0.0" width="120" height="128"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gDO-W6-PWM">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="LVL. 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPT-yv-dqq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="8"/>
+                                                        <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="8"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="xah-FA-osU">
+                                                        <rect key="frame" x="0.0" y="8" width="120" height="120"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cBR-cz-0g0" firstAttribute="leading" secondItem="kdU-Y2-27z" secondAttribute="trailing" id="GGX-25-00B"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eh4-15-zJ8">
+                                <rect key="frame" x="16" y="28" width="343" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BULBASAUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlD-mI-jTs">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="bYz-Oc-38p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="1" height="-2"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EQD-6z-J7B">
+                                        <rect key="frame" x="0.0" y="29" width="109" height="29"/>
+                                        <segments>
+                                            <segment title="Bio"/>
+                                            <segment title="Moves"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-dg-IDM">
+                                        <rect key="frame" x="0.0" y="57" width="200" height="103"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="xgf-jh-rb9">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="103"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eKl-4z-6II">
+                                                <rect key="frame" x="120" y="0.0" width="80" height="80"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oss-K0-JQm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="20"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TYPE 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUD-B5-nsl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="h27-er-evL"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMj-Sq-zPh">
+                                                                <rect key="frame" x="70" y="0.0" width="10" height="20"/>
+                                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="BUD-B5-nsl" firstAttribute="top" secondItem="oss-K0-JQm" secondAttribute="top" constant="10" id="aBq-Uz-oRr"/>
+                                                            <constraint firstAttribute="bottom" secondItem="BUD-B5-nsl" secondAttribute="bottom" constant="10" id="fzT-ic-5Dl"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CY9-4H-ApS">
+                                                        <rect key="frame" x="0.0" y="20" width="80" height="20"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TYPE 2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-ig-Gdc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="K52-Vi-Oic"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h7-oZ-0Z8">
+                                                                <rect key="frame" x="70" y="0.0" width="10" height="20"/>
+                                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="uMI-ig-Gdc" firstAttribute="top" secondItem="CY9-4H-ApS" secondAttribute="top" constant="10" id="Xgo-eb-g7Z"/>
+                                                            <constraint firstAttribute="bottom" secondItem="uMI-ig-Gdc" secondAttribute="bottom" constant="10" id="hcK-Lj-0WH"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZ8-ju-B2G">
+                                                        <rect key="frame" x="0.0" y="40" width="80" height="20"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEIGHT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea5-Mn-24M">
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="cdt-Tr-sc2"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PL-6R-VEo">
+                                                                <rect key="frame" x="70" y="0.0" width="10" height="20"/>
+                                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="nvr-PB-L3u"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pC-Jm-eTO">
+                                                        <rect key="frame" x="0.0" y="60" width="80" height="20"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEIGHT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7H-em-h2u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="7t4-oN-9E3"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1n-ie-dtq">
+                                                                <rect key="frame" x="70" y="0.0" width="10" height="20"/>
+                                                                <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="3vM-ZN-En5"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="TZ8-ju-B2G" firstAttribute="top" secondItem="CY9-4H-ApS" secondAttribute="bottom" constant="10" id="I9n-ey-e5n"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2pC-Jm-eTO" secondAttribute="bottom" constant="10" id="anA-RS-fUQ"/>
+                                                    <constraint firstItem="2pC-Jm-eTO" firstAttribute="top" secondItem="TZ8-ju-B2G" secondAttribute="bottom" constant="10" id="h7V-1Y-X91"/>
+                                                    <constraint firstItem="2pC-Jm-eTO" firstAttribute="top" secondItem="TZ8-ju-B2G" secondAttribute="bottom" constant="10" id="oQL-1P-7xW"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description of the pokemon goes here. It is intended to cover multiple lines and give a brief summary of the pokemon's nature." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbf-Xg-kBp">
+                                        <rect key="frame" x="0.0" y="160" width="320" height="40"/>
+                                        <fontDescription key="fontDescription" name="PokemonGB" family="Pokemon GB" pointSize="10"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3R4-dg-IDM" firstAttribute="top" secondItem="EQD-6z-J7B" secondAttribute="bottom" constant="10" id="7Sm-co-za0"/>
+                                    <constraint firstAttribute="height" constant="200" id="820-NO-nae"/>
+                                    <constraint firstItem="EQD-6z-J7B" firstAttribute="top" secondItem="FlD-mI-jTs" secondAttribute="bottom" constant="10" id="Y9M-tg-N7S"/>
+                                    <constraint firstItem="zbf-Xg-kBp" firstAttribute="top" secondItem="3R4-dg-IDM" secondAttribute="bottom" constant="10" id="ZxP-xi-h9R"/>
+                                    <constraint firstItem="FlD-mI-jTs" firstAttribute="top" secondItem="eh4-15-zJ8" secondAttribute="top" constant="12" id="wnh-9D-KbE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N13-23-zwi" firstAttribute="top" secondItem="1Hj-kL-RDf" secondAttribute="top" constant="500" id="6qM-xD-ovU"/>
+                            <constraint firstItem="Yz9-5a-Dz5" firstAttribute="top" secondItem="eh4-15-zJ8" secondAttribute="bottom" constant="40" id="Eb6-vg-dNz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eh4-15-zJ8" secondAttribute="trailing" id="QE6-HQ-fGa"/>
+                            <constraint firstItem="R6J-MN-ZfR" firstAttribute="top" secondItem="N13-23-zwi" secondAttribute="bottom" constant="39" id="RLP-c3-6Dj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yz9-5a-Dz5" secondAttribute="trailing" id="Sdb-h0-nqt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N13-23-zwi" secondAttribute="trailing" id="VXl-Eu-mlf"/>
+                            <constraint firstItem="eh4-15-zJ8" firstAttribute="leading" secondItem="1Hj-kL-RDf" secondAttribute="leadingMargin" id="XXW-1a-DTN"/>
+                            <constraint firstItem="eh4-15-zJ8" firstAttribute="top" secondItem="mTL-Hk-Ne2" secondAttribute="bottom" constant="8" id="du0-cM-M3B"/>
+                            <constraint firstItem="N13-23-zwi" firstAttribute="leading" secondItem="1Hj-kL-RDf" secondAttribute="leadingMargin" id="nMa-Bl-i7g"/>
+                            <constraint firstItem="Yz9-5a-Dz5" firstAttribute="leading" secondItem="1Hj-kL-RDf" secondAttribute="leadingMargin" id="omy-7J-MHD"/>
+                            <constraint firstItem="N13-23-zwi" firstAttribute="top" secondItem="Yz9-5a-Dz5" secondAttribute="bottom" constant="40" id="uYo-O1-wIu"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="FlD-mI-jTs" id="CPa-OH-K4M"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="825.5" y="392.5"/>
         </scene>
         <!--Pokedex Closed View Controller-->
         <scene sceneID="u1a-3V-sGe">
@@ -189,7 +521,9 @@
                 <swipeGestureRecognizer direction="right" id="1bk-S0-6m2">
                     <connections>
                         <outlet property="delegate" destination="oB3-JJ-fS1" id="Qe6-4U-dXm"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="swipeSegue" id="cSb-sM-Pfr"/>
+                        <segue destination="BYZ-38-t0r" kind="popoverPresentation" identifier="swipeSegue" popoverAnchorView="KXT-9o-G5j" id="cSb-sM-Pfr">
+                            <popoverArrowDirection key="popoverArrowDirection" right="YES"/>
+                        </segue>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -197,6 +531,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="120" height="120"/>
+        <image name="2" width="120" height="120"/>
+        <image name="3" width="120" height="120"/>
         <image name="6" width="137" height="120"/>
         <image name="bgImg.png" width="512" height="858"/>
         <image name="bgImgClosed.png" width="512" height="858"/>

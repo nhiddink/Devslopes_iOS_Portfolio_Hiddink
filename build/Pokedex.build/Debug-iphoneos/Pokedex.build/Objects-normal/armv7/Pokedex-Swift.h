@@ -124,14 +124,46 @@ SWIFT_CLASS("_TtC7Pokedex8PokeCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
-@class NSIndexPath;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC7Pokedex14ViewController")
-@interface ViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
-@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collection;
+SWIFT_CLASS("_TtC7Pokedex27PokedexClosedViewController")
+@interface PokedexClosedViewController : UIViewController <UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate, UIGestureRecognizerDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImgClosed;
 - (void)viewDidLoad;
+- (void)swipeRight:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Pokedex27PokedexDetailViewController")
+@interface PokedexDetailViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class AVAudioPlayer;
+@class UIImage;
+@class UIButton;
+@class UISearchBar;
+@class UICollectionView;
+@class NSIndexPath;
+
+SWIFT_CLASS("_TtC7Pokedex25PokedexOpenViewController")
+@interface PokedexOpenViewController : UIViewController <UIBarPositioningDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UISearchBarDelegate>
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collection;
+@property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified searchBar;
+@property (nonatomic, strong) AVAudioPlayer * _Null_unspecified musicPlayer;
+@property (nonatomic) BOOL inSearchMode;
+@property (nonatomic, strong) UIImage * _Nullable muteImg;
+@property (nonatomic, strong) UIImage * _Nullable soundImg;
+- (void)viewDidLoad;
+- (void)parsePokemonCSV;
+- (void)initAudio;
+- (IBAction)musicButtonPressed:(UIButton * _Null_unspecified)sender;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;

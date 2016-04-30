@@ -7,20 +7,20 @@ provides-member:
 - ["C7Pokedex11AppDelegate", ""]
 provides-dynamic-lookup:
 - "application"
-- "applicationDidBecomeActive"
-- "applicationDidEnterBackground"
 - "applicationWillTerminate"
+- "applicationDidEnterBackground"
+- "applicationDidBecomeActive"
 - "applicationWillResignActive"
-- "applicationWillEnterForeground"
 - "window"
+- "applicationWillEnterForeground"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "AppDelegate"
 - "UIResponder"
+- "UIWindow"
+- "AnyObject"
+- "AppDelegate"
 - "UIApplicationDelegate"
 - "UIApplication"
-- "AnyObject"
-- "UIWindow"
+- !private "BooleanLiteralType"
 - "Bool"
 - "NSObject"
 depends-member:

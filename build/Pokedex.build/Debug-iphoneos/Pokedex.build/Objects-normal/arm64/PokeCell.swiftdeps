@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C7Pokedex8PokeCell", ""]
 provides-dynamic-lookup:
-- "nameLabel"
 - "thumbImg"
+- "nameLabel"
 depends-top-level:
+- "UIImageView"
 - !private "UIImage"
-- "UICollectionViewCell"
-- "Pokemon"
+- "NSCoder"
+- !private "StringLiteralType"
 - "PokeCell"
 - "UILabel"
-- "NSCoder"
-- "UIImageView"
-- !private "StringLiteralType"
+- "Pokemon"
+- "UICollectionViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "capitalizedString"]
@@ -412,4 +412,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
 interface-hash: "1ebaf86f34dfa5615122ee424f7dfdab"
