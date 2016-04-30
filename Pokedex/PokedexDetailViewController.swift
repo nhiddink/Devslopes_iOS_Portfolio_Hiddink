@@ -20,5 +20,8 @@ class PokedexDetailViewController: UIViewController {
         nameLabel.text = "\(pokemon.name.uppercaseString)"
     }
 
+    @IBAction func backBtnPressed(sender: UIButton) {
+        self.performSegueWithIdentifier("backPressed", sender: self)
+    }
 
 }

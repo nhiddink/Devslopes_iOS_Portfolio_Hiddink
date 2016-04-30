@@ -135,18 +135,19 @@ SWIFT_CLASS("_TtC7Pokedex27PokedexClosedViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 
 SWIFT_CLASS("_TtC7Pokedex27PokedexDetailViewController")
 @interface PokedexDetailViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 - (void)viewDidLoad;
+- (IBAction)backBtnPressed:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class AVAudioPlayer;
 @class UIImage;
-@class UIButton;
 @class UISearchBar;
 @class UICollectionView;
 @class NSIndexPath;
