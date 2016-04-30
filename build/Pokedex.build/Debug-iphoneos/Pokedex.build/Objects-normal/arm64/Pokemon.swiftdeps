@@ -7,8 +7,8 @@ provides-member:
 - ["C7Pokedex7Pokemon", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - "Int"
+- "String"
 - "Pokemon"
 depends-member:
 - !private ["Ps9AnyObject", "_name"]
