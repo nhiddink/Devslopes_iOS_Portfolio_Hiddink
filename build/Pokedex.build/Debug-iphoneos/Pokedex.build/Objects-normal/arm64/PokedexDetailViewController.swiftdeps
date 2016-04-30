@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C7Pokedex27PokedexDetailViewController", ""]
 provides-dynamic-lookup:
+- "viewDidLoad"
 - "nameLabel"
 - "backBtnPressed"
-- "viewDidLoad"
 depends-top-level:
+- "UILabel"
+- "Pokemon"
 - "PokedexDetailViewController"
 - !private "StringLiteralType"
-- "UIButton"
 - "UIViewController"
-- "Pokemon"
-- "UILabel"
+- "UIButton"
 depends-member:
 - ["Ps9AnyObject", "backBtnPressed"]
 - ["Ps9AnyObject", "init"]
