@@ -8,22 +8,44 @@
 
 import UIKit
 
-class PokedexClosedViewController: UIViewController, UIGestureRecognizerDelegate, UIPopoverPresentationControllerDelegate {
+class PokedexClosedViewController: UIViewController, UIGestureRecognizerDelegate {
  
-    @IBOutlet weak var bgImgClosed: UIImageView!
+    var location = CGPoint(x: 0, y: 0)
+    
+    @IBOutlet weak var lockImg: UIImageView!
+    @IBOutlet weak var swipeImg: UIImageView!
+    @IBOutlet weak var pokedexClosedImg: UIImageView!
+    @IBOutlet weak var pokedexCoverImg: UIImageView!
+    @IBOutlet weak var pokedexTitleImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let aSelector: Selector = #selector(PokedexClosedViewController.swipeRight(_:))
-        
-        let recognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: aSelector)
-        recognizer.direction = UISwipeGestureRecognizerDirection.Right
-        bgImgClosed.addGestureRecognizer(recognizer)
     }
     
-    func swipeRight(sender: AnyObject){
-        self.performSegueWithIdentifier("swipeSegue", sender: self)
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.swipeImg.alpha = 0
+    }
+    
+    @IBAction func swipeRight(recognizer: UISwipeGestureRecognizer) {
+        
+        var location = recognizer.locationInView(view)
+        location.x += 250.0
+        self.pokedexTitleImg.alpha = 0.0
+        
+        UIView.animateWithDuration(0.8, delay: 0, options: .CurveEaseOut, animations: {
+            self.lockImg.alpha = 0.1
+            self.pokedexClosedImg.alpha = 0.0
+            self.lockImg.center = location
+            self.pokedexCoverImg.center = CGPoint(x: self.pokedexCoverImg.center.x + 250, y: self.pokedexCoverImg.center.y)
+            },
+                                   completion: {(finished: Bool) in
+                                    UIView.animateWithDuration(0.08, animations: {
+                                        self.lockImg.alpha = 0.0
+                                        self.pokedexCoverImg.alpha = 0.0
+                                        self.performSegueWithIdentifier("swipeSegue", sender: self)
+                                    })
+            }
+        )
     }
     
 }

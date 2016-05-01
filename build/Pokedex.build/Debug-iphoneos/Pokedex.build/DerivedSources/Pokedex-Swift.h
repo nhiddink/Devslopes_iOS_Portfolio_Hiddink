@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -124,13 +125,22 @@ SWIFT_CLASS("_TtC7Pokedex8PokeCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITouch;
+@class UIEvent;
+@class UISwipeGestureRecognizer;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC7Pokedex27PokedexClosedViewController")
-@interface PokedexClosedViewController : UIViewController <UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate, UIGestureRecognizerDelegate>
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImgClosed;
+@interface PokedexClosedViewController : UIViewController <UIGestureRecognizerDelegate>
+@property (nonatomic) CGPoint location;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified lockImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified swipeImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pokedexClosedImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pokedexCoverImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pokedexTitleImg;
 - (void)viewDidLoad;
-- (void)swipeRight:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (IBAction)swipeRight:(UISwipeGestureRecognizer * _Nonnull)recognizer;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
