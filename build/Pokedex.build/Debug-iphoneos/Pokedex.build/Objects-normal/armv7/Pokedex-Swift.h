@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -124,31 +125,43 @@ SWIFT_CLASS("_TtC7Pokedex8PokeCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITouch;
+@class UIEvent;
+@class UISwipeGestureRecognizer;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC7Pokedex27PokedexClosedViewController")
-@interface PokedexClosedViewController : UIViewController <UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate, UIGestureRecognizerDelegate>
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImgClosed;
+@interface PokedexClosedViewController : UIViewController <UIGestureRecognizerDelegate>
+@property (nonatomic) CGPoint location;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified lockImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified swipeImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pokedexClosedImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pokedexCoverImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pokedexTitleImg;
 - (void)viewDidLoad;
-- (void)swipeRight:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (IBAction)swipeRight:(UISwipeGestureRecognizer * _Nonnull)recognizer;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 
 SWIFT_CLASS("_TtC7Pokedex27PokedexDetailViewController")
 @interface PokedexDetailViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statLabel;
 - (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (IBAction)backBtnPressed:(UIButton * _Nonnull)sender;
 @end
 
 @class AVAudioPlayer;
 @class UIImage;
-@class UIButton;
 @class UISearchBar;
 @class UICollectionView;
 @class NSIndexPath;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Pokedex25PokedexOpenViewController")
 @interface PokedexOpenViewController : UIViewController <UIBarPositioningDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UISearchBarDelegate>
@@ -168,6 +181,7 @@ SWIFT_CLASS("_TtC7Pokedex25PokedexOpenViewController")
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

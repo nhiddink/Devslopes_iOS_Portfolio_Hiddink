@@ -150,10 +150,10 @@ SWIFT_CLASS("_TtC7Pokedex27PokedexClosedViewController")
 SWIFT_CLASS("_TtC7Pokedex27PokedexDetailViewController")
 @interface PokedexDetailViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statLabel;
 - (void)viewDidLoad;
-- (IBAction)backBtnPressed:(UIButton * _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (IBAction)backBtnPressed:(UIButton * _Nonnull)sender;
 @end
 
 @class AVAudioPlayer;

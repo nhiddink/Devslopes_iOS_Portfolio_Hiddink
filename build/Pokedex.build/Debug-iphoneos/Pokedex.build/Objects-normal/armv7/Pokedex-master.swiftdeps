@@ -1,11 +1,11 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "688418936f1d501c40a1ccfc43e39175"
-build_time: [515285993, 96415000]
+build_time: [515436960, 477877000]
 inputs:
-  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/PokeCell.swift": [515029491, 0]
-  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/PokedexOpenViewController.swift": [515285361, 0]
-  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/AppDelegate.swift": [515220255, 0]
-  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/Pokemon.swift": [515285358, 0]
-  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/csv.swift": [492883026, 0]
-  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/PokedexDetailViewController.swift": [515283446, 0]
-  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/PokedexClosedViewController.swift": [515279899, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/PokeCell.swift": [515433484, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/PokedexOpenViewController.swift": [515436048, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/AppDelegate.swift": [515433479, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/Pokemon.swift": [515436240, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/csv.swift": [515433484, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/PokedexDetailViewController.swift": [515436959, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pokedex/PokedexClosedViewController.swift": [515433484, 0]

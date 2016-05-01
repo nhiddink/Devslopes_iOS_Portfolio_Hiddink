@@ -9,7 +9,7 @@
 import UIKit
 
 class PokedexDetailViewController: UIViewController {
-
+    
     var pokemon: Pokemon!
     
     @IBOutlet weak var nameLabel: UILabel!

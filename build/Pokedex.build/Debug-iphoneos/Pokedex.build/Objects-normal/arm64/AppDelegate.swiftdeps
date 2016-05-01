@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C7Pokedex11AppDelegate", ""]
 provides-dynamic-lookup:
-- "application"
 - "applicationWillTerminate"
 - "applicationDidEnterBackground"
-- "applicationDidBecomeActive"
+- "application"
 - "applicationWillResignActive"
 - "window"
+- "applicationDidBecomeActive"
 - "applicationWillEnterForeground"
 depends-top-level:
-- "UIResponder"
-- "UIWindow"
-- "AnyObject"
-- "AppDelegate"
-- "UIApplicationDelegate"
 - "UIApplication"
-- !private "BooleanLiteralType"
 - "Bool"
+- !private "BooleanLiteralType"
+- "AnyObject"
+- "UIWindow"
+- "AppDelegate"
 - "NSObject"
+- "UIResponder"
+- "UIApplicationDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -227,4 +227,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
 interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"
