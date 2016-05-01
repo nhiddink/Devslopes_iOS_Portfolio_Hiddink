@@ -7,17 +7,17 @@ provides-member:
 - ["C7Pokedex3CSV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UnicodeScalarType"
-- "StringLiteralType"
 - "Dictionary"
 - !private "NSUTF8StringEncoding"
-- !private "=="
+- "String"
 - !private "<"
 - "NSCharacterSet"
-- "String"
-- !private "!="
-- "UInt"
+- "StringLiteralType"
+- "UnicodeScalarType"
 - "CSV"
+- "UInt"
+- !private "!="
+- !private "=="
 depends-member:
 - ["Ps9AnyObject", "Dictionary"]
 - ["Ps9AnyObject", "NSCharacterSet"]
@@ -490,7 +490,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
 interface-hash: "99d552fa0677d4ad15198ced90416c5e"

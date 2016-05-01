@@ -534,7 +534,21 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="attackLabel" destination="kwH-AB-v5f" id="M4Q-Lc-hjP"/>
+                        <outlet property="defenseLabel" destination="zr6-Qy-4Lk" id="iaR-kH-fvq"/>
+                        <outlet property="descriptionLabel" destination="Iv5-aX-UWd" id="cnM-bO-zTB"/>
+                        <outlet property="firstEvoImage" destination="OqP-Q5-My1" id="7ET-jd-ctd"/>
+                        <outlet property="firstEvoLabel" destination="8GE-EI-1fW" id="t08-RD-CEo"/>
+                        <outlet property="heightLabel" destination="QMf-nm-6Mm" id="8sO-4T-g26"/>
+                        <outlet property="mainImg" destination="xOq-T3-6Vg" id="HE4-sI-geR"/>
                         <outlet property="nameLabel" destination="aZh-ax-O5A" id="jZp-3d-dSp"/>
+                        <outlet property="secondEvoImage" destination="zVM-ea-Pfn" id="DN6-s2-TEF"/>
+                        <outlet property="secondEvoLabel" destination="AE1-oz-qA8" id="omy-E2-gqF"/>
+                        <outlet property="specialLabel" destination="zqM-za-I0N" id="A0S-hB-l2E"/>
+                        <outlet property="speedLabel" destination="4Rq-Q3-v7d" id="Mlk-G8-wO1"/>
+                        <outlet property="type1Label" destination="SQ9-Ti-KTM" id="LxI-Yg-7Ps"/>
+                        <outlet property="type2Label" destination="2Lo-uT-9al" id="GqD-AU-2pN"/>
+                        <outlet property="weightLabel" destination="y4o-Uc-YDr" id="D7I-m9-AZ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96u-Nd-zQN" userLabel="First Responder" sceneMemberID="firstResponder"/>

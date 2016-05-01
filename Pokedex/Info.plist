@@ -48,5 +48,10 @@
 		<string>&quot;Pokemon GB.ttf&quot;</string>
 		<string>&quot;Pokemon Solid.ttf&quot;</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

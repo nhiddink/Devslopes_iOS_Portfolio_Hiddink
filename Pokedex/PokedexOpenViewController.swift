@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import SpriteKit
 
 class PokedexOpenViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
 
