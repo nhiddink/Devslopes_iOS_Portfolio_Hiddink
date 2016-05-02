@@ -7,16 +7,16 @@ provides-member:
 - ["C7Pokedex3CSV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Dictionary"
-- !private "NSUTF8StringEncoding"
-- "String"
-- !private "<"
 - "NSCharacterSet"
-- "StringLiteralType"
-- "UnicodeScalarType"
-- "CSV"
-- "UInt"
+- "String"
 - !private "!="
+- "CSV"
+- !private "<"
+- !private "NSUTF8StringEncoding"
+- "UInt"
+- "StringLiteralType"
+- "Dictionary"
+- "UnicodeScalarType"
 - !private "=="
 depends-member:
 - ["Ps9AnyObject", "Dictionary"]
@@ -316,6 +316,10 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "enumerateLines"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["P9Alamofire20URLStringConvertible", "componentsSeparatedByCharactersInSet"]
+- !private ["P9Alamofire20URLStringConvertible", "enumerateLines"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "componentsSeparatedByCharactersInSet"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "enumerateLines"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
@@ -460,6 +464,7 @@ depends-nominal:
 - !private "SS"
 - !private "Ps30StringInterpolationConvertible"
 - !private "Ps24StringLiteralConvertible"
+- !private "P9Alamofire20URLStringConvertible"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
@@ -490,4 +495,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
 interface-hash: "99d552fa0677d4ad15198ced90416c5e"

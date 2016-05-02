@@ -145,7 +145,7 @@ class PokedexOpenViewController: UIViewController, UICollectionViewDelegate, UIC
         } else {
             poke = pokemon[indexPath.row]
         }
-        
+        musicPlayer.stop()
         performSegueWithIdentifier("detailSegue", sender: poke)
         
     }

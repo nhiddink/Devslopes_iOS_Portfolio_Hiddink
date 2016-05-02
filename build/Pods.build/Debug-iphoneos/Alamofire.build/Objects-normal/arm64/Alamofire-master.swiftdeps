@@ -1,0 +1,21 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "0c634bccac6cb038dc9ab2a42d239e0a"
+build_time: [515475002, 43000000]
+inputs:
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Alamofire.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Download.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Error.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Manager.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/MultipartFormData.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Notifications.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/ParameterEncoding.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Request.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Response.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/ResponseSerialization.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Result.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/ServerTrustPolicy.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Stream.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Timeline.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Upload.swift": [515474888, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/Pods/Alamofire/Source/Validation.swift": [515474888, 0]

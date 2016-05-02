@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C7Pokedex11AppDelegate", ""]
 provides-dynamic-lookup:
+- "applicationWillResignActive"
 - "applicationDidBecomeActive"
+- "application"
+- "applicationDidEnterBackground"
 - "applicationWillEnterForeground"
 - "window"
-- "applicationDidEnterBackground"
-- "applicationWillResignActive"
 - "applicationWillTerminate"
-- "application"
 depends-top-level:
-- "AppDelegate"
 - "UIWindow"
-- "NSObject"
-- "UIResponder"
-- "UIApplicationDelegate"
 - "Bool"
-- "AnyObject"
+- "UIApplicationDelegate"
 - "UIApplication"
 - !private "BooleanLiteralType"
+- "NSObject"
+- "AnyObject"
+- "AppDelegate"
+- "UIResponder"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -227,4 +227,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
 interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"

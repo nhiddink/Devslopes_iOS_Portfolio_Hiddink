@@ -23,10 +23,10 @@ class PokedexDetailViewController: UIViewController {
     @IBOutlet weak var defenseLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var specialLabel: UILabel!
-    @IBOutlet weak var firstEvoLabel: UILabel!
-    @IBOutlet weak var secondEvoLabel: UILabel!
-    @IBOutlet weak var firstEvoImage: UIImageView!
-    @IBOutlet weak var secondEvoImage: UIImageView!
+    @IBOutlet weak var currentEvoLabel: UILabel!
+    @IBOutlet weak var nextEvoLabel: UILabel!
+    @IBOutlet weak var currentEvoImage: UIImageView!
+    @IBOutlet weak var nextEvoImage: UIImageView!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -50,19 +50,19 @@ class PokedexDetailViewController: UIViewController {
         defenseLabel.text = pokemon.defense
         speedLabel.text = pokemon.speed
         specialLabel.text = pokemon.special
-        firstEvoLabel.text = pokemon.firstEvo
+        currentEvoLabel.text = pokemon.currentEvo
         
-        if pokemon.firstEvoId == "" {
-            firstEvoLabel.text = "No Evolutions"
-            firstEvoImage.hidden = true
-            secondEvoImage.hidden = true
+        if pokemon.currentEvoId == "" {
+            currentEvoLabel.text = "No Evolutions"
+            currentEvoImage.hidden = true
+            nextEvoImage.hidden = true
         } else {
-            firstEvoImage.hidden = false
-            firstEvoImage.image = UIImage(named: pokemon.firstEvoId)
-            var str = "Next Evolution: \(pokemon.firstEvo)"
+            currentEvoImage.hidden = false
+            currentEvoImage.image = UIImage(named: pokemon.currentEvoId)
+            var str = "Next Evolution: \(pokemon.currentEvo)"
             
-            if pokemon.firstEvoLvl != "" {
-                str += " - LVL. \(pokemon.firstEvoLvl)"
+            if pokemon.currentEvoLvl != "" {
+                str += " - LVL. \(pokemon.currentEvoLvl)"
             }
         }
     }
