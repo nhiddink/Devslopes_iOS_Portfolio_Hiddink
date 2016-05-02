@@ -14,19 +14,23 @@ class PokedexDetailViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var mainImg: UIImageView!
-    @IBOutlet weak var type1Label: UILabel!
-    @IBOutlet weak var type2Label: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var speciesLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var hpLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var attackLabel: UILabel!
     @IBOutlet weak var defenseLabel: UILabel!
-    @IBOutlet weak var speedLabel: UILabel!
-    @IBOutlet weak var specialLabel: UILabel!
+    @IBOutlet weak var spAttackLabel: UILabel!
+    @IBOutlet weak var spDefenseLabel: UILabel!
     @IBOutlet weak var currentEvoLabel: UILabel!
     @IBOutlet weak var nextEvoLabel: UILabel!
     @IBOutlet weak var currentEvoImage: UIImageView!
     @IBOutlet weak var nextEvoImage: UIImageView!
+    @IBOutlet weak var nextEvolution: UILabel!
+    @IBOutlet weak var arrow:UIImageView!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -41,24 +45,30 @@ class PokedexDetailViewController: UIViewController {
     }
 
     func updateUI() {
-        type1Label.text = pokemon.type1
-        type2Label.text = pokemon.type2
-        heightLabel.text = pokemon.height
-        weightLabel.text = pokemon.weight
+        typeLabel.text = pokemon.type
+        speciesLabel.text = pokemon.species
+        heightLabel.text = "\(pokemon.height) m"
+        weightLabel.text = "\(pokemon.weight) kg"
         descriptionLabel.text = pokemon.description
+        hpLabel.text = pokemon.hp
+        speedLabel.text = pokemon.speed
         attackLabel.text = pokemon.attack
         defenseLabel.text = pokemon.defense
-        speedLabel.text = pokemon.speed
-        specialLabel.text = pokemon.special
-        currentEvoLabel.text = pokemon.currentEvo
+        spAttackLabel.text = pokemon.spAttack
+        spDefenseLabel.text = pokemon.spDefense
+        currentEvoLabel.text = pokemon.nextEvo.uppercaseString
         
         if pokemon.currentEvoId == "" {
-            currentEvoLabel.text = "No Evolutions"
+            currentEvoLabel.hidden = true
+            nextEvoLabel.hidden = true
+            arrow.hidden = true
             currentEvoImage.hidden = true
             nextEvoImage.hidden = true
+            nextEvolution.text = "NEXT EVOLUTION: NONE"
+            
         } else {
             currentEvoImage.hidden = false
-            currentEvoImage.image = UIImage(named: pokemon.currentEvoId)
+            currentEvoImage.image = mainImg.image
             var str = "Next Evolution: \(pokemon.currentEvo)"
             
             if pokemon.currentEvoLvl != "" {

@@ -7,20 +7,20 @@ provides-member:
 - ["C7Pokedex7Pokemon", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UnicodeScalarType"
-- !private "=="
 - "DownloadComplete"
 - !private "StringLiteralType"
 - !private "URL_BASE"
-- "String"
+- !private "=="
 - "Pokemon"
-- !private "NSURL"
-- !private "AnyObject"
-- !private "Dictionary"
+- !private "UnicodeScalarType"
+- !private "Alamofire"
 - !private ">"
 - "Int"
+- !private "Dictionary"
+- !private "AnyObject"
 - !private "URL_POKEMON"
-- !private "Alamofire"
+- "String"
+- !private "NSURL"
 depends-member:
 - !private ["Ps9AnyObject", "Alamofire"]
 - !private ["Ps9AnyObject", "NSURL"]
@@ -33,13 +33,15 @@ depends-member:
 - !private ["Ps9AnyObject", "_defense"]
 - !private ["Ps9AnyObject", "_description"]
 - !private ["Ps9AnyObject", "_height"]
+- !private ["Ps9AnyObject", "_hp"]
 - !private ["Ps9AnyObject", "_name"]
 - !private ["Ps9AnyObject", "_nextEvo"]
 - !private ["Ps9AnyObject", "_nextEvoId"]
 - !private ["Ps9AnyObject", "_nextEvoLvl"]
 - !private ["Ps9AnyObject", "_pokedexId"]
 - !private ["Ps9AnyObject", "_pokemonURL"]
-- !private ["Ps9AnyObject", "_special"]
+- !private ["Ps9AnyObject", "_spAttack"]
+- !private ["Ps9AnyObject", "_spDefense"]
 - !private ["Ps9AnyObject", "_speed"]
 - !private ["Ps9AnyObject", "_type1"]
 - !private ["Ps9AnyObject", "_type2"]
@@ -260,13 +262,15 @@ depends-member:
 - !private ["C7Pokedex7Pokemon", "_defense"]
 - !private ["C7Pokedex7Pokemon", "_description"]
 - !private ["C7Pokedex7Pokemon", "_height"]
+- !private ["C7Pokedex7Pokemon", "_hp"]
 - !private ["C7Pokedex7Pokemon", "_name"]
 - !private ["C7Pokedex7Pokemon", "_nextEvo"]
 - !private ["C7Pokedex7Pokemon", "_nextEvoId"]
 - !private ["C7Pokedex7Pokemon", "_nextEvoLvl"]
 - !private ["C7Pokedex7Pokemon", "_pokedexId"]
 - !private ["C7Pokedex7Pokemon", "_pokemonURL"]
-- !private ["C7Pokedex7Pokemon", "_special"]
+- !private ["C7Pokedex7Pokemon", "_spAttack"]
+- !private ["C7Pokedex7Pokemon", "_spDefense"]
 - !private ["C7Pokedex7Pokemon", "_speed"]
 - !private ["C7Pokedex7Pokemon", "_type1"]
 - !private ["C7Pokedex7Pokemon", "_type2"]
@@ -280,13 +284,15 @@ depends-member:
 - ["C7Pokedex7Pokemon", "description"]
 - ["C7Pokedex7Pokemon", "downloadPokemonDetails"]
 - ["C7Pokedex7Pokemon", "height"]
+- ["C7Pokedex7Pokemon", "hp"]
 - ["C7Pokedex7Pokemon", "init"]
 - ["C7Pokedex7Pokemon", "name"]
 - ["C7Pokedex7Pokemon", "nextEvo"]
 - ["C7Pokedex7Pokemon", "nextEvoId"]
 - ["C7Pokedex7Pokemon", "nextEvoLvl"]
 - ["C7Pokedex7Pokemon", "pokedexId"]
-- ["C7Pokedex7Pokemon", "special"]
+- ["C7Pokedex7Pokemon", "spAttack"]
+- ["C7Pokedex7Pokemon", "spDefense"]
 - ["C7Pokedex7Pokemon", "speed"]
 - ["C7Pokedex7Pokemon", "type1"]
 - ["C7Pokedex7Pokemon", "type2"]
@@ -533,4 +539,4 @@ depends-external:
 - "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "882748d9c728af4b211f078658f60e9f"
+interface-hash: "3a3faa68aa510e46f463ccb69ba800c3"

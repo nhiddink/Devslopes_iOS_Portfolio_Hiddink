@@ -13,15 +13,17 @@ class Pokemon {
     
     private var _name: String!
     private var _pokedexId: Int!
-    private var _type1: String!
-    private var _type2: String!
+    private var _type: String!
+    private var _species: String!
     private var _height: String!
     private var _weight: String!
     private var _description: String!
+    private var _hp: String!
+    private var _speed: String!
     private var _attack: String!
     private var _defense: String!
-    private var _speed: String!
-    private var _special: String!
+    private var _spAttack: String!
+    private var _spDefense: String!
     private var _currentEvo: String!
     private var _currentEvoId: String!
     private var _currentEvoLvl: String!
@@ -38,14 +40,14 @@ class Pokemon {
         return _pokedexId
     }
     
-    var type1: String {
-        if _type1 == nil {_type1 = ""}
-        return _type1
+    var type: String {
+        if _type == nil {_type = ""}
+        return _type
     }
     
-    var type2: String {
-        if _type2 == nil {_type2 = ""}
-        return _type2
+    var species: String {
+        if _species == nil {_species = ""}
+        return _species
     }
     
     var height: String {
@@ -63,14 +65,9 @@ class Pokemon {
         return _description
     }
     
-    var attack: String {
-        if _attack == nil {_attack = ""}
-        return _attack
-    }
-    
-    var defense: String {
-        if _defense == nil {_defense = ""}
-        return _defense
+    var hp: String {
+        if _hp == nil {_hp = ""}
+        return _hp
     }
     
     var speed: String {
@@ -78,9 +75,24 @@ class Pokemon {
         return _speed
     }
     
-    var special: String {
-        if _special == nil {_special = ""}
-        return _special
+    var attack: String {
+        if _attack == nil {_attack = ""}
+        return _attack
+    }
+   
+    var defense: String {
+        if _defense == nil {_defense = ""}
+        return _defense
+    }
+    
+    var spAttack: String {
+        if _spAttack == nil {_spAttack = ""}
+        return _spAttack
+    }
+    
+    var spDefense: String {
+        if _spDefense == nil {_spDefense = ""}
+        return _spDefense
     }
     
     var currentEvo: String {
@@ -129,12 +141,20 @@ class Pokemon {
             if let dict = result.value as? Dictionary<String, AnyObject> {
             
                 if let types = dict["types"] as? [Dictionary<String, String>] where types.count > 0 {
+                    
                     if let type = types[0]["name"]{
-                        self._type1 = type.uppercaseString
+                        self._type = type.uppercaseString
                     }
-                    if let type = types[1]["name"]{
-                        self._type2 = type.uppercaseString
+                    if types.count > 1 {
+                        for x in 1 ..< types.count {
+                            if let type = types[x]["name"] {
+                                self._type! = "/\(type.uppercaseString)"
+                            }
+                        }
                     }
+                }
+                if let species = dict["species"] as? String {
+                    self._species = species
                 }
                 if let height = dict["height"] as? String {
                     self._height = height
@@ -162,17 +182,23 @@ class Pokemon {
                 } else {
                     self._description = ""
                 }
+                if let hp = dict["hp"] as? Int {
+                    self._hp = "\(hp)"
+                }
+                if let speed = dict["speed"] as? Int {
+                    self._speed = "\(speed)"
+                }
                 if let attack = dict["attack"] as? Int {
                     self._attack = "\(attack)"
                 }
                 if let defense = dict["defense"] as? Int {
                     self._defense = "\(defense)"
                 }
-                if let speed = dict["speed"] as? Int {
-                    self._speed = "\(speed)"
+                if let spAttack = dict["sp_atk"] as? Int {
+                    self._spAttack = "\(spAttack)"
                 }
-                if let special = dict["special"] as? Int {
-                    self._special = "\(special)"
+                if let spDefense = dict["sp_def"] as? Int {
+                    self._spDefense = "\(spDefense)"
                 }
                 if let evolutions = dict["evolutions"] as? [Dictionary<String, AnyObject>] where evolutions.count > 0 {
                     if let to = evolutions[0]["to"] as? String {
@@ -191,9 +217,6 @@ class Pokemon {
                             }
                         }
                     }
-                }
-                if let nextEvo = dict["types"] as? String {
-                    self._nextEvo = nextEvo
                 }
                 
             }
