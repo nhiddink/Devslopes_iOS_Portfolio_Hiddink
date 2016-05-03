@@ -150,9 +150,9 @@ SWIFT_CLASS("_TtC7Pokedex27PokedexClosedViewController")
 SWIFT_CLASS("_TtC7Pokedex27PokedexDetailViewController")
 @interface PokedexDetailViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pokedexIdLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified mainImg;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified type1Label;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified type2Label;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified typeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified heightLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified weightLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
@@ -162,11 +162,11 @@ SWIFT_CLASS("_TtC7Pokedex27PokedexDetailViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified defenseLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified spAttackLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified spDefenseLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified currentEvoLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nextEvoLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified evolutionLvlLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified evolutionNameLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified currentEvoImage;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified nextEvoImage;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nextEvolution;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nextEvoTitleLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified arrow;
 - (void)viewDidLoad;
 - (void)updateUI;

@@ -13,9 +13,9 @@ class PokedexDetailViewController: UIViewController {
     var pokemon: Pokemon!
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var pokedexIdLabel: UILabel!
     @IBOutlet weak var mainImg: UIImageView!
     @IBOutlet weak var typeLabel: UILabel!
-    @IBOutlet weak var speciesLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -25,17 +25,24 @@ class PokedexDetailViewController: UIViewController {
     @IBOutlet weak var defenseLabel: UILabel!
     @IBOutlet weak var spAttackLabel: UILabel!
     @IBOutlet weak var spDefenseLabel: UILabel!
-    @IBOutlet weak var currentEvoLabel: UILabel!
-    @IBOutlet weak var nextEvoLabel: UILabel!
+    @IBOutlet weak var evolutionLvlLabel: UILabel!
+    @IBOutlet weak var evolutionNameLabel: UILabel!
     @IBOutlet weak var currentEvoImage: UIImageView!
     @IBOutlet weak var nextEvoImage: UIImageView!
-    @IBOutlet weak var nextEvolution: UILabel!
+    @IBOutlet weak var nextEvoTitleLabel: UILabel!
     @IBOutlet weak var arrow:UIImageView!
     
     override func viewDidLoad(){
         super.viewDidLoad()
         
         nameLabel.text = "\(pokemon.name.uppercaseString)"
+        if pokemon.pokedexId < 10 {
+            pokedexIdLabel.text = "#00\(pokemon.pokedexId)"
+        } else if pokemon.pokedexId < 100 {
+            pokedexIdLabel.text = "#0\(pokemon.pokedexId)"
+        } else {
+            pokedexIdLabel.text = "#\(pokemon.pokedexId)"
+        }
         mainImg.image = UIImage(named:"\(pokemon.pokedexId)")
         pokemon.downloadPokemonDetails { () -> () in
             //called after download is completed
@@ -46,7 +53,6 @@ class PokedexDetailViewController: UIViewController {
 
     func updateUI() {
         typeLabel.text = pokemon.type
-        speciesLabel.text = pokemon.species
         heightLabel.text = "\(pokemon.height) m"
         weightLabel.text = "\(pokemon.weight) kg"
         descriptionLabel.text = pokemon.description
@@ -56,24 +62,23 @@ class PokedexDetailViewController: UIViewController {
         defenseLabel.text = pokemon.defense
         spAttackLabel.text = pokemon.spAttack
         spDefenseLabel.text = pokemon.spDefense
-        currentEvoLabel.text = pokemon.nextEvo.uppercaseString
+        evolutionNameLabel.text = pokemon.nextEvoName.uppercaseString
         
-        if pokemon.currentEvoId == "" {
-            currentEvoLabel.hidden = true
-            nextEvoLabel.hidden = true
+        if pokemon.nextEvoId == "" {
+            evolutionNameLabel.hidden = true
+            evolutionLvlLabel.hidden = true
             arrow.hidden = true
             currentEvoImage.hidden = true
             nextEvoImage.hidden = true
-            nextEvolution.text = "NEXT EVOLUTION: NONE"
+            nextEvoTitleLabel.text = "NO FURTHER EVOLUTIONS"
             
         } else {
             currentEvoImage.hidden = false
             currentEvoImage.image = mainImg.image
-            var str = "Next Evolution: \(pokemon.currentEvo)"
-            
-            if pokemon.currentEvoLvl != "" {
-                str += " - LVL. \(pokemon.currentEvoLvl)"
-            }
+            nextEvoImage.hidden = false
+            nextEvoImage.image = UIImage(named:"\(pokemon.nextEvoId)")
+            evolutionNameLabel.text = "\(pokemon.nextEvoName)"
+            evolutionLvlLabel.text = pokemon.nextEvoLvl
         }
     }
     

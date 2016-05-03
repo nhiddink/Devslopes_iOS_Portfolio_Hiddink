@@ -14,7 +14,6 @@ class Pokemon {
     private var _name: String!
     private var _pokedexId: Int!
     private var _type: String!
-    private var _species: String!
     private var _height: String!
     private var _weight: String!
     private var _description: String!
@@ -24,10 +23,7 @@ class Pokemon {
     private var _defense: String!
     private var _spAttack: String!
     private var _spDefense: String!
-    private var _currentEvo: String!
-    private var _currentEvoId: String!
-    private var _currentEvoLvl: String!
-    private var _nextEvo: String!
+    private var _nextEvoName: String!
     private var _nextEvoId: String!
     private var _nextEvoLvl: String!
     private var _pokemonURL: String!
@@ -43,11 +39,6 @@ class Pokemon {
     var type: String {
         if _type == nil {_type = ""}
         return _type
-    }
-    
-    var species: String {
-        if _species == nil {_species = ""}
-        return _species
     }
     
     var height: String {
@@ -95,24 +86,9 @@ class Pokemon {
         return _spDefense
     }
     
-    var currentEvo: String {
-        if _currentEvo == nil {_currentEvo = ""}
-        return _currentEvo
-    }
-    
-    var currentEvoId: String {
-        if _currentEvoId == nil {_currentEvoId = ""}
-        return _currentEvoId
-    }
-    
-    var currentEvoLvl: String {
-        if _currentEvoLvl == nil {_currentEvoLvl = ""}
-        return _currentEvoLvl
-    }
-    
-    var nextEvo: String {
-        if _nextEvo == nil {_nextEvo = ""}
-        return _nextEvo
+    var nextEvoName: String {
+        if _nextEvoName == nil {_nextEvoName = ""}
+        return _nextEvoName
     }
     
     var nextEvoId: String {
@@ -148,13 +124,10 @@ class Pokemon {
                     if types.count > 1 {
                         for x in 1 ..< types.count {
                             if let type = types[x]["name"] {
-                                self._type! = "/\(type.uppercaseString)"
+                                self._type! += "/\(type.uppercaseString)"
                             }
                         }
                     }
-                }
-                if let species = dict["species"] as? String {
-                    self._species = species
                 }
                 if let height = dict["height"] as? String {
                     self._height = height
@@ -208,11 +181,11 @@ class Pokemon {
                                 let newStr = uri.stringByReplacingOccurrencesOfString("/api/v1/pokemon/", withString: "")
                                 let num = newStr.stringByReplacingOccurrencesOfString("/", withString:"")
                                 
-                                self._currentEvoId = num
-                                self._currentEvo = to
+                                self._nextEvoId = num
+                                self._nextEvoName = to
                                 
                                 if let lvl = evolutions[0]["level"] as? String {
-                                    self._currentEvoLvl = "\(lvl)"
+                                    self._nextEvoLvl = "LVL. \(lvl)"
                                 }
                             }
                         }

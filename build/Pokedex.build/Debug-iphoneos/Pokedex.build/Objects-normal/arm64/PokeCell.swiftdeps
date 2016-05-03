@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C7Pokedex8PokeCell", ""]
 provides-dynamic-lookup:
-- "nameLabel"
 - "thumbImg"
+- "nameLabel"
 depends-top-level:
 - !private "UIImage"
-- "NSCoder"
-- "UIImageView"
-- "UICollectionViewCell"
 - "Pokemon"
 - "PokeCell"
+- "NSCoder"
 - !private "StringLiteralType"
 - "UILabel"
+- "UICollectionViewCell"
+- "UIImageView"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "configurePokemonCell"]
@@ -24,6 +24,7 @@ depends-member:
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "name"]
 - ["Ps9AnyObject", "nameLabel"]
 - !private ["Ps9AnyObject", "pokedexId"]
 - ["Ps9AnyObject", "pokemon"]
@@ -154,6 +155,7 @@ depends-member:
 - ["C7Pokedex8PokeCell", "nameLabel"]
 - ["C7Pokedex8PokeCell", "pokemon"]
 - ["C7Pokedex8PokeCell", "thumbImg"]
+- !private ["C7Pokedex7Pokemon", "name"]
 - !private ["C7Pokedex7Pokemon", "pokedexId"]
 - !private ["Vs12StaticString", "deinit"]
 - !private ["Ps10Streamable", "init"]

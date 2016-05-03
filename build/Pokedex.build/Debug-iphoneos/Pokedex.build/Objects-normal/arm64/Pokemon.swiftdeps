@@ -7,44 +7,42 @@ provides-member:
 - ["C7Pokedex7Pokemon", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "DownloadComplete"
 - !private "StringLiteralType"
-- !private "URL_BASE"
-- !private "=="
+- "String"
 - "Pokemon"
-- !private "UnicodeScalarType"
 - !private "Alamofire"
-- !private ">"
+- !private "NSURL"
 - "Int"
+- !private ">"
 - !private "Dictionary"
+- !private "=="
+- !private "+="
+- !private "..<"
+- !private "URL_BASE"
+- !private "UnicodeScalarType"
 - !private "AnyObject"
 - !private "URL_POKEMON"
-- "String"
-- !private "NSURL"
+- "DownloadComplete"
 depends-member:
 - !private ["Ps9AnyObject", "Alamofire"]
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "URL_BASE"]
 - !private ["Ps9AnyObject", "URL_POKEMON"]
 - !private ["Ps9AnyObject", "_attack"]
-- !private ["Ps9AnyObject", "_currentEvo"]
-- !private ["Ps9AnyObject", "_currentEvoId"]
-- !private ["Ps9AnyObject", "_currentEvoLvl"]
 - !private ["Ps9AnyObject", "_defense"]
 - !private ["Ps9AnyObject", "_description"]
 - !private ["Ps9AnyObject", "_height"]
 - !private ["Ps9AnyObject", "_hp"]
 - !private ["Ps9AnyObject", "_name"]
-- !private ["Ps9AnyObject", "_nextEvo"]
 - !private ["Ps9AnyObject", "_nextEvoId"]
 - !private ["Ps9AnyObject", "_nextEvoLvl"]
+- !private ["Ps9AnyObject", "_nextEvoName"]
 - !private ["Ps9AnyObject", "_pokedexId"]
 - !private ["Ps9AnyObject", "_pokemonURL"]
 - !private ["Ps9AnyObject", "_spAttack"]
 - !private ["Ps9AnyObject", "_spDefense"]
 - !private ["Ps9AnyObject", "_speed"]
-- !private ["Ps9AnyObject", "_type1"]
-- !private ["Ps9AnyObject", "_type2"]
+- !private ["Ps9AnyObject", "_type"]
 - !private ["Ps9AnyObject", "_weight"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "rangeOfString"]
@@ -69,14 +67,17 @@ depends-member:
 - !private ["Vs10ArraySlice", "subscript"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "_DisabledRangeIndex"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
 - !private ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "rangeOfString"]
 - !private ["Ps11CVarArgType", "stringByReplacingOccurrencesOfString"]
@@ -114,6 +115,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "count"]
@@ -142,6 +144,7 @@ depends-member:
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "GET"]
+- !private ["Ps9Equatable", "Generator"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -158,9 +161,12 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
 - !private ["Ps13GeneratorType", "Element"]
+- !private ["Vs16HalfOpenInterval", "Generator"]
+- !private ["Vs16HalfOpenInterval", "deinit"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "GET"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "rangeOfString"]
@@ -176,6 +182,7 @@ depends-member:
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "_DisabledRangeIndex"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
@@ -183,13 +190,18 @@ depends-member:
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "_DisabledRangeIndex"]
 - !private ["Ps25IntegerLiteralConvertible", "Distance"]
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "_DisabledRangeIndex"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "_DisabledRangeIndex"]
+- !private ["Ps12IntervalType", "Generator"]
 - !private ["O9Alamofire6Method", "GET"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "_DisabledRangeIndex"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps14MirrorPathType", "rangeOfString"]
 - !private ["Ps14MirrorPathType", "stringByReplacingOccurrencesOfString"]
@@ -256,29 +268,22 @@ depends-member:
 - !private ["C7Pokedex7Pokemon", "URL_BASE"]
 - !private ["C7Pokedex7Pokemon", "URL_POKEMON"]
 - !private ["C7Pokedex7Pokemon", "_attack"]
-- !private ["C7Pokedex7Pokemon", "_currentEvo"]
-- !private ["C7Pokedex7Pokemon", "_currentEvoId"]
-- !private ["C7Pokedex7Pokemon", "_currentEvoLvl"]
 - !private ["C7Pokedex7Pokemon", "_defense"]
 - !private ["C7Pokedex7Pokemon", "_description"]
 - !private ["C7Pokedex7Pokemon", "_height"]
 - !private ["C7Pokedex7Pokemon", "_hp"]
 - !private ["C7Pokedex7Pokemon", "_name"]
-- !private ["C7Pokedex7Pokemon", "_nextEvo"]
 - !private ["C7Pokedex7Pokemon", "_nextEvoId"]
 - !private ["C7Pokedex7Pokemon", "_nextEvoLvl"]
+- !private ["C7Pokedex7Pokemon", "_nextEvoName"]
 - !private ["C7Pokedex7Pokemon", "_pokedexId"]
 - !private ["C7Pokedex7Pokemon", "_pokemonURL"]
 - !private ["C7Pokedex7Pokemon", "_spAttack"]
 - !private ["C7Pokedex7Pokemon", "_spDefense"]
 - !private ["C7Pokedex7Pokemon", "_speed"]
-- !private ["C7Pokedex7Pokemon", "_type1"]
-- !private ["C7Pokedex7Pokemon", "_type2"]
+- !private ["C7Pokedex7Pokemon", "_type"]
 - !private ["C7Pokedex7Pokemon", "_weight"]
 - ["C7Pokedex7Pokemon", "attack"]
-- ["C7Pokedex7Pokemon", "currentEvo"]
-- ["C7Pokedex7Pokemon", "currentEvoId"]
-- ["C7Pokedex7Pokemon", "currentEvoLvl"]
 - ["C7Pokedex7Pokemon", "defense"]
 - ["C7Pokedex7Pokemon", "deinit"]
 - ["C7Pokedex7Pokemon", "description"]
@@ -287,19 +292,21 @@ depends-member:
 - ["C7Pokedex7Pokemon", "hp"]
 - ["C7Pokedex7Pokemon", "init"]
 - ["C7Pokedex7Pokemon", "name"]
-- ["C7Pokedex7Pokemon", "nextEvo"]
 - ["C7Pokedex7Pokemon", "nextEvoId"]
 - ["C7Pokedex7Pokemon", "nextEvoLvl"]
+- ["C7Pokedex7Pokemon", "nextEvoName"]
 - ["C7Pokedex7Pokemon", "pokedexId"]
 - ["C7Pokedex7Pokemon", "spAttack"]
 - ["C7Pokedex7Pokemon", "spDefense"]
 - ["C7Pokedex7Pokemon", "speed"]
-- ["C7Pokedex7Pokemon", "type1"]
-- ["C7Pokedex7Pokemon", "type2"]
+- ["C7Pokedex7Pokemon", "type"]
 - ["C7Pokedex7Pokemon", "weight"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "_DisabledRangeIndex"]
+- !private ["Vs5Range", "Generator"]
 - !private ["Vs5Range", "deinit"]
+- !private ["Vs14RangeGenerator", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
@@ -318,8 +325,10 @@ depends-member:
 - !private ["Ps12SequenceType", "subscript"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "_DisabledRangeIndex"]
 - !private ["Ps16SignedNumberType", "Distance"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "_DisabledRangeIndex"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
@@ -330,6 +339,7 @@ depends-member:
 - !private ["Ps10Streamable", "uppercaseString"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["SS", "rangeOfString"]
@@ -369,6 +379,7 @@ depends-member:
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "uppercaseString"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "_DisabledRangeIndex"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "rangeOfString"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
@@ -392,13 +403,16 @@ depends-member:
 - !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
 - !private ["Ps22_IntegerArithmeticType", "Distance"]
 - !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "_DisabledRangeIndex"]
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
@@ -410,12 +424,14 @@ depends-member:
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
 - !private ["Ps12_Reflectable", "Distance"]
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_DisabledRangeIndex"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "count"]
@@ -426,6 +442,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "uppercaseString"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "_DisabledRangeIndex"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Sa"
@@ -451,6 +468,7 @@ depends-nominal:
 - !private "Sf"
 - !private "Ps16ForwardIndexType"
 - !private "Ps13GeneratorType"
+- !private "Vs16HalfOpenInterval"
 - !private "Ps8Hashable"
 - !private "SQ"
 - !private "Ps9Indexable"
@@ -463,6 +481,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "Ps12IntervalType"
 - !private "O9Alamofire6Method"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
@@ -483,6 +502,7 @@ depends-nominal:
 - "C7Pokedex7Pokemon"
 - !private "Ps21RandomAccessIndexType"
 - !private "Vs5Range"
+- !private "Vs14RangeGenerator"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "C9Alamofire7Request"
@@ -539,4 +559,4 @@ depends-external:
 - "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/nhiddink/Dropbox/iPhone Applications/Pokedex/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "3a3faa68aa510e46f463ccb69ba800c3"
+interface-hash: "0f57cfcbea416b1c2101292449a071c9"
