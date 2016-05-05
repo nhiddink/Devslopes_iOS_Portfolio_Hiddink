@@ -17,24 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="fYL-ju-XeX">
-                                <rect key="frame" x="16" y="28" width="343" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="fYL-ju-XeX">
+                                <rect key="frame" x="36" y="28" width="303" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="Nu4-uk-Dm2"/>
+                                    <constraint firstAttribute="width" constant="303" id="elW-Oe-Gfw"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shelf.png" translatesAutoresizingMaskIntoConstraints="NO" id="HwK-aF-yaN">
-                                <rect key="frame" x="0.0" y="500" width="375" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="shelf.png" translatesAutoresizingMaskIntoConstraints="NO" id="HwK-aF-yaN">
+                                <rect key="frame" x="36" y="500" width="303" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="303" id="Ozi-am-ThL"/>
+                                    <constraint firstAttribute="height" constant="120" id="md0-Sr-wQw"/>
+                                </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmF-RC-bga">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmF-RC-bga">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="governer.png" translatesAutoresizingMaskIntoConstraints="NO" id="BxV-am-Yfj">
-                                        <rect key="frame" x="31" y="184" width="302" height="368"/>
-                                    </imageView>
-                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="Hq4-96-pDW"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gmF-RC-bga" secondAttribute="trailing" id="9NG-qq-pDK"/>
+                            <constraint firstItem="HwK-aF-yaN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PZ3-oh-5Zh"/>
+                            <constraint firstItem="gmF-RC-bga" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Se1-Ti-6C4"/>
+                            <constraint firstItem="fYL-ju-XeX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aHt-ge-ODW"/>
+                            <constraint firstItem="fYL-ju-XeX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ezg-78-6Kx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HwK-aF-yaN" secondAttribute="bottom" constant="72" id="n27-Le-7kh"/>
+                            <constraint firstItem="gmF-RC-bga" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vZ9-tD-ms9"/>
+                            <constraint firstItem="gmF-RC-bga" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vvf-VX-bn9"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="scrollView" destination="gmF-RC-bga" id="bCW-gJ-gti"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +61,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="governer.png" width="305" height="481"/>
         <image name="logo.png" width="732" height="340"/>
         <image name="shelf.png" width="865" height="114"/>
     </resources>

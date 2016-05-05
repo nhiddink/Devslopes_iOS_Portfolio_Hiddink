@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "8762a4dd43915cdb966cb0b3d3b775e6"
+build_time: [515780240, 939810000]
+inputs:
+  "/Users/nhiddink/Dropbox/iPhone Applications/TheWalkingDead/TheWalkingDead/ViewController.swift": [515780240, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/TheWalkingDead/TheWalkingDead/AppDelegate.swift": [515624625, 0]
