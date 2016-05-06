@@ -93,7 +93,6 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -115,7 +114,7 @@ SWIFT_CLASS("_TtC14TheWalkingDead11AppDelegate")
 @end
 
 @class UIScrollView;
-@class UILabel;
+@class UIImageView;
 @class NSBundle;
 @class NSCoder;
 
@@ -123,9 +122,7 @@ SWIFT_CLASS("_TtC14TheWalkingDead14ViewController")
 @interface ViewController : UIViewController <UIScrollViewDelegate>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull characters;
 @property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified scrollView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
-@property (nonatomic, readonly) CGFloat WIDTH;
-@property (nonatomic, readonly) CGFloat HEIGHT;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shelfImg;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

@@ -14,54 +14,52 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="fYL-ju-XeX">
-                                <rect key="frame" x="36" y="28" width="303" height="163"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fYL-ju-XeX">
+                                <rect key="frame" x="22" y="28" width="275" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="163" id="Nu4-uk-Dm2"/>
-                                    <constraint firstAttribute="width" constant="303" id="elW-Oe-Gfw"/>
+                                    <constraint firstAttribute="height" constant="150" id="Nu4-uk-Dm2"/>
+                                    <constraint firstAttribute="width" constant="275" id="elW-Oe-Gfw"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="shelf.png" translatesAutoresizingMaskIntoConstraints="NO" id="HwK-aF-yaN">
-                                <rect key="frame" x="36" y="500" width="303" height="120"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="HwK-aF-yaN">
+                                <rect key="frame" x="7" y="480" width="306" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="303" id="Ozi-am-ThL"/>
-                                    <constraint firstAttribute="height" constant="120" id="md0-Sr-wQw"/>
+                                    <constraint firstAttribute="height" constant="70" id="Hdr-CN-O3L"/>
+                                    <constraint firstAttribute="width" constant="306" id="jDI-AC-Pe1"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmF-RC-bga">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="667" id="Hq4-96-pDW"/>
-                                </constraints>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmF-RC-bga">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gmF-RC-bga" secondAttribute="trailing" id="9NG-qq-pDK"/>
-                            <constraint firstItem="HwK-aF-yaN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PZ3-oh-5Zh"/>
-                            <constraint firstItem="gmF-RC-bga" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Se1-Ti-6C4"/>
-                            <constraint firstItem="fYL-ju-XeX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aHt-ge-ODW"/>
-                            <constraint firstItem="fYL-ju-XeX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ezg-78-6Kx"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HwK-aF-yaN" secondAttribute="bottom" constant="72" id="n27-Le-7kh"/>
-                            <constraint firstItem="gmF-RC-bga" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vZ9-tD-ms9"/>
-                            <constraint firstItem="gmF-RC-bga" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vvf-VX-bn9"/>
+                            <constraint firstItem="fYL-ju-XeX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="1vN-bj-Naq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gmF-RC-bga" secondAttribute="bottom" id="GjU-F8-bBD"/>
+                            <constraint firstItem="HwK-aF-yaN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGF-qr-MCv"/>
+                            <constraint firstItem="fYL-ju-XeX" firstAttribute="centerX" secondItem="HwK-aF-yaN" secondAttribute="centerX" id="QXk-Vn-JAf"/>
+                            <constraint firstAttribute="trailing" secondItem="gmF-RC-bga" secondAttribute="trailing" id="WjJ-rC-5gt"/>
+                            <constraint firstItem="gmF-RC-bga" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dV9-pF-tRN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HwK-aF-yaN" secondAttribute="bottom" constant="18" id="y0i-vV-aaR"/>
+                            <constraint firstItem="gmF-RC-bga" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zQn-qw-6py"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="scrollView" destination="gmF-RC-bga" id="bCW-gJ-gti"/>
+                        <outlet property="scrollView" destination="gmF-RC-bga" id="CYl-uO-gcv"/>
+                        <outlet property="shelfImg" destination="HwK-aF-yaN" id="G06-8a-wS0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324.5" y="355.5"/>
+            <point key="canvasLocation" x="324" y="355"/>
         </scene>
     </scenes>
     <resources>
-        <image name="logo.png" width="732" height="340"/>
-        <image name="shelf.png" width="865" height="114"/>
+        <image name="logo" width="732" height="340"/>
+        <image name="shelf" width="865" height="114"/>
     </resources>
 </document>
