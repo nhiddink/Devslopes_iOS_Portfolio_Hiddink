@@ -66,6 +66,9 @@
                                                         <state key="normal" title="Login">
                                                             <color key="titleColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="2fJ-dc-1Fj" kind="presentation" id="ENs-kW-Hqx"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -188,11 +191,138 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="355"/>
+            <point key="canvasLocation" x="95" y="361"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="IP4-Pw-xeQ">
+            <objects>
+                <viewController id="dh1-wo-44Q" customClass="ViewController" customModule="SocialNet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hgh-Bi-Ct6"/>
+                        <viewControllerLayoutGuide type="bottom" id="you-vY-Tim"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mLu-dX-CGa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="T2s-Mh-CUN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5k-g0-t8R" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-235" y="1284"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="n31-ij-Kkt">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2fJ-dc-1Fj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ohF-L2-oLC">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dh1-wo-44Q" kind="relationship" relationship="viewControllers" id="Epu-a1-kGG"/>
+                        <segue destination="MfV-BT-CM0" kind="relationship" relationship="viewControllers" id="9fx-Bo-O7v"/>
+                        <segue destination="MNc-rf-EJv" kind="relationship" relationship="viewControllers" id="5fm-Ro-Vdu"/>
+                        <segue destination="w24-fp-uG6" kind="relationship" relationship="viewControllers" id="BbV-xJ-Krd"/>
+                        <segue destination="QLP-XA-2si" kind="relationship" relationship="viewControllers" id="dZ9-P8-Eoz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6l0-MK-f1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="361"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="JAJ-uJ-u2t">
+            <objects>
+                <viewController id="MfV-BT-CM0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ycJ-1N-qeV"/>
+                        <viewControllerLayoutGuide type="bottom" id="gMD-1o-N7K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rfg-s5-ZiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="xo6-RV-Hu3"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whR-l0-6p5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="1284"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="ftT-sN-1GF">
+            <objects>
+                <viewController id="MNc-rf-EJv" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bHQ-1L-YAe"/>
+                        <viewControllerLayoutGuide type="bottom" id="VPP-K7-7Y9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xia-gj-ped">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="QyO-v0-fnj"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5D-SK-kel" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="1284"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="1ME-Zl-pNc">
+            <objects>
+                <viewController id="w24-fp-uG6" customClass="ViewController" customModule="SocialNet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5cw-WG-EK3"/>
+                        <viewControllerLayoutGuide type="bottom" id="BBk-Bx-ykh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lfm-v9-Gbi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorite" id="E9C-hy-vEL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3uX-s0-5f1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="1284"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="QkC-KV-fiJ">
+            <objects>
+                <viewController id="QLP-XA-2si" customClass="ViewController" customModule="SocialNet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="51X-0d-W7b"/>
+                        <viewControllerLayoutGuide type="bottom" id="pjT-3P-o8J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gop-Xo-Gjd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="aYf-AW-XHd"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="go1-P5-YQf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267" y="1284"/>
         </scene>
     </scenes>
     <resources>
+        <image name="favorite" width="24" height="24"/>
         <image name="fblogin" width="716" height="157"/>
+        <image name="home" width="24" height="24"/>
+        <image name="map" width="24" height="24"/>
+        <image name="profile" width="24" height="24"/>
+        <image name="search" width="24" height="24"/>
         <image name="snetlogo" width="500" height="250"/>
     </resources>
 </document>
