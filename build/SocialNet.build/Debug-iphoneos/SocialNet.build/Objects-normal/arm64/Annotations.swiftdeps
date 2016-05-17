@@ -1,0 +1,41 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+depends-member:
+depends-nominal:
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Modules/module.modulemap"
+interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"

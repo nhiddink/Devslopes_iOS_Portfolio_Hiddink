@@ -39,7 +39,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yz8kMKlV9uXJc8CqBv6Vsab/LLY=
+			LpNhOUSI+6lfvl2Fc+xQTPEm5sY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -57,7 +57,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J7RYeT1E5rkssN02SgkTqICvbtw=
+			BJNRram93cYZQnSM1SVzhvizOMs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J/sOUTUik2gzXCVZDJUCsqABe0E=
+			oPPbs81h+cHDazbQYwh8BpQ8dzk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+InUcsU9GQWEC71VWMo/u1ocip4=
+			COCCwFIxV5HInlg/OzkdFe7KxJo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -84,7 +84,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jkZvs74raD+lanjqSh4hEBbIArQ=
+			WuDhSh0HfrdcovjEAP850f6WSG8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -93,7 +93,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0BaQm3TiWy7ab2YYsRrdrIpfMts=
+			cLcmMK4GNcczBIIfFcPPyVo7m6s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -102,7 +102,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CGq5RnOShIB/BmPjzs+pDQ+HEF4=
+			Uirr3w1ToL/i7tZOjr4lkNEnqyA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JHS4EGbIiv33D01qp21aH4XanOw=
+			ZarV4syLqstRdC7IxzFB3MNU/Ac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -131,6 +131,10 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		LWRZRwQkb+I1YXnxDfaxCVxYrbs=
+		</data>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<data>
+		ZIa5ndHD2nPbSQFI4ALIzqJXCqk=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
@@ -154,7 +158,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LofUEQPX8aTuL8vH6MFFLlD7E4Q=
+		95ulYoM/d2TJYgRPi5VNzkyMJwI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -221,11 +225,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yz8kMKlV9uXJc8CqBv6Vsab/LLY=
+			LpNhOUSI+6lfvl2Fc+xQTPEm5sY=
 			</data>
 			<key>hash2</key>
 			<data>
-			DZKO7Dy/WVQVE1QQ/AMw6hC9ZIBx2yo1vvtv2JNv7iM=
+			jfOOfegER6/cvAWsW4/EzL8E3eZR2QHES9hsz483WoA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -247,11 +251,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J7RYeT1E5rkssN02SgkTqICvbtw=
+			BJNRram93cYZQnSM1SVzhvizOMs=
 			</data>
 			<key>hash2</key>
 			<data>
-			GqkRyhsJBNzUryf7rI9j+1ne++Yh+7qo9p46G7EqY6g=
+			z45rm82yCfuDBroRDuIRcSh7R9L+Hh/st4RlDHNs4Hs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -260,11 +264,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J/sOUTUik2gzXCVZDJUCsqABe0E=
+			oPPbs81h+cHDazbQYwh8BpQ8dzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			UDzGq8pjsQhIbXJFHrx7d4YCklB9/1aGyAqndVMBzkA=
+			/92gYzbqR+1CqHpwOnyr/N2Ak57/mbvnhTsLrBtox5U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -273,11 +277,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+InUcsU9GQWEC71VWMo/u1ocip4=
+			COCCwFIxV5HInlg/OzkdFe7KxJo=
 			</data>
 			<key>hash2</key>
 			<data>
-			tCVm1yx/pj5Vdvddc0KFrlMZKnucdEK+O6WDSvJo1tw=
+			kiGvksm3aO79fk7Y64OmYpcMsMDTLltJMhUTdSKUkr4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -286,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jkZvs74raD+lanjqSh4hEBbIArQ=
+			WuDhSh0HfrdcovjEAP850f6WSG8=
 			</data>
 			<key>hash2</key>
 			<data>
-			tpV8y4/dDzmTIdWDcMcOo2wH4o69yOayeeKTx32GA9g=
+			m5bsyHhpVOqAw+XrIdpMg3ju3Ou1syB0HZvhCEg1c8Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -299,11 +303,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0BaQm3TiWy7ab2YYsRrdrIpfMts=
+			cLcmMK4GNcczBIIfFcPPyVo7m6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			lZ3Jao5T+mjyD3a161GKbwXJM2WDMXkq5lWhZ3guPJQ=
+			htHQDE1u0ajs4n2nLz6CvjjB9cTwJi1vp25kUUbuySc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -312,11 +316,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CGq5RnOShIB/BmPjzs+pDQ+HEF4=
+			Uirr3w1ToL/i7tZOjr4lkNEnqyA=
 			</data>
 			<key>hash2</key>
 			<data>
-			XZ3BFqgbFnOA2qBwr0aKWxI+gn05gjhBwlRVGR7uDZQ=
+			1wEIJeWdAyQJcd3UjoK5sstXLol9MZBwgxZgr/dBFCs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -325,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JHS4EGbIiv33D01qp21aH4XanOw=
+			ZarV4syLqstRdC7IxzFB3MNU/Ac=
 			</data>
 			<key>hash2</key>
 			<data>
-			01RC/InBKOULp84P2OZyxCwrf8s+SnO4JSoJMaTE1+g=
+			Nct9G67Ad/I/wBswVNf9Z/Gw7h6Un/gVwGUwlJl7FPQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -376,6 +380,17 @@
 			<key>hash2</key>
 			<data>
 			syGCbeYH+miSFxosVBkz42iYoGPQD7awnR7cMA1fyz0=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZIa5ndHD2nPbSQFI4ALIzqJXCqk=
+			</data>
+			<key>hash2</key>
+			<data>
+			htNwjvKGknEuFKEOdnqyr434JsE+SfaFyWgfVNMrods=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>

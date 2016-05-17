@@ -1,0 +1,9 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "0caf14ac3d1159f997d31686729b3cb9"
+build_time: [516738544, 633442000]
+inputs:
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/ViewController.swift": [516637914, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/MapViewController.swift": [516734660, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/UserAnnotations.swift": [516733319, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FavoritesViewController.swift": [9223372036854775807, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/AppDelegate.swift": [516721946, 0]
