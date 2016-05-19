@@ -7,9 +7,9 @@ provides-member:
 - ["C9SocialNet11DataService", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "DataService"
 - "Firebase"
 - "StringLiteralType"
+- "DataService"
 depends-member:
 - ["Ps9AnyObject", "DataService"]
 - ["Ps9AnyObject", "Firebase"]

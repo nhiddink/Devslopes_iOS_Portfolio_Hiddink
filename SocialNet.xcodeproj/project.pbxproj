@@ -10,8 +10,9 @@
 		7F120FC01CECDCB70056A090 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F120FBF1CECDCB60056A090 /* Profile.swift */; };
 		7F6023CF1CEB5AAB00A74710 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6023CE1CEB5AAB00A74710 /* DataService.swift */; };
 		7F6023D11CEB5C2000A74710 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6023D01CEB5C2000A74710 /* Constants.swift */; };
+		7FAF5F1A1CED6011004609DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF5F191CED6011004609DE /* HomeViewController.swift */; };
 		7FE94D701CE8BFD900BCADA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE94D6F1CE8BFD900BCADA2 /* AppDelegate.swift */; };
-		7FE94D721CE8BFDA00BCADA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE94D711CE8BFDA00BCADA2 /* ViewController.swift */; };
+		7FE94D721CE8BFDA00BCADA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE94D711CE8BFDA00BCADA2 /* LoginViewController.swift */; };
 		7FE94D751CE8BFDA00BCADA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE94D731CE8BFDA00BCADA2 /* Main.storyboard */; };
 		7FE94D771CE8BFDA00BCADA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE94D761CE8BFDA00BCADA2 /* Assets.xcassets */; };
 		7FE94D7A1CE8BFDB00BCADA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE94D781CE8BFDB00BCADA2 /* LaunchScreen.storyboard */; };
@@ -32,9 +33,10 @@
 		7F120FBF1CECDCB60056A090 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		7F6023CE1CEB5AAB00A74710 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		7F6023D01CEB5C2000A74710 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7FAF5F191CED6011004609DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7FE94D6C1CE8BFD800BCADA2 /* SocialNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE94D6F1CE8BFD900BCADA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FE94D711CE8BFDA00BCADA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FE94D711CE8BFDA00BCADA2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7FE94D741CE8BFDA00BCADA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FE94D761CE8BFDA00BCADA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FE94D791CE8BFDB00BCADA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,10 +119,11 @@
 		7FE94D821CE9090800BCADA2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7FE94D711CE8BFDA00BCADA2 /* ViewController.swift */,
+				7FE94D711CE8BFDA00BCADA2 /* LoginViewController.swift */,
 				7FE94D851CE90A7100BCADA2 /* MapViewController.swift */,
 				7FE94D921CEA48D700BCADA2 /* FavoritesViewController.swift */,
 				7FE94D941CEA523100BCADA2 /* ProfileViewController.swift */,
+				7FAF5F191CED6011004609DE /* HomeViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -299,11 +302,12 @@
 			files = (
 				7FE94D951CEA523100BCADA2 /* ProfileViewController.swift in Sources */,
 				7F120FC01CECDCB70056A090 /* Profile.swift in Sources */,
-				7FE94D721CE8BFDA00BCADA2 /* ViewController.swift in Sources */,
+				7FE94D721CE8BFDA00BCADA2 /* LoginViewController.swift in Sources */,
 				7FE94D861CE90A7100BCADA2 /* MapViewController.swift in Sources */,
 				7FE94D971CEA561800BCADA2 /* ProfileCollectionViewCell.swift in Sources */,
 				7FE94D8D1CEA341D00BCADA2 /* UserAnnotations.swift in Sources */,
 				7FE94D931CEA48D700BCADA2 /* FavoritesViewController.swift in Sources */,
+				7FAF5F1A1CED6011004609DE /* HomeViewController.swift in Sources */,
 				7FE94D701CE8BFD900BCADA2 /* AppDelegate.swift in Sources */,
 				7F6023CF1CEB5AAB00A74710 /* DataService.swift in Sources */,
 				7F6023D11CEB5C2000A74710 /* Constants.swift in Sources */,

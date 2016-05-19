@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C9SocialNet11AppDelegate", ""]
 provides-dynamic-lookup:
+- "applicationDidEnterBackground"
 - "application"
 - "application"
 - "applicationWillResignActive"
-- "applicationWillTerminate"
 - "applicationDidBecomeActive"
-- "applicationDidEnterBackground"
+- "applicationWillTerminate"
 - "window"
 - "applicationWillEnterForeground"
 depends-top-level:
-- "AnyObject"
-- "AppDelegate"
-- !private "FBSDKApplicationDelegate"
-- "UIWindow"
 - "Bool"
+- !private "FBSDKApplicationDelegate"
+- "AppDelegate"
+- "UIWindow"
+- "NSObject"
 - "String"
 - "UIApplication"
-- !private "FBSDKAppEvents"
-- "NSObject"
-- "UIResponder"
+- "AnyObject"
 - "NSURL"
+- "UIResponder"
+- !private "FBSDKAppEvents"
 - "UIApplicationDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "FBSDKAppEvents"]

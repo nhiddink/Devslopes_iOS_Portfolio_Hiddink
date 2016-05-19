@@ -9,14 +9,14 @@ provides-dynamic-lookup:
 - "cellLbl"
 - "cellImgView"
 depends-top-level:
-- "ProfileCollectionViewCell"
-- "UICollectionViewCell"
-- !private "UIImage"
 - "Profile"
+- !private "UIImage"
 - !private "StringLiteralType"
 - "UIImageView"
 - "NSCoder"
 - "UILabel"
+- "UICollectionViewCell"
+- "ProfileCollectionViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "cellImgView"]

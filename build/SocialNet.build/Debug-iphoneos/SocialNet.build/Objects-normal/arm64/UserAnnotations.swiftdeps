@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "coordinate"
 depends-top-level:
-- "MKAnnotation"
-- "UserAnnotations"
+- !private "StringLiteralType"
 - "NSObject"
 - "CLLocationCoordinate2D"
-- !private "StringLiteralType"
+- "UserAnnotations"
+- "MKAnnotation"
 depends-member:
 - ["Ps9AnyObject", "CLLocationCoordinate2D"]
 - ["Ps9AnyObject", "coordinate"]

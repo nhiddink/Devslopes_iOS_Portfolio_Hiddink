@@ -7,8 +7,8 @@ provides-member:
 - ["C9SocialNet7Profile", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - "Profile"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "_username"]
 - ["Ps9AnyObject", ""]

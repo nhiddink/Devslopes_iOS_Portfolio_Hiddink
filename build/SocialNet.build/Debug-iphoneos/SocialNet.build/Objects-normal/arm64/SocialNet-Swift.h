@@ -135,6 +135,21 @@ SWIFT_CLASS("_TtC9SocialNet23FavoritesViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
+@class UITextField;
+
+SWIFT_CLASS("_TtC9SocialNet19LoginViewController")
+@interface LoginViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+- (void)viewDidLoad;
+- (IBAction)facebookLoginButtonPressed:(UIButton * _Null_unspecified)sender;
+- (IBAction)emailLoginAttempt:(UIButton * _Null_unspecified)sender;
+- (void)showErrorAlert:(NSString * _Nonnull)title msg:(NSString * _Nonnull)msg;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class CLLocationManager;
 @class CLLocation;
 @class MKMapView;
@@ -193,21 +208,6 @@ SWIFT_CLASS("_TtC9SocialNet15UserAnnotations")
 @interface UserAnnotations : NSObject <MKAnnotation>
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 - (nonnull instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIButton;
-@class UITextField;
-
-SWIFT_CLASS("_TtC9SocialNet14ViewController")
-@interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
-- (void)viewDidLoad;
-- (IBAction)facebookLoginButtonPressed:(UIButton * _Null_unspecified)sender;
-- (IBAction)emailLoginAttempt:(UIButton * _Null_unspecified)sender;
-- (void)showErrorAlert:(NSString * _Nonnull)title msg:(NSString * _Nonnull)msg;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop
