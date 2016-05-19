@@ -52,7 +52,7 @@
 			</array>
 		</dict>
 	</array>
-	<key>FacebookAppId</key>
+	<key>FacebookAppID</key>
 	<string>129317250813237</string>
 	<key>FacebookDisplayName</key>
 	<string>SocialNet</string>

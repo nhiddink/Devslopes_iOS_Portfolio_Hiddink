@@ -9,14 +9,23 @@
 import UIKit
 
 class ProfileCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var cellLbl: UILabel!
     @IBOutlet weak var cellImgView: UIImageView!
 
+    var profile: Profile!
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        cellLbl.text = "Test"
-        cellImgView.image = UIImage(named: "map.png")
+        layer.cornerRadius = 7.0
+        
+    }
+    
+    func configureProfileCell(profile: Profile){
+        self.profile = profile
+        
+        cellLbl.text = "\(self.profile.username)"
+        cellImgView.image = UIImage(named: "map")
     }
 }

@@ -175,6 +175,11 @@ SWIFT_CLASS("_TtC9SocialNet25ProfileCollectionViewCell")
 SWIFT_CLASS("_TtC9SocialNet21ProfileViewController")
 @interface ProfileViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profilePicture;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified postsCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified followersCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified followingCountLabel;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
@@ -190,11 +195,17 @@ SWIFT_CLASS("_TtC9SocialNet15UserAnnotations")
 - (nonnull instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
+@class UITextField;
 
 SWIFT_CLASS("_TtC9SocialNet14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (IBAction)facebookLoginButtonPressed:(UIButton * _Null_unspecified)sender;
+- (IBAction)emailLoginAttempt:(UIButton * _Null_unspecified)sender;
+- (void)showErrorAlert:(NSString * _Nonnull)title msg:(NSString * _Nonnull)msg;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
