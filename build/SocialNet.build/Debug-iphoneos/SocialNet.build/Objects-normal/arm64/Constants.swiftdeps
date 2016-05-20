@@ -1,5 +1,6 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "SHADOW_COLOR"
 - "KEY_UID"
 - "SEGUE_LOGGED_IN"
 - "STATUS_ACCOUNT_NONEXIST"
@@ -7,14 +8,19 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "FloatLiteralType"
+- "CGFloat"
+- "IntegerLiteralType"
 - "SEGUE_LOGGED_IN"
-- "KEY_UID"
+- "/"
+- "SHADOW_COLOR"
 - "StringLiteralType"
 - "STATUS_ACCOUNT_NONEXIST"
-- "IntegerLiteralType"
+- "FloatLiteralType"
+- "KEY_UID"
 depends-member:
+- ["V12CoreGraphics7CGFloat", "deinit"]
 depends-nominal:
+- "V12CoreGraphics7CGFloat"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -85,4 +91,4 @@ depends-external:
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "326c503a68e8ad32957a2289698d21ae"
+interface-hash: "8e06308f0cc3dfc0a7b4f18d42534b22"

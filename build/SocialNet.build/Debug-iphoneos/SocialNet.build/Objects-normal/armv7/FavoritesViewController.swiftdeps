@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C9SocialNet23FavoritesViewController", ""]
 provides-dynamic-lookup:
+- "numberOfSectionsInTableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "viewDidLoad"
-- "numberOfSectionsInTableView"
 depends-top-level:
-- !private "StringLiteralType"
-- "UITableView"
+- "Int"
 - "UITableViewDelegate"
+- "UITableViewCell"
 - "UITableViewDataSource"
 - "NSIndexPath"
-- "UIViewController"
-- "UITableViewCell"
+- !private "StringLiteralType"
+- "UITableView"
 - "FavoritesViewController"
-- "Int"
+- "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "delegate"]

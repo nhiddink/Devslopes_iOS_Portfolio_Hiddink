@@ -6,35 +6,36 @@ provides-nominal:
 provides-member:
 - ["C9SocialNet19LoginViewController", ""]
 provides-dynamic-lookup:
-- "passwordField"
 - "emailField"
 - "emailLoginAttempt"
-- "viewDidLoad"
-- "facebookLoginButtonPressed"
 - "showErrorAlert"
+- "viewDidLoad"
+- "passwordField"
+- "facebookLoginButtonPressed"
 depends-top-level:
-- !private "Array"
-- !private "=="
-- !private "NSUserDefaults"
-- !private "UIAlertController"
-- "UIViewController"
-- !private "STATUS_ACCOUNT_NONEXIST"
-- "UITextField"
-- !private "FBSDKAccessToken"
-- !private "!="
 - "UIButton"
-- !private "print"
 - !private "StringLiteralType"
-- "String"
-- !private "FBSDKLoginManagerLoginResult"
-- !private "KEY_UID"
-- !private "NSError"
-- !private "BooleanLiteralType"
-- !private "UIAlertAction"
 - !private "DataService"
+- !private "KEY_UID"
+- !private "UIAlertController"
 - !private "FBSDKLoginManager"
+- !private "FBSDKAccessToken"
+- !private "Array"
+- !private "FBSDKLoginManagerLoginResult"
+- "Dictionary"
+- !private "UIAlertAction"
+- !private "=="
+- !private "print"
+- !private "STATUS_ACCOUNT_NONEXIST"
+- "String"
+- !private "!="
+- !private "BooleanLiteralType"
+- !private "NSError"
 - !private "SEGUE_LOGGED_IN"
 - "LoginViewController"
+- "UITextField"
+- !private "NSUserDefaults"
+- "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "DataService"]
 - !private ["Ps9AnyObject", "FBSDKAccessToken"]
@@ -50,6 +51,7 @@ depends-member:
 - !private ["Ps9AnyObject", "authUser"]
 - !private ["Ps9AnyObject", "authWithOAuthProvider"]
 - !private ["Ps9AnyObject", "code"]
+- !private ["Ps9AnyObject", "createFirebaseUser"]
 - !private ["Ps9AnyObject", "createUser"]
 - !private ["Ps9AnyObject", "currentAccessToken"]
 - !private ["Ps9AnyObject", "deinit"]
@@ -63,6 +65,7 @@ depends-member:
 - !private ["Ps9AnyObject", "performSegueWithIdentifier"]
 - !private ["Ps9AnyObject", "presentViewController"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "provider"]
 - !private ["Ps9AnyObject", "setValue"]
 - ["Ps9AnyObject", "showErrorAlert"]
 - !private ["Ps9AnyObject", "standardUserDefaults"]
@@ -104,6 +107,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
 - !private ["Ps11CVarArgType", "presentViewController"]
 - !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "provider"]
 - !private ["Ps11CVarArgType", "setValue"]
 - ["Ps11CVarArgType", "showErrorAlert"]
 - !private ["Ps11CVarArgType", "standardUserDefaults"]
@@ -116,7 +120,9 @@ depends-member:
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "Distance"]
@@ -130,6 +136,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "KEY_UID"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "SEGUE_LOGGED_IN"]
 - !private ["Ps28CustomDebugStringConvertible", "STATUS_ACCOUNT_NONEXIST"]
@@ -137,6 +144,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - !private ["Ps28CustomDebugStringConvertible", "authUser"]
@@ -153,6 +161,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "provider"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - ["Ps28CustomDebugStringConvertible", "showErrorAlert"]
 - !private ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
@@ -170,12 +179,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "KEY_UID"]
+- !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSUserDefaults"]
 - !private ["Ps23CustomStringConvertible", "SEGUE_LOGGED_IN"]
 - !private ["Ps23CustomStringConvertible", "STATUS_ACCOUNT_NONEXIST"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
@@ -193,6 +204,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "provider"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - ["Ps23CustomStringConvertible", "showErrorAlert"]
 - !private ["Ps23CustomStringConvertible", "standardUserDefaults"]
@@ -203,10 +215,13 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["C9SocialNet11DataService", "REF_BASE"]
+- !private ["C9SocialNet11DataService", "createFirebaseUser"]
 - !private ["C9SocialNet11DataService", "ds"]
 - !private ["Vs10Dictionary", "Generator"]
 - !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "Key"]
 - !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "Value"]
 - !private ["Vs10Dictionary", "_Element"]
 - !private ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
@@ -214,7 +229,9 @@ depends-member:
 - !private ["Vs15DictionaryIndex", "_DisabledRangeIndex"]
 - !private ["Ps28DictionaryLiteralConvertible", "Generator"]
 - !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "SubSequence"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "_Element"]
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
@@ -248,6 +265,7 @@ depends-member:
 - !private ["Ps9Equatable", "performSegueWithIdentifier"]
 - !private ["Ps9Equatable", "presentViewController"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "provider"]
 - !private ["Ps9Equatable", "setValue"]
 - ["Ps9Equatable", "showErrorAlert"]
 - !private ["Ps9Equatable", "standardUserDefaults"]
@@ -258,6 +276,7 @@ depends-member:
 - ["Ps9Equatable", ""]
 - !private ["Ps9ErrorType", "code"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo9FAuthData", "provider"]
 - !private ["CSo9FAuthData", "uid"]
 - !private ["CSo16FBSDKAccessToken", "currentAccessToken"]
 - !private ["CSo16FBSDKAccessToken", "tokenString"]
@@ -304,6 +323,7 @@ depends-member:
 - !private ["Ps8Hashable", "performSegueWithIdentifier"]
 - !private ["Ps8Hashable", "presentViewController"]
 - !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "provider"]
 - !private ["Ps8Hashable", "setValue"]
 - ["Ps8Hashable", "showErrorAlert"]
 - !private ["Ps8Hashable", "standardUserDefaults"]
@@ -316,7 +336,9 @@ depends-member:
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
@@ -442,6 +464,7 @@ depends-member:
 - !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - !private ["CSo8NSObject", "presentViewController"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "provider"]
 - !private ["CSo8NSObject", "setValue"]
 - ["CSo8NSObject", "showErrorAlert"]
 - !private ["CSo8NSObject", "standardUserDefaults"]
@@ -473,6 +496,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "provider"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - ["PSo16NSObjectProtocol", "showErrorAlert"]
 - !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
@@ -500,7 +524,9 @@ depends-member:
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "subscript"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
@@ -714,7 +740,9 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -725,8 +753,10 @@ depends-member:
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Key"]
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "init"]

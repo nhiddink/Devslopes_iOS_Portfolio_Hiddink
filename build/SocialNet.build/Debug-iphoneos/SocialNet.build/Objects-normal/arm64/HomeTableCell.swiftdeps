@@ -1,0 +1,529 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HomeTableCell"
+provides-nominal:
+- "C9SocialNet13HomeTableCell"
+provides-member:
+- ["C9SocialNet13HomeTableCell", ""]
+provides-dynamic-lookup:
+- "drawRect"
+- "postImg"
+- "awakeFromNib"
+- "likesLbl"
+- "profileImg"
+- "descriptionText"
+depends-top-level:
+- "UIImageView"
+- "HomeTableCell"
+- "UITextView"
+- "CGRect"
+- !private "/"
+- "UILabel"
+- !private "StringLiteralType"
+- "Post"
+- "UITableViewCell"
+depends-member:
+- ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "configureCell"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- ["Ps9AnyObject", "descriptionText"]
+- ["Ps9AnyObject", "drawRect"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "likes"]
+- ["Ps9AnyObject", "likesLbl"]
+- ["Ps9AnyObject", "post"]
+- !private ["Ps9AnyObject", "postDescription"]
+- ["Ps9AnyObject", "postImg"]
+- ["Ps9AnyObject", "profileImg"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "deinit"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "width"]
+- ["Ps11CVarArgType", "awakeFromNib"]
+- ["Ps11CVarArgType", "configureCell"]
+- !private ["Ps11CVarArgType", "cornerRadius"]
+- ["Ps11CVarArgType", "descriptionText"]
+- ["Ps11CVarArgType", "drawRect"]
+- !private ["Ps11CVarArgType", "frame"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "layer"]
+- ["Ps11CVarArgType", "likesLbl"]
+- ["Ps11CVarArgType", "post"]
+- ["Ps11CVarArgType", "postImg"]
+- ["Ps11CVarArgType", "profileImg"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "configureCell"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- ["Ps28CustomDebugStringConvertible", "descriptionText"]
+- ["Ps28CustomDebugStringConvertible", "drawRect"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- ["Ps28CustomDebugStringConvertible", "likesLbl"]
+- ["Ps28CustomDebugStringConvertible", "post"]
+- ["Ps28CustomDebugStringConvertible", "postImg"]
+- ["Ps28CustomDebugStringConvertible", "profileImg"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "configureCell"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- ["Ps23CustomStringConvertible", "descriptionText"]
+- ["Ps23CustomStringConvertible", "drawRect"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- ["Ps23CustomStringConvertible", "likesLbl"]
+- ["Ps23CustomStringConvertible", "post"]
+- ["Ps23CustomStringConvertible", "postImg"]
+- ["Ps23CustomStringConvertible", "profileImg"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "configureCell"]
+- !private ["Ps9Equatable", "cornerRadius"]
+- ["Ps9Equatable", "descriptionText"]
+- ["Ps9Equatable", "drawRect"]
+- !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "layer"]
+- ["Ps9Equatable", "likesLbl"]
+- ["Ps9Equatable", "post"]
+- ["Ps9Equatable", "postImg"]
+- ["Ps9Equatable", "profileImg"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "configureCell"]
+- !private ["Ps8Hashable", "cornerRadius"]
+- ["Ps8Hashable", "descriptionText"]
+- ["Ps8Hashable", "drawRect"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "layer"]
+- ["Ps8Hashable", "likesLbl"]
+- ["Ps8Hashable", "post"]
+- ["Ps8Hashable", "postImg"]
+- ["Ps8Hashable", "profileImg"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", ""]
+- ["C9SocialNet13HomeTableCell", "CGRect"]
+- ["C9SocialNet13HomeTableCell", "Post"]
+- ["C9SocialNet13HomeTableCell", "UIImageView"]
+- ["C9SocialNet13HomeTableCell", "UILabel"]
+- ["C9SocialNet13HomeTableCell", "UITextView"]
+- ["C9SocialNet13HomeTableCell", "awakeFromNib"]
+- ["C9SocialNet13HomeTableCell", "configureCell"]
+- ["C9SocialNet13HomeTableCell", "deinit"]
+- ["C9SocialNet13HomeTableCell", "descriptionText"]
+- ["C9SocialNet13HomeTableCell", "drawRect"]
+- ["C9SocialNet13HomeTableCell", "init"]
+- ["C9SocialNet13HomeTableCell", "likesLbl"]
+- ["C9SocialNet13HomeTableCell", "post"]
+- ["C9SocialNet13HomeTableCell", "postImg"]
+- ["C9SocialNet13HomeTableCell", "profileImg"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "configureCell"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- ["PSo8NSCoding", "descriptionText"]
+- ["PSo8NSCoding", "drawRect"]
+- !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "likesLbl"]
+- ["PSo8NSCoding", "post"]
+- ["PSo8NSCoding", "postImg"]
+- ["PSo8NSCoding", "profileImg"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "Post"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITextView"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "configureCell"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- ["CSo8NSObject", "descriptionText"]
+- ["CSo8NSObject", "drawRect"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "likesLbl"]
+- ["CSo8NSObject", "post"]
+- ["CSo8NSObject", "postImg"]
+- ["CSo8NSObject", "profileImg"]
+- !private ["CSo8NSObject", "text"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "configureCell"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- ["PSo16NSObjectProtocol", "descriptionText"]
+- ["PSo16NSObjectProtocol", "drawRect"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "likesLbl"]
+- ["PSo16NSObjectProtocol", "post"]
+- ["PSo16NSObjectProtocol", "postImg"]
+- ["PSo16NSObjectProtocol", "profileImg"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["C9SocialNet4Post", "likes"]
+- !private ["C9SocialNet4Post", "postDescription"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "configureCell"]
+- ["PSo29UIAccessibilityIdentification", "descriptionText"]
+- ["PSo29UIAccessibilityIdentification", "drawRect"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- ["PSo29UIAccessibilityIdentification", "likesLbl"]
+- ["PSo29UIAccessibilityIdentification", "post"]
+- ["PSo29UIAccessibilityIdentification", "postImg"]
+- ["PSo29UIAccessibilityIdentification", "profileImg"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "configureCell"]
+- ["PSo12UIAppearance", "descriptionText"]
+- ["PSo12UIAppearance", "drawRect"]
+- !private ["PSo12UIAppearance", "frame"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
+- ["PSo12UIAppearance", "likesLbl"]
+- ["PSo12UIAppearance", "post"]
+- ["PSo12UIAppearance", "postImg"]
+- ["PSo12UIAppearance", "profileImg"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "configureCell"]
+- ["PSo21UIAppearanceContainer", "descriptionText"]
+- ["PSo21UIAppearanceContainer", "drawRect"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "likesLbl"]
+- ["PSo21UIAppearanceContainer", "post"]
+- ["PSo21UIAppearanceContainer", "postImg"]
+- ["PSo21UIAppearanceContainer", "profileImg"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "configureCell"]
+- ["PSo17UICoordinateSpace", "descriptionText"]
+- ["PSo17UICoordinateSpace", "drawRect"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- ["PSo17UICoordinateSpace", "likesLbl"]
+- ["PSo17UICoordinateSpace", "post"]
+- ["PSo17UICoordinateSpace", "postImg"]
+- ["PSo17UICoordinateSpace", "profileImg"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "configureCell"]
+- ["PSo13UIDynamicItem", "descriptionText"]
+- ["PSo13UIDynamicItem", "drawRect"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- ["PSo13UIDynamicItem", "likesLbl"]
+- ["PSo13UIDynamicItem", "post"]
+- ["PSo13UIDynamicItem", "postImg"]
+- ["PSo13UIDynamicItem", "profileImg"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "configureCell"]
+- ["PSo18UIFocusEnvironment", "descriptionText"]
+- ["PSo18UIFocusEnvironment", "drawRect"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "likesLbl"]
+- ["PSo18UIFocusEnvironment", "post"]
+- ["PSo18UIFocusEnvironment", "postImg"]
+- ["PSo18UIFocusEnvironment", "profileImg"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "configureCell"]
+- ["PSo27UIGestureRecognizerDelegate", "descriptionText"]
+- ["PSo27UIGestureRecognizerDelegate", "drawRect"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "likesLbl"]
+- ["PSo27UIGestureRecognizerDelegate", "post"]
+- ["PSo27UIGestureRecognizerDelegate", "postImg"]
+- ["PSo27UIGestureRecognizerDelegate", "profileImg"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["CSo11UIImageView", "frame"]
+- !private ["CSo11UIImageView", "layer"]
+- !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "Post"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITextView"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "configureCell"]
+- ["CSo11UIResponder", "descriptionText"]
+- ["CSo11UIResponder", "drawRect"]
+- !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "likesLbl"]
+- ["CSo11UIResponder", "post"]
+- ["CSo11UIResponder", "postImg"]
+- ["CSo11UIResponder", "profileImg"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo12UIScrollView", "text"]
+- ["CSo15UITableViewCell", "CGRect"]
+- ["CSo15UITableViewCell", "Post"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "UITextView"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "configureCell"]
+- ["CSo15UITableViewCell", "descriptionText"]
+- ["CSo15UITableViewCell", "drawRect"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "likesLbl"]
+- ["CSo15UITableViewCell", "post"]
+- ["CSo15UITableViewCell", "postImg"]
+- ["CSo15UITableViewCell", "profileImg"]
+- ["CSo15UITableViewCell", ""]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["CSo10UITextView", "text"]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "configureCell"]
+- ["PSo18UITraitEnvironment", "descriptionText"]
+- ["PSo18UITraitEnvironment", "drawRect"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "likesLbl"]
+- ["PSo18UITraitEnvironment", "post"]
+- ["PSo18UITraitEnvironment", "postImg"]
+- ["PSo18UITraitEnvironment", "profileImg"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "Post"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "UITextView"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "configureCell"]
+- ["CSo6UIView", "descriptionText"]
+- ["CSo6UIView", "drawRect"]
+- !private ["CSo6UIView", "frame"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "likesLbl"]
+- ["CSo6UIView", "post"]
+- ["CSo6UIView", "postImg"]
+- ["CSo6UIView", "profileImg"]
+- !private ["CSo6UIView", "text"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps12_Reflectable", "awakeFromNib"]
+- ["Ps12_Reflectable", "configureCell"]
+- ["Ps12_Reflectable", "descriptionText"]
+- ["Ps12_Reflectable", "drawRect"]
+- !private ["Ps12_Reflectable", "frame"]
+- ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "layer"]
+- ["Ps12_Reflectable", "likesLbl"]
+- ["Ps12_Reflectable", "post"]
+- ["Ps12_Reflectable", "postImg"]
+- ["Ps12_Reflectable", "profileImg"]
+- !private ["Ps12_Reflectable", "size"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "width"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- "Ps8Hashable"
+- "C9SocialNet13HomeTableCell"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Sq"
+- !private "Ps16OutputStreamType"
+- !private "C9SocialNet4Post"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "CSo11UIImageView"
+- !private "PSo10UIKeyInput"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "CSo15UITableViewCell"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- !private "CSo10UITextView"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FirebaseServerValue.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FTransactionResult.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FMutableData.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FirebaseApp.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FQuery.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/Firebase.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FEventType.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FDataSnapshot.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FConfig.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FAuthType.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/FAuthData.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers/Firebase-umbrella.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Modules/module.modulemap"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFURL.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFTask.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/Bolts.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Modules/module.modulemap"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+interface-hash: "fa30ba6e6f29d4805463bc8e93c4e757"

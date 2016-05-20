@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 @import MapKit;
 @import CoreLocation;
 @import ObjectiveC;
@@ -127,6 +128,34 @@ SWIFT_CLASS("_TtC9SocialNet11AppDelegate")
 SWIFT_CLASS("_TtC9SocialNet23FavoritesViewController")
 @interface FavoritesViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+@class UITextView;
+@class UILabel;
+
+SWIFT_CLASS("_TtC9SocialNet13HomeTableCell")
+@interface HomeTableCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified postImg;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionText;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified likesLbl;
+- (void)awakeFromNib;
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9SocialNet18HomeViewController")
+@interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified hometableView;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -175,30 +204,31 @@ SWIFT_CLASS("_TtC9SocialNet17MapViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
-@class UIImageView;
 
-SWIFT_CLASS("_TtC9SocialNet25ProfileCollectionViewCell")
-@interface ProfileCollectionViewCell : UICollectionViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cellLbl;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified cellImgView;
+SWIFT_CLASS("_TtC9SocialNet14MaterialButton")
+@interface MaterialButton : UIButton
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
+
+SWIFT_CLASS("_TtC9SocialNet12MaterialView")
+@interface MaterialView : UIView
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC9SocialNet21ProfileViewController")
-@interface ProfileViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
-@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
+@interface ProfileViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profilePicture;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified postsCountLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified followersCountLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified followingCountLabel;
 - (void)viewDidLoad;
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

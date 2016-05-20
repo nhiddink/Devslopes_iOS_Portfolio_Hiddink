@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+//MARK: Colors
+let SHADOW_COLOR: CGFloat = 157.0 / 255.0
+
 //MARK: Keys
 let KEY_UID = "uid"
 
