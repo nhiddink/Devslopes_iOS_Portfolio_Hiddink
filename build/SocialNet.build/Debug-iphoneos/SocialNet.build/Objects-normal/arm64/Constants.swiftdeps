@@ -8,14 +8,14 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "CGFloat"
+- "STATUS_ACCOUNT_NONEXIST"
 - "IntegerLiteralType"
 - "SEGUE_LOGGED_IN"
 - "/"
-- "SHADOW_COLOR"
 - "StringLiteralType"
-- "STATUS_ACCOUNT_NONEXIST"
+- "CGFloat"
 - "FloatLiteralType"
+- "SHADOW_COLOR"
 - "KEY_UID"
 depends-member:
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -91,4 +91,8 @@ depends-external:
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
 interface-hash: "8e06308f0cc3dfc0a7b4f18d42534b22"

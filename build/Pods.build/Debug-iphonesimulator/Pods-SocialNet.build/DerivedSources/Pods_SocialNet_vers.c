@@ -1,0 +1,1 @@
+ const unsigned char Pods_SocialNetVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_SocialNet  PROJECT:Pods-1" "\n"; const double Pods_SocialNetVersionNumber __attribute__ ((used)) = (double)1.;

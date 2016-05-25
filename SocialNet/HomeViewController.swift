@@ -9,15 +9,21 @@
 import UIKit
 import Firebase
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var hometableView: UITableView!
     var posts = [Post]()
+    static var imageCache = NSCache()
+    
+    @IBOutlet weak var imageForImageView: UIImageView!
+    var imgPicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hometableView.delegate = self
         hometableView.dataSource = self
+        imgPicker = UIImagePickerController()
+        imgPicker.delegate = self
         
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
@@ -54,11 +60,37 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         //print(post.postDescription)
         
         if let cell = hometableView.dequeueReusableCellWithIdentifier("HomeTableCell") as? HomeTableCell {
-            cell.configureCell(post)
+            
+            cell.request?.cancel()
+            
+            var img: UIImage?
+            
+            if let url = post.imageUrl {
+               img = HomeViewController.imageCache.objectForKey(url) as? UIImage
+            }
+            
+            cell.configureCell(post, img: img)
+            
             return cell
         } else {
             return HomeTableCell()
         }
     }
     
+    //MARK: Image Picker Delegate Methods
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        imgPicker.dismissViewControllerAnimated(true, completion: nil)
+        imageForImageView.image = image
+    }
+    
+    @IBAction func cameraPressed(sender: UITapGestureRecognizer) {
+        presentViewController(imgPicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func makePost(sender: AnyObject) {
+        
+        
+        
+    }
 }

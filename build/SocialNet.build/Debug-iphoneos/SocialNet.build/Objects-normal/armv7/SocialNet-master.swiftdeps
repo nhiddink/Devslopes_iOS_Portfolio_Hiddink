@@ -1,17 +1,18 @@
-version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
-options: "b103ceafdc8900589d8f19b2cea45937"
-build_time: [517011500, 313902000]
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "3172ecd84221f88c2331bf7e6634f34b"
+build_time: [517353436, 149687000]
 inputs:
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/ProfileViewController.swift": [516981577, 0]
-  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/LoginViewController.swift": [516994338, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/LoginViewController.swift": [517084376, 0]
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/MaterialButton.swift": [516984209, 0]
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/MapViewController.swift": [516890034, 0]
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Post.swift": [516995634, 0]
-  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/HomeTableCell.swift": [516996556, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/HomeTableCell.swift": [517082700, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/MaterialTextField.swift": [9223372036854775807, 0]
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/MaterialView.swift": [516983961, 0]
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/UserAnnotations.swift": [516733319, 0]
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FavoritesViewController.swift": [516739560, 0]
-  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/HomeViewController.swift": [516996804, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/HomeViewController.swift": [517083090, 0]
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/AppDelegate.swift": [516806559, 0]
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/DataService.swift": [516995285, 0]
   "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Constants.swift": [516982264, 0]

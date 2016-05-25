@@ -19,6 +19,15 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapOutsideKeyboard = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapOutsideKeyboard)
+        
+    }
+    
+    func dismissKeyboard () {
+        
+        view.endEditing(true)
+        
     }
 
     @IBAction func facebookLoginButtonPressed(sender: UIButton!) {

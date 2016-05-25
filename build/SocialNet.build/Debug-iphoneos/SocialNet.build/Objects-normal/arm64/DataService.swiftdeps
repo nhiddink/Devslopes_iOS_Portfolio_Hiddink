@@ -8,12 +8,12 @@ provides-member:
 - ["C9SocialNet11DataService", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
-- "Firebase"
 - "URL_BASE"
-- "DataService"
 - "String"
+- "Firebase"
+- "StringLiteralType"
 - "Dictionary"
+- "DataService"
 depends-member:
 - ["Ps9AnyObject", "DataService"]
 - ["Ps9AnyObject", "Firebase"]
@@ -97,6 +97,7 @@ depends-member:
 - ["Vs6UInt32", "deinit"]
 - ["Vs6UInt64", "deinit"]
 - ["Vs5UInt8", "deinit"]
+- ["P9Alamofire20URLStringConvertible", "init"]
 - ["Sc", "deinit"]
 - ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -146,6 +147,7 @@ depends-nominal:
 - "Vs6UInt32"
 - "Vs6UInt64"
 - "Vs5UInt8"
+- "P9Alamofire20URLStringConvertible"
 - "Sc"
 - "Ps31UnicodeScalarLiteralConvertible"
 - "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
@@ -224,4 +226,8 @@ depends-external:
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
 interface-hash: "e15afeba2c5b8928ec3f943a7641cbcb"

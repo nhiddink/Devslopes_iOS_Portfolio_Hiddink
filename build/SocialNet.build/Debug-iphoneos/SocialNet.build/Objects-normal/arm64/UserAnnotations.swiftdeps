@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "coordinate"
 depends-top-level:
-- "MKAnnotation"
-- "UserAnnotations"
+- "CLLocationCoordinate2D"
 - "NSObject"
 - !private "StringLiteralType"
-- "CLLocationCoordinate2D"
+- "UserAnnotations"
+- "MKAnnotation"
 depends-member:
 - ["Ps9AnyObject", "CLLocationCoordinate2D"]
 - ["Ps9AnyObject", "coordinate"]
@@ -158,4 +158,8 @@ depends-external:
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
 interface-hash: "cbc72e072db795cd8482dbd41ac4a288"

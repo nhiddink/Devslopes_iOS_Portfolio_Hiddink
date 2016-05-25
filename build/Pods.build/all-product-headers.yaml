@@ -4,6 +4,33 @@
   'roots': [
     {
       'type': 'directory',
+      'name': "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Alamofire-Swift.h",
+          'external-contents': "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Alamofire-umbrella.h",
+          'external-contents': "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Pods.build/Debug-iphoneos/Alamofire.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Firebase.framework/Headers",
       'contents': [
         {

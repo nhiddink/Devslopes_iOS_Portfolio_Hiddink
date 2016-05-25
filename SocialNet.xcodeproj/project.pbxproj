@@ -13,6 +13,7 @@
 		7F8C85E11CEE084200EB09D6 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8C85E01CEE084200EB09D6 /* MaterialButton.swift */; };
 		7F8C85E31CEE33D300EB09D6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8C85E21CEE33D300EB09D6 /* Post.swift */; };
 		7FAF5F1A1CED6011004609DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF5F191CED6011004609DE /* HomeViewController.swift */; };
+		7FDBC9551CF3A34F00CC44D3 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBC9541CF3A34F00CC44D3 /* MaterialTextField.swift */; };
 		7FE94D701CE8BFD900BCADA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE94D6F1CE8BFD900BCADA2 /* AppDelegate.swift */; };
 		7FE94D721CE8BFDA00BCADA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE94D711CE8BFDA00BCADA2 /* LoginViewController.swift */; };
 		7FE94D751CE8BFDA00BCADA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE94D731CE8BFDA00BCADA2 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		7F8C85E01CEE084200EB09D6 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		7F8C85E21CEE33D300EB09D6 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7FAF5F191CED6011004609DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7FDBC9541CF3A34F00CC44D3 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		7FE94D6C1CE8BFD800BCADA2 /* SocialNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE94D6F1CE8BFD900BCADA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FE94D711CE8BFDA00BCADA2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				7FE94D781CE8BFDB00BCADA2 /* LaunchScreen.storyboard */,
 				7F8C85DE1CEE007E00EB09D6 /* MaterialView.swift */,
 				7F8C85E01CEE084200EB09D6 /* MaterialButton.swift */,
+				7FDBC9541CF3A34F00CC44D3 /* MaterialTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				7FE94D861CE90A7100BCADA2 /* MapViewController.swift in Sources */,
 				7F8C85E31CEE33D300EB09D6 /* Post.swift in Sources */,
 				7FE94D971CEA561800BCADA2 /* HomeTableCell.swift in Sources */,
+				7FDBC9551CF3A34F00CC44D3 /* MaterialTextField.swift in Sources */,
 				7F8C85DF1CEE007E00EB09D6 /* MaterialView.swift in Sources */,
 				7FE94D8D1CEA341D00BCADA2 /* UserAnnotations.swift in Sources */,
 				7FE94D931CEA48D700BCADA2 /* FavoritesViewController.swift in Sources */,

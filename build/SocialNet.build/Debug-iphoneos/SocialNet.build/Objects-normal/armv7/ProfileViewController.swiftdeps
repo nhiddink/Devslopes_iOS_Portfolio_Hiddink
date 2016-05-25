@@ -6,11 +6,11 @@ provides-nominal:
 provides-member:
 - ["C9SocialNet21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "followersCountLabel"
 - "postsCountLabel"
 - "followingCountLabel"
-- "nameLabel"
 - "viewDidLoad"
+- "nameLabel"
+- "followersCountLabel"
 - "profilePicture"
 depends-top-level:
 - "UIViewController"
@@ -257,4 +257,8 @@ depends-external:
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
 interface-hash: "607d67321d957e91b6d889b6f59e88d9"
