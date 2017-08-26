@@ -1,0 +1,1058 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginViewController"
+provides-nominal:
+- "C9SocialNet19LoginViewController"
+provides-member:
+- ["C9SocialNet19LoginViewController", ""]
+provides-dynamic-lookup:
+- "facebookLoginButtonPressed"
+- "showErrorAlert"
+- "passwordField"
+- "emailLoginAttempt"
+- "viewDidLoad"
+- "dismissKeyboard"
+- "emailField"
+depends-top-level:
+- !private "!="
+- !private "UIAlertController"
+- !private "STATUS_ACCOUNT_NONEXIST"
+- !private "StringLiteralType"
+- "String"
+- !private "=="
+- !private "FBSDKAccessToken"
+- !private "KEY_UID"
+- !private "DataService"
+- "Dictionary"
+- !private "BooleanLiteralType"
+- "UIButton"
+- !private "Array"
+- "UIViewController"
+- !private "NSError"
+- "UITextField"
+- !private "FBSDKLoginManager"
+- !private "SEGUE_LOGGED_IN"
+- !private "UITapGestureRecognizer"
+- "LoginViewController"
+- !private "NSUserDefaults"
+- !private "UIAlertAction"
+- !private "print"
+- !private "FBSDKLoginManagerLoginResult"
+depends-member:
+- !private ["Ps9AnyObject", "DataService"]
+- !private ["Ps9AnyObject", "FBSDKAccessToken"]
+- !private ["Ps9AnyObject", "FBSDKLoginManager"]
+- !private ["Ps9AnyObject", "KEY_UID"]
+- !private ["Ps9AnyObject", "NSUserDefaults"]
+- !private ["Ps9AnyObject", "REF_BASE"]
+- !private ["Ps9AnyObject", "SEGUE_LOGGED_IN"]
+- !private ["Ps9AnyObject", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UITapGestureRecognizer"]
+- !private ["Ps9AnyObject", "addAction"]
+- !private ["Ps9AnyObject", "addGestureRecognizer"]
+- !private ["Ps9AnyObject", "authUser"]
+- !private ["Ps9AnyObject", "authWithOAuthProvider"]
+- !private ["Ps9AnyObject", "code"]
+- !private ["Ps9AnyObject", "createFirebaseUser"]
+- !private ["Ps9AnyObject", "createUser"]
+- !private ["Ps9AnyObject", "currentAccessToken"]
+- !private ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "dismissKeyboard"]
+- !private ["Ps9AnyObject", "ds"]
+- ["Ps9AnyObject", "emailField"]
+- ["Ps9AnyObject", "emailLoginAttempt"]
+- !private ["Ps9AnyObject", "endEditing"]
+- ["Ps9AnyObject", "facebookLoginButtonPressed"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "logInWithReadPermissions"]
+- ["Ps9AnyObject", "passwordField"]
+- !private ["Ps9AnyObject", "performSegueWithIdentifier"]
+- !private ["Ps9AnyObject", "presentViewController"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "provider"]
+- !private ["Ps9AnyObject", "setValue"]
+- ["Ps9AnyObject", "showErrorAlert"]
+- !private ["Ps9AnyObject", "standardUserDefaults"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "tokenString"]
+- !private ["Ps9AnyObject", "uid"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "DataService"]
+- !private ["Ps11CVarArgType", "FBSDKAccessToken"]
+- !private ["Ps11CVarArgType", "FBSDKLoginManager"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "KEY_UID"]
+- !private ["Ps11CVarArgType", "NSUserDefaults"]
+- !private ["Ps11CVarArgType", "SEGUE_LOGGED_IN"]
+- !private ["Ps11CVarArgType", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["Ps11CVarArgType", "UIAlertAction"]
+- !private ["Ps11CVarArgType", "UIAlertController"]
+- !private ["Ps11CVarArgType", "UITapGestureRecognizer"]
+- !private ["Ps11CVarArgType", "addAction"]
+- !private ["Ps11CVarArgType", "addGestureRecognizer"]
+- !private ["Ps11CVarArgType", "authUser"]
+- !private ["Ps11CVarArgType", "authWithOAuthProvider"]
+- !private ["Ps11CVarArgType", "code"]
+- !private ["Ps11CVarArgType", "createUser"]
+- !private ["Ps11CVarArgType", "currentAccessToken"]
+- ["Ps11CVarArgType", "dismissKeyboard"]
+- ["Ps11CVarArgType", "emailField"]
+- ["Ps11CVarArgType", "emailLoginAttempt"]
+- !private ["Ps11CVarArgType", "endEditing"]
+- ["Ps11CVarArgType", "facebookLoginButtonPressed"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "logInWithReadPermissions"]
+- ["Ps11CVarArgType", "passwordField"]
+- !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
+- !private ["Ps11CVarArgType", "presentViewController"]
+- !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "provider"]
+- !private ["Ps11CVarArgType", "setValue"]
+- ["Ps11CVarArgType", "showErrorAlert"]
+- !private ["Ps11CVarArgType", "standardUserDefaults"]
+- !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "tokenString"]
+- !private ["Ps11CVarArgType", "uid"]
+- !private ["Ps11CVarArgType", "view"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "DataService"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKAccessToken"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKLoginManager"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "KEY_UID"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "SEGUE_LOGGED_IN"]
+- !private ["Ps28CustomDebugStringConvertible", "STATUS_ACCOUNT_NONEXIST"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UITapGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "authUser"]
+- !private ["Ps28CustomDebugStringConvertible", "authWithOAuthProvider"]
+- !private ["Ps28CustomDebugStringConvertible", "code"]
+- !private ["Ps28CustomDebugStringConvertible", "createUser"]
+- !private ["Ps28CustomDebugStringConvertible", "currentAccessToken"]
+- ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
+- ["Ps28CustomDebugStringConvertible", "emailField"]
+- ["Ps28CustomDebugStringConvertible", "emailLoginAttempt"]
+- !private ["Ps28CustomDebugStringConvertible", "endEditing"]
+- ["Ps28CustomDebugStringConvertible", "facebookLoginButtonPressed"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "logInWithReadPermissions"]
+- ["Ps28CustomDebugStringConvertible", "passwordField"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "provider"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- ["Ps28CustomDebugStringConvertible", "showErrorAlert"]
+- !private ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "tokenString"]
+- !private ["Ps28CustomDebugStringConvertible", "uid"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "DataService"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "FBSDKAccessToken"]
+- !private ["Ps23CustomStringConvertible", "FBSDKLoginManager"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "KEY_UID"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "SEGUE_LOGGED_IN"]
+- !private ["Ps23CustomStringConvertible", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UITapGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addAction"]
+- !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "authUser"]
+- !private ["Ps23CustomStringConvertible", "authWithOAuthProvider"]
+- !private ["Ps23CustomStringConvertible", "code"]
+- !private ["Ps23CustomStringConvertible", "createUser"]
+- !private ["Ps23CustomStringConvertible", "currentAccessToken"]
+- ["Ps23CustomStringConvertible", "dismissKeyboard"]
+- ["Ps23CustomStringConvertible", "emailField"]
+- ["Ps23CustomStringConvertible", "emailLoginAttempt"]
+- !private ["Ps23CustomStringConvertible", "endEditing"]
+- ["Ps23CustomStringConvertible", "facebookLoginButtonPressed"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "logInWithReadPermissions"]
+- ["Ps23CustomStringConvertible", "passwordField"]
+- !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "provider"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- ["Ps23CustomStringConvertible", "showErrorAlert"]
+- !private ["Ps23CustomStringConvertible", "standardUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "tokenString"]
+- !private ["Ps23CustomStringConvertible", "uid"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["C9SocialNet11DataService", "REF_BASE"]
+- !private ["C9SocialNet11DataService", "createFirebaseUser"]
+- !private ["C9SocialNet11DataService", "ds"]
+- !private ["Vs10Dictionary", "Generator"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Vs10Dictionary", "_Element"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Vs15DictionaryIndex", "Distance"]
+- !private ["Vs15DictionaryIndex", "_DisabledRangeIndex"]
+- !private ["Ps28DictionaryLiteralConvertible", "Generator"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "SubSequence"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "_Element"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Alert"]
+- !private ["Ps9Equatable", "DataService"]
+- !private ["Ps9Equatable", "Default"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "FBSDKAccessToken"]
+- !private ["Ps9Equatable", "FBSDKLoginManager"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "KEY_UID"]
+- !private ["Ps9Equatable", "NSUserDefaults"]
+- !private ["Ps9Equatable", "SEGUE_LOGGED_IN"]
+- !private ["Ps9Equatable", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UITapGestureRecognizer"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addAction"]
+- !private ["Ps9Equatable", "addGestureRecognizer"]
+- !private ["Ps9Equatable", "authUser"]
+- !private ["Ps9Equatable", "authWithOAuthProvider"]
+- !private ["Ps9Equatable", "code"]
+- !private ["Ps9Equatable", "createUser"]
+- !private ["Ps9Equatable", "currentAccessToken"]
+- ["Ps9Equatable", "dismissKeyboard"]
+- ["Ps9Equatable", "emailField"]
+- ["Ps9Equatable", "emailLoginAttempt"]
+- !private ["Ps9Equatable", "endEditing"]
+- ["Ps9Equatable", "facebookLoginButtonPressed"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "logInWithReadPermissions"]
+- ["Ps9Equatable", "passwordField"]
+- !private ["Ps9Equatable", "performSegueWithIdentifier"]
+- !private ["Ps9Equatable", "presentViewController"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "provider"]
+- !private ["Ps9Equatable", "setValue"]
+- ["Ps9Equatable", "showErrorAlert"]
+- !private ["Ps9Equatable", "standardUserDefaults"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "tokenString"]
+- !private ["Ps9Equatable", "uid"]
+- !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps9ErrorType", "code"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo9FAuthData", "provider"]
+- !private ["CSo9FAuthData", "uid"]
+- !private ["CSo16FBSDKAccessToken", "currentAccessToken"]
+- !private ["CSo16FBSDKAccessToken", "tokenString"]
+- !private ["PSo12FBSDKCopying", "currentAccessToken"]
+- !private ["PSo12FBSDKCopying", "tokenString"]
+- !private ["CSo17FBSDKLoginManager", "init"]
+- !private ["CSo17FBSDKLoginManager", "logInWithReadPermissions"]
+- !private ["CSo6FQuery", "authUser"]
+- !private ["CSo6FQuery", "authWithOAuthProvider"]
+- !private ["CSo6FQuery", "createUser"]
+- !private ["CSo8Firebase", "authUser"]
+- !private ["CSo8Firebase", "authWithOAuthProvider"]
+- !private ["CSo8Firebase", "createUser"]
+- !private ["Sf", "deinit"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Alert"]
+- !private ["Ps8Hashable", "DataService"]
+- !private ["Ps8Hashable", "Default"]
+- !private ["Ps8Hashable", "FBSDKAccessToken"]
+- !private ["Ps8Hashable", "FBSDKLoginManager"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "KEY_UID"]
+- !private ["Ps8Hashable", "NSUserDefaults"]
+- !private ["Ps8Hashable", "SEGUE_LOGGED_IN"]
+- !private ["Ps8Hashable", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UITapGestureRecognizer"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addAction"]
+- !private ["Ps8Hashable", "addGestureRecognizer"]
+- !private ["Ps8Hashable", "authUser"]
+- !private ["Ps8Hashable", "authWithOAuthProvider"]
+- !private ["Ps8Hashable", "code"]
+- !private ["Ps8Hashable", "createUser"]
+- !private ["Ps8Hashable", "currentAccessToken"]
+- ["Ps8Hashable", "dismissKeyboard"]
+- ["Ps8Hashable", "emailField"]
+- ["Ps8Hashable", "emailLoginAttempt"]
+- !private ["Ps8Hashable", "endEditing"]
+- ["Ps8Hashable", "facebookLoginButtonPressed"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "logInWithReadPermissions"]
+- ["Ps8Hashable", "passwordField"]
+- !private ["Ps8Hashable", "performSegueWithIdentifier"]
+- !private ["Ps8Hashable", "presentViewController"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "provider"]
+- !private ["Ps8Hashable", "setValue"]
+- ["Ps8Hashable", "showErrorAlert"]
+- !private ["Ps8Hashable", "standardUserDefaults"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "tokenString"]
+- !private ["Ps8Hashable", "uid"]
+- !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["C9SocialNet19LoginViewController", "DataService"]
+- !private ["C9SocialNet19LoginViewController", "FBSDKAccessToken"]
+- !private ["C9SocialNet19LoginViewController", "FBSDKLoginManager"]
+- !private ["C9SocialNet19LoginViewController", "FBSDKLoginManagerLoginResult"]
+- !private ["C9SocialNet19LoginViewController", "KEY_UID"]
+- !private ["C9SocialNet19LoginViewController", "NSError"]
+- !private ["C9SocialNet19LoginViewController", "NSUserDefaults"]
+- !private ["C9SocialNet19LoginViewController", "SEGUE_LOGGED_IN"]
+- !private ["C9SocialNet19LoginViewController", "STATUS_ACCOUNT_NONEXIST"]
+- ["C9SocialNet19LoginViewController", "String"]
+- !private ["C9SocialNet19LoginViewController", "UIAlertAction"]
+- !private ["C9SocialNet19LoginViewController", "UIAlertController"]
+- ["C9SocialNet19LoginViewController", "UIButton"]
+- !private ["C9SocialNet19LoginViewController", "UITapGestureRecognizer"]
+- ["C9SocialNet19LoginViewController", "UITextField"]
+- ["C9SocialNet19LoginViewController", "deinit"]
+- ["C9SocialNet19LoginViewController", "dismissKeyboard"]
+- ["C9SocialNet19LoginViewController", "emailField"]
+- ["C9SocialNet19LoginViewController", "emailLoginAttempt"]
+- ["C9SocialNet19LoginViewController", "facebookLoginButtonPressed"]
+- ["C9SocialNet19LoginViewController", "init"]
+- ["C9SocialNet19LoginViewController", "passwordField"]
+- !private ["C9SocialNet19LoginViewController", "performSegueWithIdentifier"]
+- !private ["C9SocialNet19LoginViewController", "presentViewController"]
+- !private ["C9SocialNet19LoginViewController", "print"]
+- ["C9SocialNet19LoginViewController", "showErrorAlert"]
+- !private ["C9SocialNet19LoginViewController", "view"]
+- ["C9SocialNet19LoginViewController", "viewDidLoad"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["PSo8NSCoding", "DataService"]
+- !private ["PSo8NSCoding", "FBSDKAccessToken"]
+- !private ["PSo8NSCoding", "FBSDKLoginManager"]
+- !private ["PSo8NSCoding", "KEY_UID"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
+- !private ["PSo8NSCoding", "SEGUE_LOGGED_IN"]
+- !private ["PSo8NSCoding", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UITapGestureRecognizer"]
+- !private ["PSo8NSCoding", "addAction"]
+- !private ["PSo8NSCoding", "addGestureRecognizer"]
+- !private ["PSo8NSCoding", "code"]
+- !private ["PSo8NSCoding", "currentAccessToken"]
+- ["PSo8NSCoding", "dismissKeyboard"]
+- ["PSo8NSCoding", "emailField"]
+- ["PSo8NSCoding", "emailLoginAttempt"]
+- !private ["PSo8NSCoding", "endEditing"]
+- ["PSo8NSCoding", "facebookLoginButtonPressed"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "passwordField"]
+- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "showErrorAlert"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "tokenString"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "code"]
+- !private ["PSo9NSCopying", "currentAccessToken"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "tokenString"]
+- !private ["CSo7NSError", "code"]
+- !private ["CSo7NSError", "deinit"]
+- !private ["PSo26NSExtensionRequestHandling", "DataService"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKAccessToken"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKLoginManager"]
+- !private ["PSo26NSExtensionRequestHandling", "KEY_UID"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "SEGUE_LOGGED_IN"]
+- !private ["PSo26NSExtensionRequestHandling", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UITapGestureRecognizer"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- ["PSo26NSExtensionRequestHandling", "dismissKeyboard"]
+- ["PSo26NSExtensionRequestHandling", "emailField"]
+- ["PSo26NSExtensionRequestHandling", "emailLoginAttempt"]
+- ["PSo26NSExtensionRequestHandling", "facebookLoginButtonPressed"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "passwordField"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "showErrorAlert"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "DataService"]
+- !private ["CSo8NSObject", "FBSDKAccessToken"]
+- !private ["CSo8NSObject", "FBSDKLoginManager"]
+- !private ["CSo8NSObject", "FBSDKLoginManagerLoginResult"]
+- !private ["CSo8NSObject", "KEY_UID"]
+- !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- !private ["CSo8NSObject", "SEGUE_LOGGED_IN"]
+- !private ["CSo8NSObject", "STATUS_ACCOUNT_NONEXIST"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertController"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UITapGestureRecognizer"]
+- ["CSo8NSObject", "UITextField"]
+- !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "addGestureRecognizer"]
+- !private ["CSo8NSObject", "authUser"]
+- !private ["CSo8NSObject", "authWithOAuthProvider"]
+- !private ["CSo8NSObject", "code"]
+- !private ["CSo8NSObject", "createUser"]
+- !private ["CSo8NSObject", "currentAccessToken"]
+- !private ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "dismissKeyboard"]
+- ["CSo8NSObject", "emailField"]
+- ["CSo8NSObject", "emailLoginAttempt"]
+- !private ["CSo8NSObject", "endEditing"]
+- ["CSo8NSObject", "facebookLoginButtonPressed"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "logInWithReadPermissions"]
+- ["CSo8NSObject", "passwordField"]
+- !private ["CSo8NSObject", "performSegueWithIdentifier"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "provider"]
+- !private ["CSo8NSObject", "setValue"]
+- ["CSo8NSObject", "showErrorAlert"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "tokenString"]
+- !private ["CSo8NSObject", "uid"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "DataService"]
+- !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
+- !private ["PSo16NSObjectProtocol", "FBSDKLoginManager"]
+- !private ["PSo16NSObjectProtocol", "KEY_UID"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "SEGUE_LOGGED_IN"]
+- !private ["PSo16NSObjectProtocol", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UITapGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "authUser"]
+- !private ["PSo16NSObjectProtocol", "authWithOAuthProvider"]
+- !private ["PSo16NSObjectProtocol", "code"]
+- !private ["PSo16NSObjectProtocol", "createUser"]
+- !private ["PSo16NSObjectProtocol", "currentAccessToken"]
+- ["PSo16NSObjectProtocol", "dismissKeyboard"]
+- ["PSo16NSObjectProtocol", "emailField"]
+- ["PSo16NSObjectProtocol", "emailLoginAttempt"]
+- !private ["PSo16NSObjectProtocol", "endEditing"]
+- ["PSo16NSObjectProtocol", "facebookLoginButtonPressed"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "logInWithReadPermissions"]
+- ["PSo16NSObjectProtocol", "passwordField"]
+- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "provider"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- ["PSo16NSObjectProtocol", "showErrorAlert"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "tokenString"]
+- !private ["PSo16NSObjectProtocol", "uid"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "code"]
+- !private ["PSo14NSSecureCoding", "currentAccessToken"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "tokenString"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo14NSUserDefaults", "setValue"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps16RawRepresentable", "Alert"]
+- !private ["Ps16RawRepresentable", "Default"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
+- !private ["PSo29UIAccessibilityIdentification", "endEditing"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo12UIAppearance", "addGestureRecognizer"]
+- !private ["PSo12UIAppearance", "endEditing"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "DataService"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKAccessToken"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKLoginManager"]
+- !private ["PSo21UIAppearanceContainer", "KEY_UID"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "SEGUE_LOGGED_IN"]
+- !private ["PSo21UIAppearanceContainer", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UITapGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
+- ["PSo21UIAppearanceContainer", "dismissKeyboard"]
+- ["PSo21UIAppearanceContainer", "emailField"]
+- ["PSo21UIAppearanceContainer", "emailLoginAttempt"]
+- !private ["PSo21UIAppearanceContainer", "endEditing"]
+- ["PSo21UIAppearanceContainer", "facebookLoginButtonPressed"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "passwordField"]
+- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "showErrorAlert"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "DataService"]
+- !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
+- !private ["PSo18UIContentContainer", "FBSDKLoginManager"]
+- !private ["PSo18UIContentContainer", "KEY_UID"]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- !private ["PSo18UIContentContainer", "SEGUE_LOGGED_IN"]
+- !private ["PSo18UIContentContainer", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UITapGestureRecognizer"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- ["PSo18UIContentContainer", "dismissKeyboard"]
+- ["PSo18UIContentContainer", "emailField"]
+- ["PSo18UIContentContainer", "emailLoginAttempt"]
+- ["PSo18UIContentContainer", "facebookLoginButtonPressed"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "passwordField"]
+- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "showErrorAlert"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
+- !private ["PSo17UICoordinateSpace", "endEditing"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "endEditing"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "DataService"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKLoginManager"]
+- !private ["PSo18UIFocusEnvironment", "KEY_UID"]
+- !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
+- !private ["PSo18UIFocusEnvironment", "SEGUE_LOGGED_IN"]
+- !private ["PSo18UIFocusEnvironment", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UITapGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
+- ["PSo18UIFocusEnvironment", "dismissKeyboard"]
+- ["PSo18UIFocusEnvironment", "emailField"]
+- ["PSo18UIFocusEnvironment", "emailLoginAttempt"]
+- !private ["PSo18UIFocusEnvironment", "endEditing"]
+- ["PSo18UIFocusEnvironment", "facebookLoginButtonPressed"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "passwordField"]
+- !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "showErrorAlert"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo11UIResponder", "DataService"]
+- !private ["CSo11UIResponder", "FBSDKAccessToken"]
+- !private ["CSo11UIResponder", "FBSDKLoginManager"]
+- !private ["CSo11UIResponder", "FBSDKLoginManagerLoginResult"]
+- !private ["CSo11UIResponder", "KEY_UID"]
+- !private ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- !private ["CSo11UIResponder", "SEGUE_LOGGED_IN"]
+- !private ["CSo11UIResponder", "STATUS_ACCOUNT_NONEXIST"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertController"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UITapGestureRecognizer"]
+- ["CSo11UIResponder", "UITextField"]
+- !private ["CSo11UIResponder", "addAction"]
+- !private ["CSo11UIResponder", "addGestureRecognizer"]
+- ["CSo11UIResponder", "dismissKeyboard"]
+- ["CSo11UIResponder", "emailField"]
+- ["CSo11UIResponder", "emailLoginAttempt"]
+- !private ["CSo11UIResponder", "endEditing"]
+- ["CSo11UIResponder", "facebookLoginButtonPressed"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "passwordField"]
+- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "showErrorAlert"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "DataService"]
+- !private ["PSo16UIStateRestoring", "FBSDKAccessToken"]
+- !private ["PSo16UIStateRestoring", "FBSDKLoginManager"]
+- !private ["PSo16UIStateRestoring", "KEY_UID"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- !private ["PSo16UIStateRestoring", "SEGUE_LOGGED_IN"]
+- !private ["PSo16UIStateRestoring", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UITapGestureRecognizer"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- ["PSo16UIStateRestoring", "dismissKeyboard"]
+- ["PSo16UIStateRestoring", "emailField"]
+- ["PSo16UIStateRestoring", "emailLoginAttempt"]
+- ["PSo16UIStateRestoring", "facebookLoginButtonPressed"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "passwordField"]
+- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "showErrorAlert"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo22UITapGestureRecognizer", "init"]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "DataService"]
+- !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
+- !private ["PSo18UITraitEnvironment", "FBSDKLoginManager"]
+- !private ["PSo18UITraitEnvironment", "KEY_UID"]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- !private ["PSo18UITraitEnvironment", "SEGUE_LOGGED_IN"]
+- !private ["PSo18UITraitEnvironment", "STATUS_ACCOUNT_NONEXIST"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UITapGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
+- ["PSo18UITraitEnvironment", "dismissKeyboard"]
+- ["PSo18UITraitEnvironment", "emailField"]
+- ["PSo18UITraitEnvironment", "emailLoginAttempt"]
+- !private ["PSo18UITraitEnvironment", "endEditing"]
+- ["PSo18UITraitEnvironment", "facebookLoginButtonPressed"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "passwordField"]
+- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "showErrorAlert"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addGestureRecognizer"]
+- !private ["CSo6UIView", "endEditing"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "DataService"]
+- !private ["CSo16UIViewController", "FBSDKAccessToken"]
+- !private ["CSo16UIViewController", "FBSDKLoginManager"]
+- !private ["CSo16UIViewController", "FBSDKLoginManagerLoginResult"]
+- !private ["CSo16UIViewController", "KEY_UID"]
+- !private ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- !private ["CSo16UIViewController", "SEGUE_LOGGED_IN"]
+- !private ["CSo16UIViewController", "STATUS_ACCOUNT_NONEXIST"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- !private ["CSo16UIViewController", "UIAlertController"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UITapGestureRecognizer"]
+- ["CSo16UIViewController", "UITextField"]
+- !private ["CSo16UIViewController", "addAction"]
+- ["CSo16UIViewController", "dismissKeyboard"]
+- ["CSo16UIViewController", "emailField"]
+- ["CSo16UIViewController", "emailLoginAttempt"]
+- ["CSo16UIViewController", "facebookLoginButtonPressed"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "passwordField"]
+- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "showErrorAlert"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Key"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "addGestureRecognizer"]
+- !private ["Ps12_Reflectable", "endEditing"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "C9SocialNet11DataService"
+- !private "Vs10Dictionary"
+- !private "Vs15DictionaryIndex"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps9ErrorType"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo9FAuthData"
+- !private "CSo16FBSDKAccessToken"
+- !private "PSo12FBSDKCopying"
+- !private "CSo17FBSDKLoginManager"
+- !private "CSo6FQuery"
+- !private "CSo8Firebase"
+- !private "Sf"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "SQ"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- "C9SocialNet19LoginViewController"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo14NSUserDefaults"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Vs5Slice"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo19UIGestureRecognizer"
+- !private "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- !private "CSo22UITapGestureRecognizer"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseServerValue.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FTransactionResult.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FMutableData.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseApp.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FQuery.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/Firebase.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FEventType.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FDataSnapshot.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FConfig.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FAuthType.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/FAuthData.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Headers/Firebase-umbrella.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Firebase.framework/Modules/module.modulemap"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFURL.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFTask.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Headers/Bolts.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/Bolts.framework/Modules/module.modulemap"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/SocialNet/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreLocation.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/i386.swiftmodule"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/build/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
+interface-hash: "16e6767841a446ae945aeb7c4ec4e732"

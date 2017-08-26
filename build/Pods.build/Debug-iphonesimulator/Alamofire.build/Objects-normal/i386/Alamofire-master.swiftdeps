@@ -1,0 +1,21 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "484ed9eb5979db187141014f1b5d025a"
+build_time: [517358337, 680524000]
+inputs:
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Alamofire.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Download.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Error.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Manager.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/MultipartFormData.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Notifications.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/ParameterEncoding.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Request.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Response.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/ResponseSerialization.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Result.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/ServerTrustPolicy.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Stream.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Timeline.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Upload.swift": [517028296, 0]
+  "/Users/nhiddink/Dropbox/iPhone Applications/SocialNet/Pods/Alamofire/Source/Validation.swift": [517028296, 0]
